@@ -1,5 +1,5 @@
-import Navbar from "./Comonents/Navbar/Navbar";
-
+import Navbar from "./Component/Navbar/Navbar";
+import "./App.css"
 function App() {
   return (
     <div className="App">
@@ -7,5 +7,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
