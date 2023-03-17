@@ -34,6 +34,6 @@
   cursor: pointer;
   color: var(--orange);
 }
-.button {
-  flex: 2;
+.n-button {
+  flex:2;
 }
