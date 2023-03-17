@@ -1,7 +1,9 @@
+import Navbar from "./Comonents/Navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
-      welcome to my portfolio
+      <Navbar />
     </div>
   );
 }
