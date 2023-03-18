@@ -13,6 +13,7 @@ import Boy from "../../img/boy.png";
 import Thumbup from "../../img/thumbup.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import Crown from "../../img/crown.png";
+import FloatingDiv from "../FloatingDiv/FloatingDiv";
 const Intro = () => {
   return (
     <div className="intro">
@@ -63,6 +64,10 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
+
+        <div style={{ top: "-4%", left: "68%" }}>
+          <FloatingDiv image={Crown} text1="Web" text2="Developer" />
+        </div>
       </div>
     </div>
   );
