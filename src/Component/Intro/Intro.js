@@ -19,10 +19,21 @@ const Intro = () => {
         </div>
         <button className="button i-button">Hire Me</button>
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
-          <img src={Youtube} alt="" />
+          <a
+            href="https://github.com/mhdshabeebvp/portfolio-website-react/commits/master"
+            target={"_blank"}
+          >
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/feed/" target={"_blank"}>
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://www.instagram.com/" target={"_blank"}>
+            <img src={Instagram} alt="" />
+          </a>
+          <a href="https://www.youtube.com/ " target={"_blank"}>
+            <img src={Youtube} alt="" />
+          </a>
         </div>
       </div>
       <div className="i-right"> i am right side</div>
