@@ -64,6 +64,7 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
+        <img src={glassesimoji} alt="" />
         {/* floating section[important] */}
         <div style={{ top: "-4%", left: "68%" }}>
           <FloatingDiv image={Crown} text1="Web" text2="Developer" />
