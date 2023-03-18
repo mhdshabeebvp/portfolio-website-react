@@ -3,6 +3,7 @@ import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
+import Youtube from "../../img/youtube.png";
 
 const Intro = () => {
   return (
@@ -21,7 +22,7 @@ const Intro = () => {
           <img src={Github} alt="" />
           <img src={LinkedIn} alt="" />
           <img src={Instagram} alt="" />
-         
+          <img src={Youtube} alt="" />
         </div>
       </div>
       <div className="i-right"> i am right side</div>
