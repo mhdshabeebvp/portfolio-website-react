@@ -2,8 +2,9 @@ import React from "react";
 import "./Services.css";
 import HearEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png"
+import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
+import Resume from "../../Component/Services/Resume.pdf"
 const Services = () => {
   return (
     <div className="Services">
@@ -16,7 +17,9 @@ const Services = () => {
           <br /> Magni ab iusto eaque dolore veniam iure a quae, unde fuga.
           Quam.
         </span>
-        <button className="button s-button">Download CV</button>
+        <a href={Resume} download>
+          <button className="button s-button">Download CV</button>
+        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* RIGHT SIDE */}
