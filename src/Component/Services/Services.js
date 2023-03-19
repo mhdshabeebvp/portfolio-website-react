@@ -4,7 +4,7 @@ import HearEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
-import Resume from "../../Component/Services/Resume.pdf"
+import Resume from "../../Component/Services/Resume.pdf";
 const Services = () => {
   return (
     <div className="Services">
@@ -49,6 +49,9 @@ const Services = () => {
             details={"html,css,javascript,Reactjs"}
           />
         </div>
+        {/* color purple */}
+        <div className="blur s-blur2" style={{ background:'var(--purple)'}}></div>
+
       </div>
     </div>
   );
