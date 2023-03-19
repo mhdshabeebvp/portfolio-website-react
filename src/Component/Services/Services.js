@@ -2,6 +2,7 @@ import React from "react";
 import "./Services.css";
 import HearEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
+import Humble from "../../img/humble.png"
 import Card from "../Card/Card";
 const Services = () => {
   return (
@@ -30,14 +31,21 @@ const Services = () => {
           />
         </div>
         {/* second card */}
-        <div style={{ top: "12rem", left: -"4rem" }}>
+        <div style={{ top: "12rem", left: "-4rem" }}>
           <Card
             emoji={Glasses}
             heading={"ux/ui"}
             details={"Figma,Sketch, phonoscope,Adobe"}
           />
         </div>
-        
+        {/* adding 3rd card */}
+        <div style={{ top: "19rem", left: "12rem" }}>
+          <Card
+            emoji={Humble}
+            heading={"software developennt"}
+            details={"html,css,javascript,Reactjs"}
+          />
+        </div>
       </div>
     </div>
   );
