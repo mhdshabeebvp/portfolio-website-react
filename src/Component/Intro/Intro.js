@@ -10,6 +10,7 @@ import Youtube from "../../img/youtube.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import Boy from "../../img/boy.png";
+// import Newboy from "../../img/NEWBOY.png"
 import Thumbup from "../../img/thumbup.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import Crown from "../../img/crown.png";
