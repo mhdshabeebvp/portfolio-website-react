@@ -45,8 +45,8 @@ const Services = () => {
         <div style={{ top: "19rem", left: "12rem" }}>
           <Card
             emoji={Humble}
-            heading={"software developennt"}
-            details={"html,css,javascript,Reactjs"}
+            heading={"software development"}
+            details={"html,css,javascript,Reacts"}
           />
         </div>
         {/* color purple */}
