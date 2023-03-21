@@ -12,5 +12,4 @@ const FloatingDiv = ({ image, text1, text2 }) => {
     </div>
   );
 };
-
 export default FloatingDiv;
