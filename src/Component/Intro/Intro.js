@@ -17,14 +17,16 @@ import Crown from "../../img/crown.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 const Intro = () => {
+  const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;;
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="intro">
+    <div className="intro">mo
       <div className="i-left">
         <div className="i-name">
-          <span style={{color:darkMode? "white" : ""}}>Hy! I Am </span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
             Frontend Developer with high level of experience in web
@@ -69,14 +71,32 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
-        <img src={glassesimoji} alt="" />
+        {/* motion animation */}
+        <motion.img
+          initial={{ left: "-36%" }}
+          whileInView={{ left: "-24%" }}
+          transition={transition}
+          src={glassesimoji}
+          alt=""
+        />
         {/* floating section[important] */}
-        <div style={{ top: "-4%", left: "68%" }}>
+        <motion.div
+          initial={{ top: "-4%", left: "74%" }}
+          whileInView={{ left: "68%" }}
+          transition={transition}
+          style={{ top: "-4%", left: "68%" }}
+        >
           <FloatingDiv image={Crown} text1="Web" text2="Developer" />
-        </div>
-        <div style={{ top: "18rem", left: "0rem " }}>
+        </motion.div>
+        <motion.div
+          initial={{ top: "18rem", left: "9rem" }}
+          whileInView={{ left: "0rem" }}
+          transition={transition}
+          style={{ top: "18rem", left: "0rem " }}
+        >
+
           <FloatingDiv image={Thumbup} text1="Best design" text2="Award" />
-        </div>
+        </motion.div>
         {/* blur div  */}
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
@@ -86,7 +106,7 @@ const Intro = () => {
             top: "17rem",
             width: "21rem",
             height: "11rem",
-            left:'-9rem'
+            left: "-9rem",
           }}
         ></div>
       </div>

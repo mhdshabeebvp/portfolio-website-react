@@ -7,7 +7,9 @@ import Card from "../Card/Card";
 import Resume from "../../Component/Services/Resume.pdf";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 const Services = () => {
+  const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -30,29 +32,41 @@ const Services = () => {
       <div className="cards">
         {/* card section in right section of services */}
         {/* first card */}
-        <div style={{ left: "14rem" }}>
+        <motion.div
+          whileInView={{ left: "14rem" }}
+          initial={{ left: "25rem" }}
+          transition={{ transition }}
+        >
           <Card
             emoji={HearEmoji}
             heading={"Design"}
             details={"Figma,Sketch, phonoscope,Adobe"}
           />
-        </div>
+        </motion.div>
         {/* second card */}
-        <div style={{ top: "12rem", left: "-4rem" }}>
+        <motion.div
+          initial={{ left: "-11rem", top: "12rem" }}
+          whileInView={{ left: "-4rem" }}
+          transition={transition}
+        >
           <Card
             emoji={Glasses}
             heading={"ux/ui"}
             details={"Figma,Sketch, phonoscope,Adobe"}
           />
-        </div>
+        </motion.div>
         {/* adding 3rd card */}
-        <div style={{ top: "19rem", left: "12rem" }}>
+        <motion.div
+          initial={{ top: "19rem", left: "25rem" }}
+          whileInView={{ left: "12rem" }}
+          transition={transition}
+        >
           <Card
             emoji={Humble}
             heading={"software development"}
             details={"html,css,javascript,Reacts"}
           />
-        </div>
+        </motion.div>
         {/* color purple */}
         <div
           className="blur s-blur2"
