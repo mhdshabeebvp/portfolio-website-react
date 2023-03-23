@@ -13,7 +13,7 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="Services">
+    <div className="Services" id="services">
       {/* LEFT SIDE */}
       <div className="awesome">
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
