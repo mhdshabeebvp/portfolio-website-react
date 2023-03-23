@@ -64,10 +64,12 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"software development"}
-            details={"html,css,javascript,Reacts"}
+            details={"html,css,javascript,reacts,python"}
           />
         </motion.div>
         {/* color purple */}
+        
+
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

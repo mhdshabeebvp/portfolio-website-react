@@ -18,12 +18,13 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="intro">mo
+    <div className="intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am </span>
@@ -34,35 +35,12 @@ const Intro = () => {
           </span>
         </div>
         <button className="button i-button">Hire Me</button>
+        {/* social icon */}
         <div className="i-icons">
-          <a
-            href="https://github.com/mhdshabeebvp/portfolio-website-react/commits/master"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <img src={Github} alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/feed/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <img src={LinkedIn} alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <img src={Instagram} alt="" />
-          </a>
-          <a
-            href="https://www.youtube.com/ "
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <img src={Youtube} alt="" />
-          </a>
+          <img src={Github} alt="" rel="noreferrer" />
+          <img src={LinkedIn} alt="" rel="noreferrer" />
+          <img src={Instagram} alt="" rel="noreferrer" />
+          <img src={Youtube} alt="" />
         </div>
       </div>
 
@@ -80,11 +58,12 @@ const Intro = () => {
           alt=""
         />
         {/* floating section[important] */}
+
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
-          style={{ top: "-4%", left: "68%" }}
+          className="floating-div"
         >
           <FloatingDiv image={Crown} text1="Web" text2="Developer" />
         </motion.div>
@@ -92,9 +71,8 @@ const Intro = () => {
           initial={{ top: "18rem", left: "9rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
-          style={{ top: "18rem", left: "0rem " }}
+          className="floating-div"
         >
-
           <FloatingDiv image={Thumbup} text1="Best design" text2="Award" />
         </motion.div>
         {/* blur div  */}

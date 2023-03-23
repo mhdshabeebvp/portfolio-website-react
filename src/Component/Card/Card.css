@@ -8,7 +8,7 @@
   text-align: center;
   width: 10rem;
   align-items: center;
-  border: 7px solid var(--orange);
+  border: 7px solid var(--orangeCard);
   background: rgba(255, 255, 255, 0.26);
   box-shadow: var(--boxShadow);
   border-radius: 20px;
@@ -31,17 +31,12 @@
   font-size: 16px;
   color: #5290fd;
 }
-.cards{
-  position: relative;
+.c-button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
-.cards > *{
-  position: absolute;
-}
-.s-blur2{
-  left: 14rem;
-  top: 8rem;
-}
-.s-blur1{
-top: 13;
-left: -18rem;
+@media screen and (max-width: 480px) {
+  .card{
+    width: auto;
+  }
 }

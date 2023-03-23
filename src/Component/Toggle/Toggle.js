@@ -9,18 +9,17 @@ import { type } from "@testing-library/user-event/dist/type";
 const Toggle = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const handleClick = () =>{
-    theme.dispatch({type:'toggle'})
-  }
+  const handleClick = () => {
+    theme.dispatch({ type: "toggle" });
+  };
   return (
     <div className="toggle" onClick={handleClick}>
       <Moon />
       <Sun />
-      <div className="t-button"
-   
-      style = {darkMode ? { left: "2px" } : { right: "2px" }}>
-        
-      </div>
+      <div
+        className="t-button"
+        style={darkMode ? { left: "2px" } : { right: "2px" }}
+      ></div>
     </div>
   );
 };

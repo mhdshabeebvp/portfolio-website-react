@@ -17,7 +17,7 @@ const Footer = () => {
             <Facebook color="white" size="3rem" />
             <Github color="white" size="3rem" />
             <Youtube color="white" size="3rem" />
-          </div>
+            </div>
         </div>
       </div>
     </div>

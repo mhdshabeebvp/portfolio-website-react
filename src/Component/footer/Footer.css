@@ -19,3 +19,12 @@
   gap: 2rem;
   display: flex;
 }
+@media screen and (max-width: 480px){
+  .f-content{
+    transform: scale(.5);
+   
+  }
+.footer{
+  margin-top: 1px;
+}
+}
