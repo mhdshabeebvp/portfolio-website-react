@@ -43,7 +43,7 @@ const Services = () => {
             details={"Figma,Sketch, phonoscope,Adobe,Figma,Sketch,"}
           />
         </motion.div>
-        {/* second card */}
+                   {/* second card */}
         <motion.div
           initial={{ left: "-11rem", top: "12rem" }}
           whileInView={{ left: "-4rem" }}
@@ -52,7 +52,9 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"ux/ui"}
-            details={"Figma,Sketch, phonoscope,Lorem ipsum dolor si consectetur"}
+            details={
+              "Figma,Sketch, phonoscope,Lorem ipsum dolor si consectetur"
+            }
           />
         </motion.div>
         {/* adding 3rd card */}
@@ -64,11 +66,12 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"software development"}
-            details={"html,cssm dolor sit amen consectetur,Lorem ipsum dolor sit reacts,python"}
+            details={
+              "html,cssm dolor sit amen consectetur,Lorem ipsum dolor sit reacts,python"
+            }
           />
         </motion.div>
         {/* color purple */}
-        
 
         <div
           className="blur s-blur2"

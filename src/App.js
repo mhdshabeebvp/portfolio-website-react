@@ -7,6 +7,9 @@ import Services from "./Component/Services/Services";
 import Testimonial from "./Component/Testimonial/Testimonial";
 import { themeContext } from "./Context";
 import { useContext } from "react";
+import { Skills } from "./Component/Skills/Skills";
+import { Projects } from "./Component/Projects/Projects";
+
 
 function App() {
   const theme = useContext(themeContext);
@@ -23,6 +26,8 @@ function App() {
       <Intro />
       <Services />
       <Experience />
+      <Skills />
+      <Projects />
       <Testimonial />
       <Footer />
     </div>
