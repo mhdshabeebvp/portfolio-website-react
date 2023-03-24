@@ -103,4 +103,8 @@
     /* display: none; */
     top: -7rem !important;;
   }
+  .i-icons{
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

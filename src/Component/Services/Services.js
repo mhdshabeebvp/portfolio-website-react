@@ -40,7 +40,7 @@ const Services = () => {
           <Card
             emoji={HearEmoji}
             heading={"Design"}
-            details={"Figma,Sketch, phonoscope,Adobe"}
+            details={"Figma,Sketch, phonoscope,Adobe,Figma,Sketch,"}
           />
         </motion.div>
         {/* second card */}
@@ -52,7 +52,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"ux/ui"}
-            details={"Figma,Sketch, phonoscope,Adobe"}
+            details={"Figma,Sketch, phonoscope,Lorem ipsum dolor si consectetur"}
           />
         </motion.div>
         {/* adding 3rd card */}
@@ -64,7 +64,7 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"software development"}
-            details={"html,css,javascript,reacts,python"}
+            details={"html,cssm dolor sit amen consectetur,Lorem ipsum dolor sit reacts,python"}
           />
         </motion.div>
         {/* color purple */}
