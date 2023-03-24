@@ -3,7 +3,7 @@ import "./Services.css";
 import HearEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
-import Card from "../Card/Card";
+import Card_S from "../Card_S/Card_S";
 import Resume from "../../Component/Services/Resume.pdf";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -29,7 +29,7 @@ const Services = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* RIGHT SIDE */}
-      <div className="cards">
+      <div className="cards_S">
         {/* card section in right section of services */}
         {/* first card */}
         <motion.div
@@ -37,7 +37,7 @@ const Services = () => {
           initial={{ left: "25rem" }}
           transition={{ transition }}
         >
-          <Card
+          <Card_S
             emoji={HearEmoji}
             heading={"Design"}
             details={"Figma,Sketch, phonoscope,Adobe,Figma,Sketch,"}
@@ -49,7 +49,7 @@ const Services = () => {
           whileInView={{ left: "-4rem" }}
           transition={transition}
         >
-          <Card
+          <Card_S
             emoji={Glasses}
             heading={"ux/ui"}
             details={
@@ -63,7 +63,7 @@ const Services = () => {
           whileInView={{ left: "12rem" }}
           transition={transition}
         >
-          <Card
+          <Card_S
             emoji={Humble}
             heading={"software development"}
             details={

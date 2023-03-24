@@ -32,10 +32,10 @@
   margin-top: 1rem;
 }
 /* right sided */
-.cards {
+.cards_S {
   position: relative;
 }
-.cards > * {
+.cards_S > * {
   position: absolute;
 }
 /* blur */
@@ -56,12 +56,12 @@
     padding: 0;
   }
 
-  .cards {
+  .cards_S {
     display: flex;
     flex-direction: column;
     gap: 17rem;
   }
-  .cards > * {
+  .cards_S > * {
     position: static;
   }
 }

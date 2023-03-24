@@ -8,7 +8,9 @@ import Testimonial from "./Component/Testimonial/Testimonial";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
-import { Projects } from "./Component/Projects/Projects";
+import { Projects } from "./Component/Project/Projects";
+
+
 
 
 function App() {
