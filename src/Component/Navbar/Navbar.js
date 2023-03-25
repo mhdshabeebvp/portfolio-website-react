@@ -1,13 +1,44 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { themeContext } from "../../Context";
 
 const Navbar = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const isSticky = scrollPosition >= 10;
+  
+
   return (
-    <div className="n-wrapper">
+    <div
+      className={`n-wrapper ${isSticky ? "sticky" : ""}`}
+      style={{
+        background: darkMode ? "black" : "white",
+        color: darkMode ? "white" : "black",
+      }}
+    >
       <div className="n-left">
-        <div className="n-name">TETRA</div>
+        <div
+          className={`n-name ${isSticky ? "name-sticky" : ""}`}
+          style={{ marginLeft: isSticky ? "15px" : "0" }}
+        >
+          TETRA
+        </div>
         <Toggle />
       </div>
 
@@ -19,6 +50,7 @@ const Navbar = () => {
               to="Navbar"
               smooth={true}
               activeClass="activeClass"
+              
             >
               <li>Home</li>
             </Link>
@@ -28,13 +60,14 @@ const Navbar = () => {
               smooth={true}
               activeClass="activeClass"
             >
-              <li>services</li>
+              <li>Services</li>
             </Link>
             <Link
               spy={true}
               to="Experience"
               smooth={true}
               activeClass="activeClass"
+              
             >
               <li>Experience</li>
             </Link>
@@ -43,6 +76,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               activeClass="activeClass"
+              
             >
               <li>Skills</li>
             </Link>
@@ -51,6 +85,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               activeClass="activeClass"
+              style={{ textDecoration: "none" }}
             >
               <li>Projects</li>
             </Link>
@@ -64,7 +99,7 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <button className="button">Contact</button>
+        <button className="n-button button">Contact</button>
       </div>
     </div>
   );

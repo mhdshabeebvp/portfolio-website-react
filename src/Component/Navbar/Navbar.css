@@ -2,7 +2,24 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s ease;
+  z-index: 999;
+  /* position: sticky;
+  top: 0;
+  background-color: white;
+  color: black; */
 }
+/* Sticky Navbar Styling */
+.n-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* .n-wrapper.dark-mode {
+  background-color: var(--black);
+  color: var(--white);
+} */
 .n-left {
   flex: 1;
   align-items: center;
@@ -31,19 +48,23 @@
 }
 /* color effect in the navbar ul li */
 /* ">" means targeting */
-.n-list > ul > li:hover {
+/* .n-list > ul > li:hover {
   cursor: pointer;
   color: var(--orange);
+  text-decoration: none;
+} */
+.n-button {
+  flex: 2;
 }
 .n-button {
-  flex:2;
+  transform: translateX(-10px);
 }
 
 @media screen and (max-width: 480px) {
-  .n-list{
+  .n-list {
     display: none;
   }
-  .n-button{
+  .n-button {
     display: none;
   }
 }

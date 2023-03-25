@@ -10,9 +10,6 @@ import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
 import { Projects } from "./Component/Project/Projects";
 
-
-
-
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -23,7 +20,9 @@ function App() {
       style={{
         background: darkMode ? "black" : "",
         color: darkMode ? "white" : "",
-      }}>
+        
+      }}
+    >
       <Navbar />
       <Intro />
       <Services />
