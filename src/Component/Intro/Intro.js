@@ -19,29 +19,55 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
-
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="intro">
+    <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
-            Frontend Developer with high level of experience in web
-            design,producing the Quality works
+            With a strong passion for technology and programming. I am skilled
+            in several programming languages, including PYTHON, JAVASCRIPT,
+            HTML, CSS etc..and have used these skills to develop websites, web
+            applications, and projects in hardware, robotics, and IoT. I am
+            committed to learning and exploring new ideas to stay up-to-date
+            with the latest trends and innovations in technology. I believe that
+            technology can be a powerful tool to solve complex problems and
+            improve people's lives, and I am excited to be a part of this
+            ever-evolving field.
           </span>
         </div>
         <button className="button i-button">Hire Me</button>
         {/* social icon */}
         <div className="i-icons">
-          <img src={Github} alt="" rel="noreferrer" />
-          <img src={LinkedIn} alt="" rel="noreferrer" />
-          <img src={Instagram} alt="" rel="noreferrer" />
-          <img src={Youtube} alt="" />
+          <a
+            href="https://github.com/mhdshabeebvp"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={Github} alt="" rel="noreferrer" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhamed-shabeeb-vp-a24917229/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={LinkedIn} alt="" rel="noreferrer" />
+          </a>
+          <a
+            href="https://www.instagram.com/mhdshabeeb786"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={Instagram} alt="" rel="noreferrer" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+            <img src={Youtube} alt="" />
+          </a>
         </div>
       </div>
 

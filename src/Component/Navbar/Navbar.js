@@ -13,7 +13,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrollPosition(window.pageYOffset);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -21,12 +21,13 @@ const Navbar = () => {
     };
   }, []);
 
-  const isSticky = scrollPosition >= 10;
-  
+  const isSticky = scrollPosition > 65;
 
   return (
     <div
-      className={`n-wrapper ${isSticky ? "sticky" : ""}`}
+      className={`n-wrapper ${isSticky ? "sticky" : ""} ${
+        darkMode ? "" : "bright-mode"
+      }`}
       style={{
         background: darkMode ? "black" : "white",
         color: darkMode ? "white" : "black",
@@ -47,53 +48,79 @@ const Navbar = () => {
           <ul style={{ listStyle: "none" }}>
             <Link
               spy={true}
-              to="Navbar"
-              smooth={true}
+              to="Intro"
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
-              
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-144}
             >
               <li>Home</li>
             </Link>
             <Link
               spy={true}
               to="services"
-              smooth={true}
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-120}
             >
               <li>Services</li>
             </Link>
             <Link
               spy={true}
               to="Experience"
-              smooth={true}
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
-              
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-190}
             >
               <li>Experience</li>
             </Link>
             <Link
               spy={true}
               to="skills"
-              smooth={true}
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
-              
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-120}
             >
               <li>Skills</li>
             </Link>
             <Link
               spy={true}
               to="projects"
-              smooth={true}
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
-              style={{ textDecoration: "none" }}
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-10}
             >
               <li>Projects</li>
             </Link>
             <Link
               spy={true}
               to="Testimonial"
-              smooth={true}
+              smooth={{ duration: 500 }}
               activeClass="activeClass"
+              style={{
+                color: isSticky ? "white" : "inherit",
+                textDecorationColor: "orange",
+              }}
+              offset={-10}
             >
               <li>Testimonial</li>
             </Link>
