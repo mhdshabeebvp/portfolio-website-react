@@ -10,7 +10,7 @@
 .toggle > * {
   width: 1rem;
   height: 1rem;
-  color: var(--orange);
+  color:  linear-gradient(to bottom, #2193b0, #6dd5ed, #bce6eb, #ffc3a0, #ffafbd);;
 }
 .t-button {
   border-radius: 100%;
