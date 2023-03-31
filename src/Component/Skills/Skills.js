@@ -39,6 +39,7 @@ export const Skills = () => {
       items: 1,
     },
   };
+  
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -46,10 +47,9 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className="skill-bx wow zoomIn" style={{ background: darkMode ? "black" : "" }}>
               <h2 style={{ color: darkMode ? "white" : "white" }}>Skills </h2>
-
-              <p>
+              <p style={{ color: darkMode ? "white" : "white" }} >
                 "Experienced in front-end and back-end development, database
                 management, IoT, and hardware projects, I deliver robust and
                 user-friendly applications with a keen eye for detail.
@@ -72,7 +72,7 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={reactIcon} alt="Image" />
-                  <h5>React</h5>
+                  <h5 style={{ color: darkMode ? "white" : "" }}>React</h5>
                 </div>
                 <div className="item">
                   <img src={python} alt="Image" />

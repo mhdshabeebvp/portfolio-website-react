@@ -19,9 +19,11 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Services</span>
         <span>
-          Lorem ipsum dolor sit amen consectetur adipisicing elit.
-          <br /> Magni ab iusto eaque dolore veniam iure a quae, unde fuga.
-          Quam.
+          Welcome to my services section. I offer custom <br />
+          web development, web application design,
+          <br />
+          online/offline mentoring,Workshops.
+          <br /> Contact me to learn more.
         </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -43,7 +45,7 @@ const Services = () => {
             details={"Figma,Sketch, phonoscope,Adobe,Figma,Sketch,"}
           />
         </motion.div>
-                   {/* second card */}
+        {/* second card */}
         <motion.div
           initial={{ left: "-11rem", top: "12rem" }}
           whileInView={{ left: "-4rem" }}

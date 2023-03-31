@@ -7,8 +7,8 @@
   text-align: center;
   width: 14rem;
   align-items: center;
-  border: 7px solid var(--orangeCard);
-  background: rgba(255, 255, 255, 0.26);
+  border: 1px solid white;
+  background:black;
   box-shadow: var(--boxShadow);
   border-radius: 20px;
   padding: 0px 26px 2rem 26px;

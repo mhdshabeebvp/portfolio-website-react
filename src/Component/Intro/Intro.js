@@ -80,7 +80,7 @@ const Intro = () => {
         <img src={Newboy} alt="" />
         {/* motion animation */}
         <motion.img
-          initial={{ left: "-36%" }}
+          initial={{ left: "-47%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={glassesimoji}
@@ -89,8 +89,8 @@ const Intro = () => {
         {/* floating section[important] */}
 
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          initial={{ top: "-4%", left: "39%" }}
+          whileInView={{ left: "69.7%" }}
           transition={transition}
           className="floating-div"
         >

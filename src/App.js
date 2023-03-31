@@ -9,6 +9,8 @@ import { themeContext } from "./Context";
 import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
 import { Projects } from "./Component/Project/Projects";
+import Contact from "./Component/Contact/Contact";
+import Blog from "./Component/Blog/Blog";
 
 function App() {
   const theme = useContext(themeContext);
@@ -18,9 +20,8 @@ function App() {
       className="App"
       // style section when it turn ON DarkMode
       style={{
-        background: darkMode ? "black" : "",
+        background: darkMode ? "#121212" : "",
         color: darkMode ? "white" : "",
-        
       }}
     >
       <Navbar />
@@ -29,7 +30,9 @@ function App() {
       <Experience />
       <Skills />
       <Projects />
+      {/* <Blog /> */}
       <Testimonial />
+      <Contact />
       <Footer />
     </div>
   );
