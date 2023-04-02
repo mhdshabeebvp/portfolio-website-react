@@ -51,11 +51,11 @@ export const Skills = () => {
               <h2 style={{ color: darkMode ? "white" : "white" }}>Skills </h2>
               <p style={{ color: darkMode ? "white" : "white" }} >
                 "Experienced in front-end and back-end development, database
-                management, IoT, and hardware projects, I deliver robust and
+                management, IoT, and hardware projects,I deliver robust and
                 user-friendly applications with a keen eye for detail.
                 Proficient in popular frameworks such as Bootstrap and React, I
                 communicate complex technical concepts effectively and
-                collaborate well with others. Let's create something
+                collaborate well with others.Let's create something
                 extraordinary together!"
               </p>
               {/* <div className="skill-Icon">

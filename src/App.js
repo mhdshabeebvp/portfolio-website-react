@@ -1,16 +1,17 @@
 import "./App.css";
 import Experience from "./Component/Experience/Experience";
-import Footer from "./Component/footer/Footer";
+
 import Intro from "./Component/Intro/Intro";
-import Navbar from "./Component/Navbar/Navbar";
+// import Navbar from "./Component/Navbar/Navbar";
 import Services from "./Component/Services/Services";
-import Testimonial from "./Component/Testimonial/Testimonial";
+// import Testimonial from "./Component/Testimonial/Testimonial";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
 import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
-import Blog from "./Component/Blog/Blog";
+import Header from "./Component/Header/Header";
+// import Blog from "./Component/Blog/Blog";
 
 function App() {
   const theme = useContext(themeContext);
@@ -24,16 +25,17 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <Navbar />
+      
+      <Header />
+    
       <Intro />
       <Services />
       <Experience />
       <Skills />
       <Projects />
       {/* <Blog /> */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
-      <Footer />
     </div>
   );
 }

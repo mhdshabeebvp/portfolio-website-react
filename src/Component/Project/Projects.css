@@ -4,6 +4,7 @@
   background-color: black;
   border-radius: 64px;
   border: 1px solid white;
+ 
 }
 .project h2 {
   font-size: 45px;
@@ -140,8 +141,14 @@
   width: 100%;
   margin-top: 10px;
 }
+.project h2{
+  margin-top: -2rem;
+}
 .project .nav.nav-pills {
   width: 90%;
+}
+.project{
+  height: 95rem;
 }
 }
 

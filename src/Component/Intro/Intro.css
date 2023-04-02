@@ -95,6 +95,9 @@
     gap: 7rem;
     height: 64rem;
   }
+  .i-left{
+    margin-top: -30px;
+  }
   .i-right {
     transform: scale(0.7);
     left: -3rem;
@@ -113,7 +116,8 @@
     /* display: none; */
     top: -4rem !important;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: -1.5rem;
+    width: 12rem;
   }
   .i-icons{
     display: flex;
@@ -127,4 +131,5 @@
     letter-spacing: -1px;
     margin: 0; 
   }
+ 
 }

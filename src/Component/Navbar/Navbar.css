@@ -79,19 +79,7 @@
     width: 100%;
     padding: 1rem;
   }
-  .n-list.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .n-toggle {
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
+ 
   
 }
 html {

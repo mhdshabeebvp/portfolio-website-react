@@ -1,0 +1,47 @@
+.custom-navbar {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.custom-navbar .navbar-brand {
+  color: #000;
+}
+
+.custom-nav .nav-link {
+  font-size: 16px;
+  margin-right: 20px;
+  color: #000;
+}
+
+.custom-nav .nav-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 480px) {
+  .custom-nav .nav-link {
+    margin-right: 0;
+  }
+  
+}
+
+
+.dark-mode .custom-navbar {
+  background-color: #000;
+}
+
+.dark-mode .custom-navbar .navbar-brand {
+  color: #fff;
+}
+
+.dark-mode .custom-nav .nav-link {
+  color: #fff;
+}
+
+.dark-mode .custom-nav .nav-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.3s ease-in-out;
+}

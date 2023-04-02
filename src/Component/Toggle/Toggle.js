@@ -14,8 +14,8 @@ const Toggle = () => {
   };
   return (
     <div className="toggle" onClick={handleClick}>
-      <Moon />
-      <Sun />
+      <Moon style={{ color: darkMode ? "white" : "black" }} />
+      <Sun style={{ color: darkMode ? "white" : "black" }} />
       <div
         className="t-button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
