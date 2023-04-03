@@ -35,10 +35,9 @@
 }
 
 .button:hover {
-  background: white;
   cursor: pointer;
   border: 1px solid var(--orange);
-  color: var(--orange);
+  color: black;
 }
 @media screen and (max-width: 480px) {
   .App {
