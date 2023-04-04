@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import Toggle from "../Toggle/Toggle";
 import { themeContext } from "../../Context";
@@ -8,6 +8,10 @@ const NavigationBar = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const [expanded, setExpanded] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const navbarRef = useRef(null);
 
   const handleLinkClick = () => {
     if (window.innerWidth <= 991.98) {
@@ -21,29 +25,53 @@ const NavigationBar = () => {
     }
   };
 
-  const handleCloseClick = () => {
-    setExpanded(false);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible]);
+
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target) &&
+        expanded
+      ) {
+        setExpanded(false);
+      }
+    };
+
+    document.addEventListener("click", handleDocumentClick);
+
+    return () => document.removeEventListener("click", handleDocumentClick);
+  }, [expanded]);
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       <Navbar
         expand="lg"
         variant="dark"
-        className="custom-navbar"
-        fixed="top"
+        className={`custom-navbar ${!visible ? "navbar-hidden" : ""}`}
         expanded={expanded}
         onToggle={setExpanded}
+        ref={navbarRef}
       >
         <Navbar.Brand className="navbar-brand" href="#home">
           TETRA
         </Navbar.Brand>
         <Toggle />
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          className="tog"
-        />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="tog" />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="justify-content-end"
+        >
           <Nav className="custom-nav justify-content-center">
             <Nav.Link href="#Intro" onClick={handleLinkClick}>
               Home
@@ -69,11 +97,6 @@ const NavigationBar = () => {
               Contact
             </button>
           </Nav.Link>
-          {expanded && (
-            <button type="button" className="close-button" onClick={handleCloseClick}>
-              &times;
-            </button>
-          )}
         </Navbar.Collapse>
       </Navbar>
     </div>
