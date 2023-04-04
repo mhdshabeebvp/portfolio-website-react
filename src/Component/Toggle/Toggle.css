@@ -23,3 +23,8 @@
     margin-left: -6rem;
   }
 }
+@media(max-width: 320px){ 
+  .toggle{
+    margin-left: 0px;
+  }
+}
