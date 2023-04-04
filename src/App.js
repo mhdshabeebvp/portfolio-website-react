@@ -12,6 +12,7 @@ import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Header from "./Component/Header/Header";
 // import Blog from "./Component/Blog/Blog";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   const theme = useContext(themeContext);
@@ -25,9 +26,8 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      
       <Header />
-    
+
       <Intro />
       <Services />
       <Experience />
@@ -36,6 +36,7 @@ function App() {
       {/* <Blog /> */}
       {/* <Testimonial /> */}
       <Contact />
+      <Footer />
     </div>
   );
 }

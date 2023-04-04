@@ -54,7 +54,7 @@ const NavigationBar = () => {
   }, [expanded]);
 
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
+    <div className={darkMode ? "dark-mode" : ""} id="header">
       <Navbar
         expand="lg"
         variant="dark"
@@ -73,7 +73,7 @@ const NavigationBar = () => {
           className="justify-content-end"
         >
           <Nav className="custom-nav justify-content-center">
-            <Nav.Link href="#Intro" onClick={handleLinkClick}>
+            <Nav.Link href="#header" onClick={handleLinkClick}>
               Home
             </Nav.Link>
             <Nav.Link href="#services" onClick={handleLinkClick}>
