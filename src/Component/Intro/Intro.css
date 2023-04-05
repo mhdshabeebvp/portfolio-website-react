@@ -53,30 +53,38 @@
   position: absolute;
   z-index: 1;
 }
-/* this down section now temperately fixed if we any image into the bottom portion of the NewBoy image */
-.i-right > :nth-child(1) {
-  transform: scale(0);
-  right: 21%;
-  left: -40%;
-  top: -113%;
+.TextHidden {
+  left: 40%;
+  top: 40%;
 }
-.i-right > :nth-child(2) {
-  top: -4.6%;
-  transform: scale(0);
-  left: -3rem;
-}
-.i-right > :nth-child(3) {
 
-  transform: scale(0.78);
-  left: 5%;
-  bottom: -8%;
+.headings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* adjust as needed */
+  border-bottom: 1px solid #ccc; /* optional */
 }
-.i-right > :nth-child(4) {
-  transform: scale(0.6);
-  top: -19%;
-  left: -24%;
-  border-radius: 50%;
-  padding: 0;
+.headings-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
+.headings-container h1:hover {
+  opacity: 1;
+}
+.headings-container h1::before {
+  content: "<";
+  font-size: 56px;
+  margin-right: 16px;
+}
+.headings-container h1::after {
+  content: ">";
+  font-size: 56px;
+  margin-left: 16px;
 }
 .blur {
   position: absolute;
@@ -89,47 +97,77 @@
   top: -18%;
   left: 56%;
 }
+.skills-charts {
+  margin-left: 6rem;
+}
+.button {
+  background-color: #fff;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
 @media screen and (max-width: 480px) {
   .intro {
     flex-direction: column;
     gap: 7rem;
     height: 64rem;
   }
-  .i-left{
+  .i-left {
     margin-top: -30px;
-  }
-  .i-right {
-    transform: scale(0.7);
-    left: -3rem;
-    margin-top: 18rem;
-    margin-right:13rem;
   }
   .i-right .blur {
     display: none;
   }
-  .floating-div:nth-of-type(1){
-    /* display: none; */
-    top: -29rem !important;
-    margin-left: 14.2rem;
-  }
-  .floating-div:nth-of-type(2){
-    /* display: none; */
-    top: -4rem !important;
-    margin-left: 2rem;
-    margin-top: -1.5rem;
-    width: 12rem;
-  }
-  .i-icons{
+  .i-icons {
     display: flex;
     justify-content: space-evenly;
-  }
-  .i-right > :nth-child(4){
-    margin-top: -34rem;
   }
   .i-name > :nth-child(3) {
     text-align: justify;
     letter-spacing: -1px;
-    margin: 0; 
+    margin: 0;
   }
- 
+}
+@media (max-width: 768px) {
+  .headings-container h1 {
+    font-size: 36px;
+  }
+
+  .headings-container h1::before,
+  .headings-container h1::after {
+    font-size: 48px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  .skills-charts {
+    margin-left: -4rem;
+    margin-top: -5rem;
+  }
+}
+/* Large screens (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .skills-charts {
+    margin-top: 6rem;
+    margin-left: 15rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .skills-charts {
+    margin-top: 10rem;
+    margin-left: -100px;
+  
+  }
+
 }

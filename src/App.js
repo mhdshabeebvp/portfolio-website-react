@@ -1,5 +1,5 @@
 import "./App.css";
-import Experience from "./Component/Experience/Experience";
+// import Experience from "./Component/Experience/Experience";
 
 import Intro from "./Component/Intro/Intro";
 // import Navbar from "./Component/Navbar/Navbar";
@@ -28,8 +28,9 @@ function App() {
     >
       <Header />
       <Intro />
+      
       <Services />
-      <Experience />
+      {/* <Experience /> */}
       <Skills />
       <Projects />
       {/* <Blog /> */}

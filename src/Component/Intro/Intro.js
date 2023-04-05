@@ -1,4 +1,7 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { Component, createRef, useEffect } from 'react';
+import TagCanvas from 'tag-canvas';
+
 import "./Intro.css";
 // Icons section started
 import Github from "../../img/github.png";
@@ -7,22 +10,53 @@ import Instagram from "../../img/instagram.png";
 import Youtube from "../../img/youtube.png";
 // icons section ended
 // RIGHT SECTION IMAGES
-import Vector2 from "../../img/Vector2.png";
-import Newboy from "../../img/NEWBOY.png";
-import Thumbup from "../../img/thumbup.png";
-import reactIcon from "../../img/react.svg";
-import glassesimoji from "../../img/glassesimoji.png";
-import Crown from "../../img/crown.png";
-import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import { motion } from "framer-motion";
-import Resume from "../../Component/Intro/Resume.pdf"
-
+import Resume from "../../Component/Intro/Resume.pdf";
 const Intro = () => {
-  const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const skills = [
+    { name: 'HTML', url: '#' },
+    { name: 'CSS', url: '#' },
+    { name: 'ES5', url: '#' },
+    { name: 'TypeScript', url: '#' },
+    { name: 'REST', url: '#' },
+    { name: 'JSON', url: '#' },
+    { name: 'GSAP', url: '#' },
+    { name: 'Data Science', url: '#' },
+    { name: 'Wordpress', url: '#' },
+    { name: 'PHP', url: '#' },
+    { name: 'Python', url: '#' },
+    { name: 'Node JS', url: '#' },
+    { name: 'Git', url: '#' },
+    { name: '_lodash', url: '#' },
+    { name: 'SASS', url: '#' },
+    { name: 'JQuery', url: '#' },
+    { name: 'SQI', url: '#' },
+    { name: 'Gulp', url: '#' },
+    { name: 'npm', url: '#' },
+    { name: 'BEM', url: '#' },
+  ];
+
+  const canvasRef = createRef();
+
+  useEffect(() => {
+    const options = {
+      textColour: darkMode ? '#08fdd8' : 'black',
+
+      outlineColour: 'transparent',
+      reverse: true,
+      depth: 0.8,
+      maxSpeed: 0.05,
+      weight: true,
+    };
+    const canvas = canvasRef.current;
+    if (canvas && typeof TagCanvas !== 'undefined') {
+      TagCanvas.Start('myCanvas', 'tags', options);
+    }
+  }, [canvasRef]);
+
   return (
     <div className="intro" id="Intro">
       <div className="i-left">
@@ -75,35 +109,22 @@ const Intro = () => {
 
       {/* INTRO RIGHT SECTION */}
       <div className="i-right">
-        <img src={reactIcon} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={Newboy} alt="" />
-        {/* motion animation */}
-        <motion.img
-          initial={{ left: "-47%" }}
-          whileInView={{ left: "-24%" }}
-          transition={transition}
-          src={glassesimoji}
-          alt=""
-        />
-        {/* floating section[important] */}
-
-        <motion.div
-          initial={{ top: "-4%", left: "39%" }}
-          whileInView={{ left: "69.7%" }}
-          transition={transition}
-          className="floating-div"
-        >
-          <FloatingDiv image={Crown} text1="Web" text2="Developer" />
-        </motion.div>
-        <motion.div
-          initial={{ top: "18rem", left: "9rem" }}
-          whileInView={{ left: "0rem" }}
-          transition={transition}
-          className="floating-div"
-        >
-          <FloatingDiv image={Thumbup} text1="Best design" text2="Award" />
-        </motion.div>
+     
+      <div className="skills-charts">
+      <div id="myCanvasContainer">
+        <canvas width="500" height="500" id="myCanvas" ref={canvasRef}>
+          <ul id="tags">
+            {skills.map((skill, index) => (
+              <li key={index}>
+                <a href={skill.url} target="_blank">
+                  {skill.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </canvas>
+      </div>
+    </div>
         {/* blur div  */}
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
