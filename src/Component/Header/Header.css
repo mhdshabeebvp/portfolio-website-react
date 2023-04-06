@@ -85,7 +85,7 @@
 /* Laptop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .custom-navbar {
-    margin-top: 10px;
+    margin-top:0;
   }
 }
 /* Large screens (desktops, 1200px and up) */

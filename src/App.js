@@ -13,7 +13,6 @@ import Contact from "./Component/Contact/Contact";
 import Header from "./Component/Header/Header";
 // import Blog from "./Component/Blog/Blog";
 import Footer from "./Component/Footer/Footer";
-
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -28,7 +27,6 @@ function App() {
     >
       <Header />
       <Intro />
-      
       <Services />
       {/* <Experience /> */}
       <Skills />

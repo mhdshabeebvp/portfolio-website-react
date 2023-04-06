@@ -1,7 +1,12 @@
 .intro {
   display: flex;
-  height: 77vh;
+  height: 100vh;
   margin-top: 6rem;
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  padding: 25px;
+    box-shadow: var(--shadow-1);
 }
 .i-left {
   display: flex;
@@ -27,23 +32,20 @@
 .i-name > :nth-child(3) {
   font-weight: 100;
   font-size: 19px;
-  color: var(--gray);
+  color: var(--light-gray);
   margin-top: 10px;
+  line-height: 1.6;
 }
 .i-button {
   width: 6rem;
   height: 2rem;
 }
-.i-icons {
-  display: flex;
-  margin-top: 1rem;
-  gap: 0rem;
-}
-.i-icons > * {
-  transform: scale(0.5);
-}
-.i-icons:hover {
-  cursor: pointer;
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 18px;
 }
 .i-right {
   flex: 1;
@@ -52,11 +54,13 @@
 .i-right > * {
   position: absolute;
   z-index: 1;
+  
 }
-.TextHidden {
-  left: 40%;
-  top: 40%;
+#myCanvasContainer{
+  margin-left: -13rem;
+  margin-top: -5.1rem;
 }
+
 
 .headings-container {
   display: flex;
@@ -97,9 +101,7 @@
   top: -18%;
   left: 56%;
 }
-.skills-charts {
-  margin-left: 6rem;
-}
+
 .button:hover {
   background-color: #333;
   color: #fff;
@@ -116,16 +118,66 @@
   .i-right .blur {
     display: none;
   }
-  .i-icons {
-    display: flex;
-    justify-content: space-evenly;
-  }
+
   .i-name > :nth-child(3) {
     text-align: justify;
     letter-spacing: -1px;
     margin: 0;
   }
 }
+
+
+/* social media icons */
+
+
+.sidebar {
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  height:3.7rem;
+  width: 16rem; /* reduce the width of the sidebar as an example */
+  padding-left: 0;
+  
+}
+  
+  .icon-box {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--orange-yellow-crayola);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+    
+  }
+  .social-icon-s{
+    color: var(--orange-yellow-crayola);
+  
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .icon-box::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--eerie-black-1);
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .icon-box ion-icon {
+    --ionicon-stroke-width: 45px;
+  }
 @media (max-width: 768px) {
   .headings-container h1 {
     font-size: 36px;
