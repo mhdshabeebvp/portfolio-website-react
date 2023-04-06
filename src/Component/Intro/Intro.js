@@ -2,10 +2,10 @@
 import React, { Component, createRef, useEffect } from "react";
 import TagCanvas from "tag-canvas";
 import "../../App.css";
+import { FaEye } from 'react-icons/fa';
 import "./Intro.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faTwitter,
   faInstagram,
   faGithub,
@@ -85,8 +85,12 @@ const Intro = () => {
           </span>
         </div>
         <a style={{ textDecoration: "none" }} href={Resume} download>
-          <button className="button s-button">Download CV</button>
+          <button className="button si-button">Download CV</button>
         </a>
+        <a style={{ textDecoration: "none" }} href={Resume}  target="_blank">
+          <button className="sv-button "><FaEye /> </button>
+        </a>
+    
         {/* social icon */}
         <div className="i-icons">
           <aside className="sidebar" data-sidebar>
@@ -135,7 +139,7 @@ const Intro = () => {
                 <div className="icon-box">
                   <a href="#">
                     <FontAwesomeIcon
-                      icon={faFacebook}
+                      icon={faYoutube}
                       className="social-icon-s"
                     />
                   </a>
