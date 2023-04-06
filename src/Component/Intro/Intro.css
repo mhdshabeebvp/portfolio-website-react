@@ -138,7 +138,9 @@
   height:3.7rem;
   width: 16rem; /* reduce the width of the sidebar as an example */
   padding-left: 0;
-  
+  padding-right: 0;
+
+
 }
   
   .icon-box {
