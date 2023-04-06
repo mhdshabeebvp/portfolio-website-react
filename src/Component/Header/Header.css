@@ -1,5 +1,5 @@
 .custom-navbar {
-  padding: 20px 10%;
+  padding: 20px 12%;
   position: fixed;
   top: -18px;
   left: 0;
@@ -7,53 +7,59 @@
   transition: transform 0.3s ease;
   z-index: 9999;
   background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  border-radius: 12px 12px 0 0;
 }
-
-.custom-navbar.dark-mode {
+.nav-link {
+  color: var(--light-gray);
+  font-size: var(--fs-2);
+  padding: 7px 7px;
+  transition: color var(--transition-1);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--light-gray-70);
+}
+.nav-link.active {
+  color: var(--orange-yellow-crayola);
+}
+/* .custom-navbar.dark-mode {
   background-color: #212121;
-}
-
-.navbar-brand {
+} */
+/* .navbar-brand {
   color: #fff;
   font-size: 25px;
   font-weight: bold;
-
-}
-
+} */
+/* 
 .navbar-brand:hover {
   color: #f2f2f2;
-}
-
-.nav-link {
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  padding: 0 10px;
-  
-}
-
-.nav-link:hover {
-  color: #f2f2f2;
-}
-
-.custom-nav .active {
-  color: #f2f2f2;
-}
+} */
 
 @media screen and (max-width: 991.98px) {
   .custom-navbar {
-    padding: 10px 5%;
+    position: fixed;
+    bottom: auto;
     top: 0;
+    left: auto;
+    right: -1rem;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 30px;
+    box-shadow: none;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     font-size: 20px;
-  }
+  } */
   .nav-link {
-    font-size: 16px;
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    
     width: 100%;
+  }
+  .nav-link {
+    --fs-8: 15px;
   }
 }
 
@@ -76,26 +82,33 @@
   background: none;
 }
 
-.button:hover {
-  background-color: #333;
-  color: #fff;
-}
-
 /* Laptop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .custom-navbar{
+  .custom-navbar {
     margin-top: 10px;
   }
-  
-
 }
 /* Large screens (desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .custom-navbar{
-    margin-top: 10px;
-    width: 110%;
+  .custom-navbar {
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-shadow: none;
   }
-  .navbar-brand{
+  .nav-list {
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .navbar-brand {
     margin-left: -6rem;
+  }
+  .nav-link {
+    font-weight: var(--fw-500);
   }
 }

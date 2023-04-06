@@ -64,10 +64,10 @@ const NavigationBar = () => {
         onToggle={setExpanded}
         ref={navbarRef}
       >
-        <Navbar.Brand className="navbar-brand" href="#home">
+        {/* <Navbar.Brand className="navbar-brand" href="#home">
           TETRA
         </Navbar.Brand>
-        <Toggle />
+        <Toggle /> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="tog" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="custom-nav justify-content-center">

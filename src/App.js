@@ -22,7 +22,7 @@ function App() {
       className="App"
       // style section when it turn ON DarkMode
       style={{
-        background: darkMode ? "#121212" : "",
+        background: darkMode ? "black" : "",
         color: darkMode ? "white" : "",
       }}
     >
