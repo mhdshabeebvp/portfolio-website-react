@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import Toggle from "../Toggle/Toggle";
 import { themeContext } from "../../Context";
 import "./Header.css";
+import "../../App.css";
 
 const NavigationBar = () => {
   const theme = useContext(themeContext);
@@ -68,10 +69,7 @@ const NavigationBar = () => {
         </Navbar.Brand>
         <Toggle />
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="tog" />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="justify-content-end"
-        >
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="custom-nav justify-content-center">
             <Nav.Link href="#header" onClick={handleLinkClick}>
               Home
