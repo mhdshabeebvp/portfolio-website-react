@@ -1,7 +1,7 @@
 .footer {
   background-color: rgb(31, 33, 36);
   color: rgb(255, 255, 255);
-  padding: 50px 0px;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,8 +159,8 @@
 @media only screen and (min-width: 1200px) {
   .footer {
     width: 100%;
-    padding: 80px 0;
-    margin: 0 auto;
+    padding: 20px 0;
+    margin: 38px auto;
     width: 112%;
     margin-left: -71px;
     margin-bottom: -1rem;
