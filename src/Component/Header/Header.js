@@ -89,7 +89,7 @@ const NavigationBar = () => {
             <Nav.Link href="#projects" onClick={handleLinkClick}>
               Projects
             </Nav.Link>
-            <Nav.Link href="#slide" onClick={handleLinkClick}>
+            <Nav.Link href="#ParallaxSections" onClick={handleLinkClick}>
               Blogs
             </Nav.Link>
             

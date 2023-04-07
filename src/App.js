@@ -29,8 +29,8 @@ function App() {
       <Services />
       <Skills />
       <Projects />
-      <Contact />
       <ParallaxSections />
+      <Contact />
       <Footer />
     </div>
   );
