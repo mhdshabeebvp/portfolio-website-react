@@ -11,7 +11,7 @@ const Contact = () => {
   const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     emailjs
       .sendForm(
         "service_azo1x7u",
@@ -23,14 +23,19 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          form.current.reset();
+  
+          setTimeout(() => {
+            setDone(false);
+          }, 3000); // hide the message after 3 seconds
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
-
+  
+  
   return (
     <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}

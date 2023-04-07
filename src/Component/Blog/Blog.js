@@ -1,89 +1,77 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import React, { useRef, useEffect } from "react";
+// import { gsap } from "gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Blog.css";
 
-const Blog = ({ title, summary, content, image, imageF }) => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMore = () => {
-    setShowFullContent(true);
-    document.body.style.overflow = "hidden"; // disable scrolling
-  };
-
-  const handleClose = () => {
-    setShowFullContent(false);
-    document.body.style.overflow = "auto"; // enable scrolling
-  };
-
-  return (
-    <div className="blog">
-      <h2 className="blog-title">{title}</h2>
-      <p className="blog-summary">{summary}</p>
-      <img className="blog-image" src={imageF} alt="Blog Image" />
-
-      {!showFullContent && (
-        <button className="blog-read-more" onClick={handleReadMore}>
-          Read More
-        </button>
-      )}
-      {showFullContent && (
-        <div className="blog-full-content">
-          <button className="blog-close" onClick={handleClose}>
-            <FontAwesomeIcon icon={faTimes} />
-          </button>
-          <div
-            className="blog-content"
-            style={{ height: "400px", overflowY: "auto" }}
-          >
-            <p>{content}</p>
-            <img className="blog-image" src={image} alt="Blog Image" />
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
-
-const blogs = [
+gsap.registerPlugin(ScrollTrigger);
+const sections = [
   {
-    title: "Blog Title 1",
-    summary: "Blog summary 1",
-    content: "Blog content 1",
-    image:
-      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg",
-    imageF:
-      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg",
+    title: "Simple parallax sections",
+    imageUrl: "https://picsum.photos/1600/800?random=0",
   },
   {
-    title: "Blog Title 2",
-    summary: "Blog summary 2",
-    content: "Blog content 2",
-    image:
-      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg",
-      imageF:
-      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg",
+    title: "Hey look, a title",
+    imageUrl: "https://picsum.photos/1600/800?random=1",
   },
-
-  // Add more blog objects here
+  {
+    title: "They just keep coming",
+    imageUrl: "https://picsum.photos/1600/800?random=2",
+  },
+  {
+    title: "So smooth though",
+    imageUrl: "https://picsum.photos/1600/800?random=3",
+  },
+  {
+    title: "Nice, right?",
+    imageUrl: "https://picsum.photos/1600/800?random=4",
+  },
 ];
+const ParallaxSections = () => {
+  const sectionsRef = useRef([]);
 
-const BlogList = () => {
+  useEffect(() => {
+    gsap.utils.toArray(sectionsRef.current).forEach((section, i) => {
+      const bg = section.querySelector(".bg");
+
+      gsap.set(bg, { backgroundImage: `url(${sections[i].imageUrl})` });
+
+      const getRatio = () =>
+        window.innerHeight / (window.innerHeight + section.offsetHeight);
+
+      gsap.fromTo(
+        bg,
+        {
+          backgroundPosition: () =>
+            i ? `50% ${-window.innerHeight * getRatio()}px` : "50% 0px",
+        },
+        {
+          backgroundPosition: () =>
+            `50% ${window.innerHeight * (1 - getRatio())}px`,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: () => (i ? "top bottom" : "top top"),
+            end: "bottom top",
+            scrub: true,
+            invalidateOnRefresh: true, // to make it responsive
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div>
-      {blogs.map((blog, index) => (
-        <Blog
-          key={index}
-          title={blog.title}
-          summary={blog.summary}
-          content={blog.content}
-          image={blog.image}
-          imageF={blog.imageF}
-        />
+    <>
+ 
+      {sections.map((section, i) => (
+        <section key={i} ref={(el) => (sectionsRef.current[i] = el)}>
+          <div className="bg"></div>
+          <h1 Blog-heading>{section.title}</h1>
+        </section>
       ))}
-    </div>
+    </>
   );
 };
 
-export default BlogList;
-// original
+export default ParallaxSections;

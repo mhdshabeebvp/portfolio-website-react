@@ -1,9 +1,12 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import Toggle from "../Toggle/Toggle";
+// import Toggle from "../Toggle/Toggle";
 import { themeContext } from "../../Context";
 import "./Header.css";
 import "../../App.css";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
+
 
 const NavigationBar = () => {
   const theme = useContext(themeContext);
@@ -71,7 +74,7 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="tog" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="custom-nav justify-content-center">
-            <Nav.Link href="#header" onClick={handleLinkClick}>
+            <Nav.Link href="#header" onClick={handleLinkClick} off>
               Home
             </Nav.Link>
             <Nav.Link href="#services" onClick={handleLinkClick}>
@@ -86,9 +89,10 @@ const NavigationBar = () => {
             <Nav.Link href="#projects" onClick={handleLinkClick}>
               Projects
             </Nav.Link>
-            <Nav.Link href="#Testimonials" onClick={handleLinkClick}>
-              Testimonial
+            <Nav.Link href="#Blogs" onClick={handleLinkClick}>
+              Blogs
             </Nav.Link>
+            
           </Nav>
           <Nav.Link href="#contact">
             <button className="button n-button" onClick={handleContactClick}>
