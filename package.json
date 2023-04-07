@@ -34,6 +34,7 @@
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.1",
     "sass": "^1.57.1",
+    "scrolltrigger": "^1.0.1",
     "source-map-loader": "^4.0.1",
     "styled-components": "^5.3.9",
     "swiper": "^9.1.1",

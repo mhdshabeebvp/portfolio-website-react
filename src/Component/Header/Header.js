@@ -5,7 +5,7 @@ import { themeContext } from "../../Context";
 import "./Header.css";
 import "../../App.css";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
+
 
 
 const NavigationBar = () => {
@@ -89,7 +89,7 @@ const NavigationBar = () => {
             <Nav.Link href="#projects" onClick={handleLinkClick}>
               Projects
             </Nav.Link>
-            <Nav.Link href="#Blogs" onClick={handleLinkClick}>
+            <Nav.Link href="#slide" onClick={handleLinkClick}>
               Blogs
             </Nav.Link>
             
