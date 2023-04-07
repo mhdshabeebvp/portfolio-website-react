@@ -9,7 +9,6 @@ import Contact from "./Component/Contact/Contact";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 // import { Router } from "react-bootstrap-icons";
-// import ParallaxSections from "./Component/Blog/Blog";
 
 function App() {
   const theme = useContext(themeContext);
@@ -26,10 +25,8 @@ function App() {
       <Header />
       <Intro />
       <Services />
-      {/* <ParallaxSections /> */}
       <Skills />
       <Projects />
-      {/* <ParallaxSections /> */}
       <Contact />
       <Footer />
     </div>
