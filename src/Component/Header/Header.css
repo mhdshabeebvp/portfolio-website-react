@@ -37,55 +37,49 @@
   color: #f2f2f2;
 } */
 
-@media screen and (max-width: 991.98px) {
-  .custom-navbar {
-    position: fixed;
-    bottom: auto;
-    top: 0;
-    left: auto;
-    right: -1rem;
-    width: max-content;
-    border-radius: 0 20px;
-    padding: 0 30px;
-    box-shadow: none;
-  }
-  /* .navbar-brand {
-    font-size: 20px;
-  } */
-  .nav-link {
-    padding: 10px 0;
-    text-align: center;
-    
-    width: 100%;
-  }
-  .nav-link {
-    --fs-8: 15px;
-  }
-}
-
 /* Hide navbar on scroll down */
 .navbar-hidden {
   transform: translateY(-100%);
 }
-
 /* Show navbar on scroll up */
 .navbar-visible {
   transform: translateY(0);
 }
-
 .navbar-collapse {
   justify-content: flex-end;
 }
-
 .tog {
   border: none;
   background: none;
+}
+@media screen and (max-width: 480px) {
+  .custom-navbar {
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    
+    left: 200px;
+    /* width: max-content; */
+    width: 10rem;
+    border-radius: 0 20px;
+    padding: 0 25px;
+    box-shadow: none;
+  }
+  .nav-link {
+    padding: 10px 0;
+    text-align: center;
+    --fs-8: 15px;
+    width: 100%;
+  }
+  .navbar-toggler{
+    margin-left: 5rem;
+  }
 }
 
 /* Laptop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .custom-navbar {
-    margin-top:0;
+    margin-top: 0;
   }
 }
 /* Large screens (desktops, 1200px and up) */
@@ -112,3 +106,4 @@
     font-weight: var(--fw-500);
   }
 }
+

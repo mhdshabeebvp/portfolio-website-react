@@ -1,6 +1,6 @@
 import "./App.css";
 import Intro from "./Component/Intro/Intro";
-import Services from "./Component/Services/Services";
+// import Services from "./Component/Services/Services";
 // import { themeContext } from "./Context";
 // import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
@@ -26,7 +26,7 @@ function App() {
     >
       <Header />
       <Intro />
-      <Services />
+      {/* <Services /> */}
       <Skills />
       <Projects />
       <ParallaxSections />
