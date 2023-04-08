@@ -52,30 +52,31 @@
   border: none;
   background: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 991.98px) {
   .custom-navbar {
     position: fixed;
     bottom: auto;
     top: 0;
-    
-    left: 200px;
-    /* width: max-content; */
-    width: 10rem;
+    left: auto;
+    right: -1rem;
+    width: max-content;
     border-radius: 0 20px;
-    padding: 0 25px;
+    padding: 0 30px;
     box-shadow: none;
   }
+  /* .navbar-brand {
+    font-size: 20px;
+  } */
   .nav-link {
     padding: 10px 0;
     text-align: center;
-    --fs-8: 15px;
+
     width: 100%;
   }
-  .navbar-toggler{
-    margin-left: 5rem;
+  .nav-link {
+    --fs-8: 15px;
   }
 }
-
 /* Laptop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .custom-navbar {
