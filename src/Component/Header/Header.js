@@ -77,9 +77,9 @@ const NavigationBar = () => {
             <Nav.Link href="#header" onClick={handleLinkClick} off>
               Home
             </Nav.Link>
-            <Nav.Link href="#services" onClick={handleLinkClick}>
+            {/* <Nav.Link href="#services" onClick={handleLinkClick}>
               Services
-            </Nav.Link>
+            </Nav.Link> */}
             {/* <Nav.Link href="#Experience" onClick={handleLinkClick}>
               Experience
             </Nav.Link> */}

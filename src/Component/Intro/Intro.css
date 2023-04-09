@@ -275,10 +275,29 @@
   .sidebar {
     width: 17.5rem;
   }
+  .intro{
+    height: 30rem;
+  }
+  .contacts-list {
+gap: 18px;
+  }
 }
 @media only screen and (min-width: 1201px) {
+  
+.intro{
+  height: 35rem;
+}
+  .sidebar {
+    width: 18rem;
+  }
   .skills-charts {
     margin-top: 10rem;
-    margin-left: -100px;
+    margin-left: 10px;
+  }
+  .contacts-list {
+    gap: 1.1rem;
+  }
+  .sv-button{
+    width: 5.3rem;
   }
 }

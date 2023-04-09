@@ -85,3 +85,14 @@ textarea {
     height: 20rem;
   }
 }
+
+
+@media only screen and (min-width: 1201px) {
+
+    .contact-form{
+      height: 20rem;
+    }
+    .c-right{
+      margin-top: 10px;
+    }
+}
