@@ -50,7 +50,8 @@ textarea {
   top: 1rem;
   left: 8rem;
 }
-
+/* ----------------Responsive---------------- */
+/* for Mobile [verified] */  
 @media screen and (max-width: 480px) {
   .contact-form {
     padding: 0;
@@ -58,10 +59,29 @@ textarea {
     gap: 1rem;
     height: 29rem;
     margin-top: 7rem;
-   
-    
   }
   .c-right .user {
     width: 16rem;
+  }
+}
+/* iPads, Tablet [verified] */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .contact-form {
+    padding: 0 2rem 0 2rem;
+    gap: -1rem;
+  }
+  .c-right .user {
+    width: 12rem;
+    margin-left: -9rem;
+    margin-top: 1rem;
+   
+  }
+  .button-c{
+    margin-left: -9rem;
+    width: 12rem;
+  }
+  .contact-form{
+    height: 20rem;
   }
 }

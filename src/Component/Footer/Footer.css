@@ -85,6 +85,7 @@
     transform: translateY(0);
   }
 }
+/* =======================Responsive======================= */
 
 /* Mobile Styles */
 @media screen and (max-width: 480px) {
@@ -92,7 +93,7 @@
     flex-direction: column;
     padding: 30px 0px;
     margin-bottom: -0.5rem;
-    margin-left:-20px;
+    margin-left: -20px;
     width: 117%;
     margin-top: 1rem;
   }
@@ -101,15 +102,12 @@
     width: 100%;
     margin-bottom: 20px;
     margin-left: 1rem;
-    
   }
 
   .right-section {
     width: 100%;
     text-align: center;
     margin-left: 40px;
-   
-
   }
 
   .social-link {
@@ -118,7 +116,6 @@
 
   .social-icon {
     font-size: 24px;
-    
   }
 
   .footer-heading {
@@ -130,22 +127,14 @@
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* iPads, Tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .footer {
-    width: 132%;
-    margin-left: -70px;
+    margin-top: 5rem;
+    width: 130%;
   }
-  .left-section {
-    margin-left: 1rem;
-  }
-  .footer{
-    flex-direction: column;
-  }
-
-
 }
-
 /* Laptop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .left-section {
@@ -154,6 +143,21 @@
 
   .right-section {
     margin-right: 40px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    width: 132%;
+    margin-left: -70px;
+    margin-top: 3rem;
+  }
+  .left-section {
+    margin-left: 1rem;
+  }
+  .footer {
+    flex-direction: column;
   }
 }
 /* Large screens (desktops, 1200px and up) */
