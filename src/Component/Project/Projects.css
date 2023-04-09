@@ -80,7 +80,7 @@
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   width: 100%;
 
@@ -117,12 +117,14 @@
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  color: var(--orange-yellow-crayola);
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  color: white;
 }
 .background-image-right {
   top: 20%;
@@ -143,7 +145,8 @@
   text-align: justify;
   letter-spacing: -1px;
   width: 100%;
-  margin-top: 10px;
+
+  
 }
 .project h2{
   margin-top: -2rem;
@@ -152,12 +155,9 @@
   width: 90%;
 }
 .project{
-  height: 95rem;
+  height: 40rem;
+  overflow-y: scroll;
+ 
 }
 }
 
-
-
-/* text-align: justify;
-    letter-spacing: -1px;
-    margin: 0;  */

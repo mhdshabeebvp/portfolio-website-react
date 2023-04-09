@@ -5,7 +5,7 @@
   margin-bottom: 8rem;
   margin-top: 7rem;
   margin-bottom: 13rem;
-  
+  display: none;
 }
 .awesome {
   display: flex;
@@ -53,8 +53,9 @@
     margin-top: 7rem;
     flex-direction: column;
     gap: 5rem;
-    height: 66rem;
-    padding: 0;
+    height: 63rem;
+    padding: 0px 0px 0px 0px;
+    display: none;
   }
 
   .cards_S {

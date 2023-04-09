@@ -80,9 +80,9 @@ const NavigationBar = () => {
             <Nav.Link href="#services" onClick={handleLinkClick}>
               Services
             </Nav.Link>
-            <Nav.Link href="#Experience" onClick={handleLinkClick}>
+            {/* <Nav.Link href="#Experience" onClick={handleLinkClick}>
               Experience
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link href="#skills" onClick={handleLinkClick}>
               Skills
             </Nav.Link>

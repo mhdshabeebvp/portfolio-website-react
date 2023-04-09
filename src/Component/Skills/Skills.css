@@ -73,13 +73,12 @@ margin-top: 21px;
 }
 @media screen and (max-width: 480px) {
   .skill{
-    margin-top: 23rem;
-    width: 19rem;
-    margin-left: -1.11rem;
+    margin-top: 5rem;
+    width: auto;
 
   }
   .skill-bx{
-    height: 35rem;
+    height: 37rem;
   }
   .skill p{
     text-align: justify;

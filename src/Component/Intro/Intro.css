@@ -198,6 +198,7 @@ height: 2rem;
     gap: 7rem;
     height: 52rem;
     margin-top: 100px;
+    margin-left: 3.5px;
   }
   .i-left {
     margin-top: -30px;
@@ -234,8 +235,8 @@ height: 2rem;
   .contacts-list {
     display: flex;
     gap: 0.5rem;
-    margin-left: -20.5px;
-    margin-top: 5%;
+    margin-left: -12.5px;
+    margin-top: 6%;
   }
   .skills-charts {
     display: none;
@@ -259,6 +260,7 @@ height: 2rem;
     margin-left: -4rem;
     margin-top: -5rem;
   }
+ 
 }
 /* Large screens (desktops, 1200px and up) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {

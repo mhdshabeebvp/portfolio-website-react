@@ -8,7 +8,7 @@ import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
-import ParallaxSections from "./Component/Slide/Slide";
+import ParallaxSections from "./Component/Blogs/Blogs";
 // import { Router } from "react-bootstrap-icons";
 
 
