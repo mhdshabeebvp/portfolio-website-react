@@ -24,6 +24,7 @@
   font-weight: bold;
   font-size: 3rem;
 }
+
 .i-name > :nth-child(2) {
   color: var(--orange);
   font-weight: bold;
@@ -56,9 +57,10 @@
   z-index: 1;
 }
 #myCanvasContainer {
-  margin-left: 7rem;
-  margin-top: -5.1rem;
+  margin-left: -3rem;
+  margin-top: -2.1rem;
 }
+
 .sv-button {
   position: relative;
   width: 11%;
@@ -241,6 +243,7 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+ 
 }
 
 /* iPads, Tablet [verified] */
@@ -281,18 +284,20 @@
   .contacts-list {
 gap: 18px;
   }
+
+  
 }
 @media only screen and (min-width: 1201px) {
-  
 .intro{
   height: 35rem;
+  width: 100%;
 }
   .sidebar {
     width: 18rem;
   }
   .skills-charts {
-    margin-top: 10rem;
-    margin-left: 10px;
+    margin-top: 4rem;
+    margin-left: 2rem;
   }
   .contacts-list {
     gap: 1.1rem;
@@ -300,4 +305,9 @@ gap: 18px;
   .sv-button{
     width: 5.3rem;
   }
+ 
+  #myCanvasContainer {
+  margin-left: 2rem;
+  margin-top: -1rem;
+}
 }

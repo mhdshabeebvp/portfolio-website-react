@@ -15,23 +15,29 @@ import humenf from "../../img/skillp/humenf.jpg";
 import cnc from "../../img/skillp/CNC.jpg";
 import linefollower from "../../img/skillp/linefollower.webp";
 import mvg from "../../img/skillp/mvg.jpg";
+import project2 from "../../img/project2.jpg";
+import project3 from "../../img/project3.png";
+import lp1 from "../../img/LP/lp1.png";
+import lp2 from "../../img/LP/lp2.png";
+import lp3 from "../../img/LP/lp3.png";
+import lp4 from "../../img/LP/lp4.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Education department Website",
+      description: "Multipage-Education-School-Startup-website",
       imgUrl: techassistap,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Web Application",
+      description: "Blood Donation information Application",
+      imgUrl: project2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Personal Portfolio Website [React]",
+      description: "Personal Portfolio Website using Reactjs",
+      imgUrl: project3,
     },
     {
       title: "Business Startup",
@@ -86,6 +92,37 @@ export const Projects = () => {
       imgUrl: mvg,
     },
   ];
+  const projects3 = [
+    {
+      title: "Ecommerce Website",
+      description:
+        "Building a fully functional ecommerce website requires a lot of planning, development, and testing",
+      imgUrl: lp1,
+    },
+    {
+      title: "Giftopia: Personalized Gifts Delivered",
+      description:
+        "Seamless user experience for personalized gifting, easy checkout, and exceptional service.",
+      imgUrl: lp2,
+    },
+    {
+      title: "The Cosmetics Corner: Discover Your Perfect Look",
+      description: "shopping Website using Reactjs",
+      imgUrl: lp3,
+    },
+    {
+      title: "Ecommerce Website",
+      description:
+        "Building a fully functional ecommerce website requires a lot of planning, development, and testing",
+      imgUrl: lp4,
+    },
+
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+  ];
   return (
     <section className="project" id="projects">
       <Container>
@@ -119,7 +156,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Hardware</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Launchpad</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -151,14 +188,13 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Portfolio project section showcases my upcoming
+                          fully functional website. It describes its purpose,
+                          features, and goals, as well as the technologies used
+                          to develop it, highlighting my technical skills.
                         </p>
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects3.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>

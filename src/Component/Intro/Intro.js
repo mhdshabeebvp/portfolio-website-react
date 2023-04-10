@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {  createRef, useEffect } from "react";
+import React, { createRef, useEffect } from "react";
 import TagCanvas from "tag-canvas";
 import "../../App.css";
-import { FaEye } from 'react-icons/fa';
+import { FaEye } from "react-icons/fa";
 import "./Intro.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -45,7 +45,8 @@ const Intro = () => {
     { name: "SQI", url: "#" },
     { name: "Gulp", url: "#" },
     { name: "npm", url: "#" },
-    { name: "BEM", url: "#" },
+    { name: "IoT", url: "#" },
+    { name: "Yarn", url: "#" },
   ];
 
   const canvasRef = createRef();
@@ -87,17 +88,28 @@ const Intro = () => {
         <a style={{ textDecoration: "none" }} href={Resume} download>
           <button className="button si-button">Download CV</button>
         </a>
-        <a style={{ textDecoration: "none" }} href={Resume} rel="noreferrer" target="_blank">
-          <button className="sv-button "><FaEye /> </button>
+        <a
+          style={{ textDecoration: "none" }}
+          href={Resume}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button className="sv-button ">
+            <FaEye />{" "}
+          </button>
         </a>
-    
+
         {/* social icon */}
         <div className="i-icons">
           <aside className="sidebar" data-sidebar>
             <ul className="contacts-list">
               <li className="contact-item">
                 <div className="icon-box">
-                  <a href="https://github.com/mhdshabeebvp">
+                  <a
+                    href="https://github.com/mhdshabeebvp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="social-icon-s"
@@ -107,28 +119,26 @@ const Intro = () => {
               </li>
               <li className="contact-item">
                 <div className="icon-box">
-                  <a href="https://www.linkedin.com/feed/">
+                  <a
+                    href="https://www.linkedin.com/feed/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
-                      
                       className="social-icon-s"
                     />
                   </a>
                 </div>
               </li>
+           
               <li className="contact-item">
                 <div className="icon-box">
-                  <a href="https://www.instagram.com/">
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      className="social-icon-s"
-                    />
-                  </a>
-                </div>
-              </li>
-              <li className="contact-item">
-                <div className="icon-box">
-                  <a href="https://twitter.com/i/flow/single_sign_on">
+                  <a
+                    href="https://twitter.com/i/flow/single_sign_on"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faTwitter}
                       className="social-icon-s"
@@ -138,7 +148,25 @@ const Intro = () => {
               </li>
               <li className="contact-item">
                 <div className="icon-box">
-                  <a href="https://www.youtube.com/">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      className="social-icon-s"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li className="contact-item">
+                <div className="icon-box">
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faYoutube}
                       className="social-icon-s"
@@ -159,7 +187,7 @@ const Intro = () => {
               <ul id="tags">
                 {skills.map((skill, index) => (
                   <li key={index}>
-                    <a href={skill.url} rel="noreferrer" target="_blank" >
+                    <a href={skill.url} rel="noreferrer" target="_blank">
                       {skill.name}
                     </a>
                   </li>

@@ -3,7 +3,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Blogs.css";
 import gpt3 from "../../img/gpt3.webp";
-import job from "../../img/job.png"
+import job from "../../img/job.png";
+import gpt4 from "../../img/gpt4.jpg";
+import cb from "../../img/cb.jpg";
+import skill2023 from "../../img/skills2023.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,24 +18,25 @@ const sections = [
       "https://codemindiq.blogspot.com/2023/04/introduction-modern-ai-language-model.html",
   },
   {
-    title: "Hey look, a title",
-    imageUrl: job,
-    linkUrl: "/path2",
+    title: "The Most Lucrative High-Paid Skills for 2023",
+    imageUrl: skill2023,
+    linkUrl: "https://codemindiq.blogspot.com/2023/04/the-skills-that-pay-bills-most.html",
   },
   {
-    title: "They just keep coming",
-    imageUrl: "https://picsum.photos/1600/800?random=2",
-    linkUrl: "/path3",
+    title: "GPT-4: Advanced Language Processing Benefits",
+    imageUrl: gpt4 ,
+    linkUrl: "https://picsum.photos/1600/800?random=2",
   },
   {
-    title: "So smooth though",
-    imageUrl: "https://picsum.photos/1600/800?random=3",
-    linkUrl: "/path4",
+    title: "ChatGPT vs BART: A Battle of AI Chatbot Titans",
+    imageUrl:cb,
+    linkUrl: "https://codemindiq.blogspot.com/2023/04/chatgpt-vs-bart-comparison-of-two.html",
   },
   {
     title: "The Future of Work: Which Jobs Are at Risk of Automation",
     imageUrl: job,
-    linkUrl: "https://codemindiq.blogspot.com/2023/04/the-future-of-work-which-jobs-are-at.html",
+    linkUrl:
+      "https://codemindiq.blogspot.com/2023/04/the-future-of-work-which-jobs-are-at.html",
   },
 ];
 
