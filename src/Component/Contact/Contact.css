@@ -96,3 +96,30 @@ textarea {
       margin-top: 10px;
     }
 }
+
+/* extra section */
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {  
+  .contact-form {
+    padding: 0 2rem 0 2rem;
+    gap: -1rem;
+  }
+  .c-right .user {
+    width: 12rem;
+    margin-left: -9rem;
+    margin-top: 1rem;
+   
+  }
+  .button-c{
+    margin-left: -9rem;
+    width: 13rem;
+  }
+  .contact-form{
+    height: 20rem;
+  }
+}
+

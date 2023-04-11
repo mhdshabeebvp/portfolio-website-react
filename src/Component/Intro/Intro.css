@@ -192,18 +192,60 @@
 }
 
 
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1023px
+ */
 
+@media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
 
+  .contacts-list {
+    gap: 1rem;
+  }
+  .sv-button {
+    width: 4.9rem;
+  }
+}
 
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
 
+@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {
+  .skills-charts {
+    display: none;
+  }
+  .i-right {
+    display: none;
+  }
+  .intro {
+    height: 40rem;
+  }
 
+}
+/* 
+ ##Device = Tablets, Ipads (portrait)
+ ##Screen = B/w 768px to 1024px  */
 
+@media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+  
+  .contacts-list {
+    gap: 1rem;
+  }
+  .sv-button {
+    width: 4.5rem;
+  }
+}
 
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
 
-
-
-
-
+@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {
+  
+}
 
 /*----------------------------------- Responsive ----------------------------------- */
 
@@ -257,9 +299,18 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
- .contacts-list{
+  .sidebar {
+    background: var(--eerie-black-2);
 
- }
+    margin-top: -59px;
+  }
+  .contacts-list {
+    margin-left: -15px;
+    gap: 0.88rem;
+  }
+  .sv-button {
+    width: 3.2rem;
+  }
 }
 
 /* iPads, Tablet [verified] */
@@ -294,20 +345,18 @@
   .sidebar {
     width: 17.5rem;
   }
-  .intro{
+  .intro {
     height: 30rem;
   }
   .contacts-list {
-gap: 18px;
+    gap: 18px;
   }
-
-  
 }
 @media only screen and (min-width: 1201px) {
-.intro{
-  height: 35rem;
-  width: 100%;
-}
+  .intro {
+    height: 35rem;
+    width: 100%;
+  }
   .sidebar {
     width: 18rem;
   }
@@ -318,12 +367,12 @@ gap: 18px;
   .contacts-list {
     gap: 1.1rem;
   }
-  .sv-button{
+  .sv-button {
     width: 5.3rem;
   }
- 
+
   #myCanvasContainer {
-  margin-left: 2rem;
-  margin-top: -1rem;
-}
+    margin-left: 2rem;
+    margin-top: -1rem;
+  }
 }
