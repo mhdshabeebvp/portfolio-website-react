@@ -200,11 +200,15 @@
 @media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
 
   .contacts-list {
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .sv-button {
     width: 4.9rem;
+    margin-left: 15.4rem;
   }
+ .si-button{
+  width: 14.5rem;
+ }
 }
 
 /* 
@@ -290,7 +294,7 @@
   }
   .contacts-list {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.8rem;
     margin-left: -12.5px;
     margin-top: 6%;
   }
