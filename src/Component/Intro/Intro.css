@@ -191,6 +191,20 @@
   --ionicon-stroke-width: 45px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------- Responsive ----------------------------------- */
 
 /* mobile screen */
@@ -243,7 +257,9 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
- 
+ .contacts-list{
+
+ }
 }
 
 /* iPads, Tablet [verified] */

@@ -8,7 +8,8 @@ import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
-import ParallaxSections from "./Component/Blogs/Blogs";
+// import ParallaxSections from "./Component/Blogs/Blogs";
+import BlogSection from "./Component/article/Article";
 // import { Router } from "react-bootstrap-icons";
 
 
@@ -29,8 +30,10 @@ function App() {
       <Services />
       <Skills />
       <Projects />
-      <ParallaxSections />
+      {/* <ParallaxSections /> */}
+      <BlogSection />
       <Contact />
+      
       <Footer />
     </div>
   );

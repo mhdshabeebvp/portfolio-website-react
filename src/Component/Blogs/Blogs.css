@@ -62,8 +62,21 @@ sectionslide {
   border: 1px solid var(--jet);
 
 }
+@media screen and (max-width: 767px) {
+  .box {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 /* for mobile phones */
 @media screen and (max-width: 480px) {
+  /* sectionslide{
+   background-size: cover;
+  } */
+  .box:first-child {
+   background-size: cover;
+  }
+
   .box h1 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -86,6 +99,8 @@ sectionslide {
   .box {
     height: 110vh;
     width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .box h1 {
     color: var(--orange-yellow-crayola);
