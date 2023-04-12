@@ -1,0 +1,487 @@
+.intro {
+  display: flex;
+  height: 110vh;
+  margin-top: 6rem;
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  padding: 25px;
+  box-shadow: var(--shadow-1);
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 19px;
+  color: var(--light-gray);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+#myCanvasContainer {
+  margin-left: -3rem;
+  margin-top: -2.1rem;
+}
+
+.sv-button {
+  position: relative;
+  width: 11%;
+  height: 2rem;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  margin-left: 257px;
+  margin-top: -4rem;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.headings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* adjust as needed */
+  border-bottom: 1px solid #ccc; /* optional */
+}
+.headings-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
+.headings-container h1:hover {
+  opacity: 1;
+}
+.headings-container h1::before {
+  content: "<";
+  font-size: 56px;
+  margin-right: 16px;
+}
+.headings-container h1::after {
+  content: ">";
+  font-size: 56px;
+  margin-left: 16px;
+}
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.si-button {
+  width: 12.1rem;
+  height: 2rem;
+}
+
+/* social media icons */
+
+.sidebar {
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  height: 3.7rem;
+  width: 16rem; /* reduce the width of the sidebar as an example */
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -40px;
+}
+
+.icon-box {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+.social-icon-s {
+  color: var(--orange-yellow-crayola);
+}
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box ion-icon {
+  --ionicon-stroke-width: 45px;
+}
+
+/* ------------Responsive media Query */
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops */
+
+@media (min-width: 80.0625em) {
+  .intro {
+    height: 35rem;
+    width: 100%;
+  }
+  .sidebar {
+    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+
+    width: 18rem;
+  }
+  .skills-charts {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  .contacts-list {
+    gap: 1.1rem;
+  }
+  .sv-button {
+    width: 5.3rem;
+  }
+
+  #myCanvasContainer {
+    margin-left: 2rem;
+    margin-top: -1rem;
+  }
+}
+
+/* ------ */
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px */
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .sidebar {
+    width: 17.5rem;
+    background-color: aqua;
+  }
+  .intro {
+    height: 42rem;
+  }
+  .contacts-list {
+    gap: 18px;
+  }
+  .sv-button {
+    width: 4.5rem;
+  }
+  .skills-charts {
+    margin-top: 9rem;
+    margin-left: 5rem;
+  }
+}
+
+/* -------- */
+
+/* 
+ ##Device = Tablets, Ipads (portrait)
+ ##Screen = B/w 768px to 1024px  */
+
+@media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+  .intro {
+    height: 35rem;
+  }
+  .headings-container h1 {
+    font-size: 36px;
+    width: auto;
+  }
+
+  .headings-container h1::before,
+  .headings-container h1::after {
+    font-size: 48px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .i-right {
+    display: none;
+  }
+  .sidebar {
+    width: 17.6rem;
+    margin-top: -3rem;
+    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+
+  }
+  .contacts-list {
+    gap: 1rem;
+  }
+  .sv-button {
+    width: 4.7rem;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1023px
+ */
+
+@media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+  .sidebar {
+    background-color: rgb(164, 102, 26);
+    width: 16.5rem;
+  }
+  .contacts-list {
+    gap: 0.6rem;
+  }
+  .i-right {
+    display: none;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .intro {
+    height: 34rem;
+  }
+  .sv-button {
+    width: 3.6rem;
+  }
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {
+  .sidebar {
+    background-color: blueviolet;
+  }
+  .i-right {
+    display: none;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .intro {
+    height: 41rem;
+  }
+  .sv-button {
+    width: 3.2rem;
+  }
+}
+
+/* für iPhone 6/7/8  766,4px x 375px   */
+
+@media only screen and (max-width: 47.9em) and (min-width: 23.4375em) and (orientation: landscape) {
+  .sidebar {
+    background-color: chartreuse;
+  }
+}
+
+/* kleine smartphone   Landscape  640px  x 319px kleine als Galaxy S5  */
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  .sidebar {
+    background-color: yellow;
+  }
+}
+/* iphone 5 und kleine  528px     */
+
+@media only screen and (max-width: 33em) and (orientation: landscape) {
+  .sidebar {
+    background-color: rgb(119, 155, 223);
+  }
+  .i-right {
+    display: none;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .intro {
+    height: 58rem;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 27px;
+  }
+  .i-name > :nth-child(3) {
+    width: 12rem;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sv-button {
+    width: 12.2rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .si-button {
+    width: 12.2rem;
+  }
+  .sidebar {
+    width: 12.2rem;
+    margin-left: 0;
+    margin-top: -1rem;
+  }
+  .contacts-list {
+    gap: 0.1rem;
+    margin-left: -1.1rem;
+  }
+}
+/* ich selb gebaut   767px x 481px      */
+
+@media only screen and (max-width: 30.0625em) and (orientation: portrait) {
+  .sidebar {
+    background-color: white;
+  }
+  .i-right {
+    display: none;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .intro {
+    height: auto;
+    width: 100%;
+  }
+  .i-name > :nth-child(1) {
+    font-size: 70px;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 35px;
+    width: auto;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sv-button {
+    width: 16.5rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .si-button {
+    width: 16.5rem;
+  }
+  .sidebar {
+    width: auto;
+    margin-left: 0;
+    margin-top: -0.5rem;
+  }
+  .contacts-list {
+    gap: 1.1rem;
+    margin-left: -1.1rem;
+  }
+}
+/*  iphone 5       galaxy S5  */
+
+@media only screen and (max-width: 23em) and (orientation: portrait) {
+  .sidebar {
+    background-color: darkslategrey;
+  }
+  .i-right {
+    display: none;
+  }
+  .skills-charts {
+    display: none;
+  }
+  .intro {
+    height: auto;
+    width: 100%;
+  }
+  .i-name > :nth-child(1) {
+    font-size: 60px;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 27px;
+    width: auto;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sv-button {
+    width: 13.5rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .si-button {
+    width: 13.5rem;
+  }
+  .sidebar {
+    width: 13.5rem;
+    margin-left: 0;
+    margin-top: -0.5rem;
+  }
+  .contacts-list {
+    gap: 0.44rem;
+    margin-left: -1.1rem;
+  }
+}
