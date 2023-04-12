@@ -203,8 +203,7 @@
     width: 100%;
   }
   .sidebar {
-    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-
+    background: var(--border-gradient-onyx);
     width: 18rem;
   }
   .skills-charts {
@@ -231,8 +230,7 @@
 @media (min-width: 64.0625em) and (max-width: 80em) {
   .sidebar {
     width: 17.5rem;
-    background-color: aqua;
-  }
+    background: var(--border-gradient-onyx);  }
   .intro {
     height: 42rem;
   }
@@ -278,9 +276,7 @@
   .sidebar {
     width: 17.6rem;
     margin-top: -3rem;
-    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-
-  }
+    background: var(--border-gradient-onyx);  }
   .contacts-list {
     gap: 1rem;
   }
@@ -295,8 +291,7 @@
 
 @media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
   .sidebar {
-    background-color: rgb(164, 102, 26);
-    width: 16.5rem;
+    background: var(--border-gradient-onyx);    width: 16.5rem;
   }
   .contacts-list {
     gap: 0.6rem;
@@ -321,8 +316,7 @@
 
 @media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {
   .sidebar {
-    background-color: blueviolet;
-  }
+    background: var(--border-gradient-onyx);  }
   .i-right {
     display: none;
   }
@@ -341,23 +335,20 @@
 
 @media only screen and (max-width: 47.9em) and (min-width: 23.4375em) and (orientation: landscape) {
   .sidebar {
-    background-color: chartreuse;
-  }
+    background: var(--border-gradient-onyx);  }
 }
 
 /* kleine smartphone   Landscape  640px  x 319px kleine als Galaxy S5  */
 
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   .sidebar {
-    background-color: yellow;
-  }
+    background: var(--border-gradient-onyx);  }
 }
 /* iphone 5 und kleine  528px     */
 
 @media only screen and (max-width: 33em) and (orientation: landscape) {
   .sidebar {
-    background-color: rgb(119, 155, 223);
-  }
+    background: var(--border-gradient-onyx);  }
   .i-right {
     display: none;
   }
@@ -397,8 +388,7 @@
 
 @media only screen and (max-width: 30.0625em) and (orientation: portrait) {
   .sidebar {
-    background-color: white;
-  }
+    background: var(--border-gradient-onyx);  }
   .i-right {
     display: none;
   }
@@ -443,8 +433,7 @@
 
 @media only screen and (max-width: 23em) and (orientation: portrait) {
   .sidebar {
-    background-color: darkslategrey;
-  }
+    background: var(--border-gradient-onyx);  }
   .i-right {
     display: none;
   }
