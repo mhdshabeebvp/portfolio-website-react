@@ -347,8 +347,8 @@
     height: auto;
   }
   .skills-charts {
-    margin-top: 0;
-    margin-left: 6rem;
+    margin-top: 5rem;
+    margin-left: 7rem;
   }
   .contacts-list {
     gap: 1.233rem;
@@ -360,8 +360,8 @@
     font-size: 25px;
   }
   #myCanvas {
-    width: 35rem;
-    height: 35rem;
+    width: 27rem;
+    height: 27rem;
   }
   .sv-button {
     width: 6rem;
