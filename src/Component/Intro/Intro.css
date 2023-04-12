@@ -1,118 +1,391 @@
-
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1023px
- */
-
-@media (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
-
-  .contacts-list {
-    gap: 1.5rem;
-  }
-  .sv-button {
-    width: 4.9rem;
-    margin-left: 15.4rem;
-  }
- .si-button{
-  width: 14.5rem;
- }
+.intro {
+  display: flex;
+  height: auto;
+  margin-top: 6rem;
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  padding: 25px;
+  box-shadow: var(--shadow-1);
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 19px;
+  margin-top: 10px;
+  color: var(--light-gray);
+  line-height: 1.6;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
 
-@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {
-  .skills-charts {
-    display: none;
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+#myCanvasContainer {
+  margin-left: -3rem;
+  margin-top: -2.1rem;
+}
+
+
+.sv-button {
+  position: relative;
+  width: 11%;
+  height: 2rem;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  margin-left: 257px;
+  margin-top: -4rem;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.headings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* adjust as needed */
+  border-bottom: 1px solid #ccc; /* optional */
+}
+.headings-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
+.headings-container h1:hover {
+  opacity: 1;
+}
+.headings-container h1::before {
+  content: "<";
+  font-size: 56px;
+  margin-right: 16px;
+}
+.headings-container h1::after {
+  content: ">";
+  font-size: 56px;
+  margin-left: 16px;
+}
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.si-button {
+  width: 12.1rem;
+  height: 2rem;
+}
+
+/* social media icons */
+
+.sidebar {
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  height: 3.7rem;
+  width: 16rem; /* reduce the width of the sidebar as an example */
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -40px;
+}
+
+.icon-box {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+.social-icon-s {
+  color: var(--orange-yellow-crayola);
+}
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box ion-icon {
+  --ionicon-stroke-width: 45px;
+}
+
+
+/* Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .sidebar{
+    background-color: blue;
   }
   .i-right {
     display: none;
   }
-  .intro {
-    height: 40rem;
-  }
-
-}
-
-/*----------------------------------- Responsive ----------------------------------- */
-
-/* mobile screen */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .intro {
-    flex-direction: column;
-    gap: 7rem;
-    height: 52rem;
-    margin-top: 100px;
-    margin-left: 3.5px;
-  }
-  .i-left {
-    margin-top: -30px;
-  }
-  .i-right .blur {
-    display: none;
-  }
-
-  .i-name > :nth-child(3) {
-    text-align: justify;
-    letter-spacing: -1px;
-    margin: 0;
-  }
-  .si-button {
-    width: 100%;
-  }
-  .sv-button {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  .sidebar {
-    background: var(--eerie-black-2);
-    border-radius: 20px;
-    box-shadow: var(--shadow-1);
-    z-index: 1;
-    height: 3.7rem;
-    width: 100%;
-    padding: 0;
-    margin-top: 0px;
-  }
-  .contacts-list {
-    display: flex;
-    gap: 0.8rem;
-    margin-left: -12.5px;
-    margin-top: 6%;
-  }
   .skills-charts {
     display: none;
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .sidebar {
-    background: var(--eerie-black-2);
-
-    margin-top: -59px;
+  .intro {
+    height: auto;
   }
-  .contacts-list {
-    margin-left: -15px;
-    gap: 0.88rem;
+  .i-name > :nth-child(2) {
+    font-size: 28px;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .sv-button {
-    width: 3.2rem;
+    width: 13.7rem;
+    margin-left: 0;
+    margin-top: 0;
   }
-}
+  .si-button {
+    width: 13.7rem;
 
-
-/* Large screens (desktops, 1200px and up) */
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  }
   .sidebar {
-    width: 17.5rem;
-  }
-  .intro {
-    height: 30rem;
+    width: 13.7rem;
+    margin-left: 0;
+    margin-top: -1rem;
   }
   .contacts-list {
-    gap: 18px;
+    gap: 0.45rem;
+    margin-left: -1.1rem;
   }
 }
+
+/* iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* CSS styles for iPads and tablets go here */
+  .sidebar{
+    background-color: rgb(0, 255, 8);
+  }
+  .i-right {
+    display: none;
+  }
+ 
+  .intro {
+    height: auto;
+ 
+  }
+  .i-name > :nth-child(2) {
+    font-size: 28px;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sv-button {
+  width: 4rem;
+  margin-left: 14.5rem;
+
+  }
+  .si-button {
+    width: 13.7rem;
+
+  }
+  .sidebar {
+    width: 18.55rem;
+    margin-left: 0;
+    margin-top: -2.5rem;
+    
+  }
+  .contacts-list {
+    gap: 1.5rem;
+    margin-left: -0.8rem;
+  }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS styles for small screens and laptops go here */
+  .sidebar{
+    background-color: rgb(255, 140, 0);
+  }
+ 
+  .i-right {
+    display: none;
+  }
+
+  .intro {
+    height: auto;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 28px;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sv-button {
+    width: 3.7rem;
+    margin-left: 15rem;
+  }
+  .si-button {
+    width: 13.7rem;
+
+  }
+  .sidebar {
+    width: 18.9rem;
+    margin-left: 0;
+    margin-top: -3rem;
+  }
+  .contacts-list {
+    gap: 1.77rem;
+    margin-left: -1.1rem;
+  }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* CSS styles for desktops and large screens go here */
+  .sidebar{
+    background-color: rgb(186, 22, 192);
+  }
+
+  .skills-charts{
+    margin-top: 5rem;
+    margin-left: 3rem;
+  }
+  .sv-button{
+    width: 3.3rem;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 49px;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* Extra large screens, TV */
+@media only screen and (min-width: 1201px) {
+  /* CSS styles for extra large screens and TV go here */
+  .sidebar{
+    background-color: rgb(218, 212, 25);
+    width: 19rem;
+  }
+  .intro{
+    height: auto;
+  }
+  .skills-charts{
+    margin-top: 0;
+    margin-left: 6rem;
+  }
+  .contacts-list{
+    gap: 1.233rem;
+  }
+  .i-name > :nth-child(3) {
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+  }
+  #myCanvas{
+    width: 35rem;
+    height: 35rem;
+  }
+  .sv-button{
+    width: 6rem;
+  }
+}
+@media only screen and (min-width: 1202px) and (max-width: 80.0625em) {
+  .sidebar{
+    background-color: rgb(251, 251, 251);
+  }
+  .intro{
+    height: auto;
+  }
+  .skills-charts{
+    margin-top: 9rem;
+    margin-left: 4rem;
+  }
+}
+
+/* für iPhone 6/7/8  766,4px x 375px   */
+

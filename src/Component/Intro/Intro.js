@@ -2,7 +2,7 @@ import React, { createRef, useEffect } from "react";
 import TagCanvas from "tag-canvas";
 import "../../App.css";
 import { FaEye } from "react-icons/fa";
-import "./Intros.css";
+import "./Intro.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,

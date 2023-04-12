@@ -3,7 +3,7 @@
   display: flex;
   height: 65vh;
   margin-top: 5rem;
-  /* scroll */
+   /* scroll */
   padding-top: 1rem;
   background: var(--eerie-black-2);
   border-radius: 20px;
@@ -51,22 +51,12 @@ textarea {
   left: 8rem;
 }
 /* ----------------Responsive---------------- */
-/* for Mobile [verified] */  
+/* for Mobile [verified] */
 @media screen and (max-width: 480px) {
-  .contact-form {
-    padding: 0;
-    flex-direction: column;
-    gap: 1rem;
-    height: 29rem;
-    margin-top: 7rem;
-  }
-  .c-right .user {
-    width: 16rem;
-  }
 }
 /* iPads, Tablet [verified] */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+/* @media only screen and (min-width: 768px) and (max-width: 1024px){
   .contact-form {
     padding: 0 2rem 0 2rem;
     gap: -1rem;
@@ -85,41 +75,108 @@ textarea {
     height: 20rem;
   }
 }
-
-
-@media only screen and (min-width: 1201px) {
-
-    .contact-form{
-      height: 20rem;
-    }
-    .c-right{
-      margin-top: 10px;
-    }
-}
+ */
 
 /* extra section */
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
 */
-
-@media only screen and (min-width: 41.75em) and (max-width: 47.9375em) {  
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .contact-form {
-    padding: 0 2rem 0 2rem;
-    gap: -1rem;
+    padding: 0;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    margin-top: 7rem;
   }
   .c-right .user {
-    width: 12rem;
-    margin-left: -9rem;
-    margin-top: 1rem;
-   
-  }
-  .button-c{
-    margin-left: -9rem;
-    width: 13rem;
-  }
-  .contact-form{
-    height: 20rem;
+    width: 14rem;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+.contact-form{
+  height: auto;
+  width: auto;
+}
+.awesome > :nth-child(1){
+  font-size: 30px;
+}
+.awesome > :nth-child(2){
+  font-size: 33px;
+}
+.c-right .user {
+margin-left: -7rem;
+width: 12rem;
+}
+.button-c {
+  margin-left: -7rem;
+  width: 12rem;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .contact-form{
+    height: auto;
+    width: auto;
+    margin-bottom: 5rem;
+  }
+  .awesome > :nth-child(1){
+    font-size: 60px;
+    
+  }
+  .awesome > :nth-child(2){
+    font-size: 50px;
+  }
+  .c-right .user {
+  margin-left: -7rem;
+  width: 18rem;
+  }
+  .button-c {
+    margin-left: -7rem;
+    width: 18rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .contact-form{
+    height: auto;
+    width: auto;
+    margin-bottom: 5rem;
+  }
+  .awesome > :nth-child(1){
+    font-size: 50px;
+
+  }
+  .awesome > :nth-child(2){
+    font-size: 40px;
+  }
+  .c-right .user {
+  margin-left: -7rem;
+  width: 18rem;
+  }
+  .button-c {
+    margin-left: -7rem;
+    width: 18rem;
+  }
+
+}
+
+@media only screen and (min-width: 1201px) {
+.contact-form{
+  height: auto;
+}
+.c-right .user {
+  margin-left: -7rem;
+  width: 30rem;
+  }
+  .button-c{
+    width: 30rem;
+    margin-left: -7rem;
+  }
+
+
+}
+
 
