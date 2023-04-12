@@ -119,7 +119,7 @@ const Intro = () => {
               <li className="contact-item">
                 <div className="icon-box">
                   <a
-                    href="https://www.linkedin.com/feed/"
+                    href="https://www.linkedin.com/in/muhamed-shabeeb-vp-a24917229"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -148,7 +148,7 @@ const Intro = () => {
               <li className="contact-item">
                 <div className="icon-box">
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://instagram.com/shutterbee_boy?igshid=ZDdkNTZiNTM"
                     target="_blank"
                     rel="noreferrer"
                   >

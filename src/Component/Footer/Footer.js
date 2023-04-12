@@ -1,6 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faInstagram, faGithub, faYoutube,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
 const Footer = () => {
@@ -32,28 +38,28 @@ const Footer = () => {
       </div>
       <div className="right-section">
         <ul className="social-links">
-        <li className="social-link">
-            <a href="#">
+          <li className="social-link">
+            <a href="https://github.com/mhdshabeebvp">
               <FontAwesomeIcon icon={faGithub} className="social-icon" />
             </a>
           </li>
           <li className="social-link">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/muhamed-shabeeb-vp-a24917229">
               <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
             </a>
           </li>
-          
+
           <li className="social-link">
             <a href="#">
               <FontAwesomeIcon icon={faTwitter} className="social-icon" />
             </a>
           </li>
           <li className="social-link">
-            <a href="#">
+            <a href="https://instagram.com/shutterbee_boy?igshid=ZDdkNTZiNTM=">
               <FontAwesomeIcon icon={faInstagram} className="social-icon" />
             </a>
           </li>
-          
+
           <li className="social-link">
             <a href="#">
               <FontAwesomeIcon icon={faYoutube} className="social-icon" />
