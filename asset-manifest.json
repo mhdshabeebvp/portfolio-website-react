@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website-react/static/css/main.04520d10.css",
-    "main.js": "/portfolio-website-react/static/js/main.5ca5d396.js",
+    "main.js": "/portfolio-website-react/static/js/main.117521fd.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
@@ -39,10 +39,10 @@
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
     "main.04520d10.css.map": "/portfolio-website-react/static/css/main.04520d10.css.map",
-    "main.5ca5d396.js.map": "/portfolio-website-react/static/js/main.5ca5d396.js.map"
+    "main.117521fd.js.map": "/portfolio-website-react/static/js/main.117521fd.js.map"
   },
   "entrypoints": [
     "static/css/main.04520d10.css",
-    "static/js/main.5ca5d396.js"
+    "static/js/main.117521fd.js"
   ]
 }
