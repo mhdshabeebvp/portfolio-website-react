@@ -196,7 +196,8 @@
 /* Mobile devices */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .sidebar {
-    background: var(--border-gradient-onyx);  }
+    background: blue;
+  }
   .i-right {
     display: none;
   }
@@ -237,7 +238,7 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* CSS styles for iPads and tablets go here */
   .sidebar {
-    background: var(--border-gradient-onyx);
+    background: rgb(0, 255, 68);
   }
   .i-right {
     display: none;
@@ -276,7 +277,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* CSS styles for small screens and laptops go here */
   .sidebar {
-    background: var(--border-gradient-onyx);
+    background: rgb(255, 81, 0);
   }
 
   .i-right {
@@ -316,7 +317,7 @@
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   /* CSS styles for desktops and large screens go here */
   .sidebar {
-    background: var(--border-gradient-onyx);
+    background: rgb(212, 0, 255);
   }
 
   .skills-charts {
@@ -340,7 +341,7 @@
 @media only screen and (min-width: 1201px) {
   /* CSS styles for extra large screens and TV go here */
   .sidebar {
-    background: var(--border-gradient-onyx);
+    background: rgb(26, 180, 241);
     width: 19rem;
   }
   .intro {
@@ -369,7 +370,8 @@
 }
 @media only screen and (min-width: 1202px) and (max-width: 80.0625em) {
   .sidebar {
-    background: var(--border-gradient-onyx);  }
+    background: rgb(235, 235, 20);
+  }
   .intro {
     height: auto;
   }
