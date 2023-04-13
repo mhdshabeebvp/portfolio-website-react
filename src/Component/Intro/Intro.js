@@ -70,7 +70,7 @@ const Intro = () => {
     <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am </span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
             With a strong passion for technology and programming. I am skilled
