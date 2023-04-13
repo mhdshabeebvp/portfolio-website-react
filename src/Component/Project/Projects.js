@@ -44,16 +44,16 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg1,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
   ];
   const projects2 = [
     {
@@ -70,7 +70,7 @@ export const Projects = () => {
     {
       title: " HUMAN FOLLOWING ROBOT",
       description:
-        "The Arduino-powered robot utilizes sensors to detect and track human movement, while motor control allows it to follow.",
+        "The Arduino-powered robot utilizes sensors to detect and track human movement.",
       imgUrl: humenf,
     },
     {

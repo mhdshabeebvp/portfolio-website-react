@@ -5,6 +5,7 @@
   border-radius: 20px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
+
 }
 .project h2 {
   font-size: 45px;
@@ -24,7 +25,7 @@
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
-  font-weight:100;
+  /* font-weight:100; */
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -166,6 +167,18 @@
     text-justify: inter-word;
     color: var(--light-gray);
   }
+  .proj-txtx h4 {
+    font-size: 21px;
+    width: auto;
+    letter-spacing: 0.8px;
+    line-height: 1em;
+    color: var(--orange-yellow-crayola);
+  }
+  .proj-txtx span {
+  font-size: 14px;
+  line-height: 0.5em;
+
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .project p {
@@ -174,12 +187,38 @@
     text-justify: inter-word;
     color: var(--light-gray);
   }
+    .proj-txtx h4 {
+    font-size: 20px;
+    width: auto;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1em;
+    color: var(--orange-yellow-crayola);
+  }
+  .proj-txtx span {
+  font-size: 10px;
+  line-height: 0.5em;
+
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .project p {
     width: auto;
     text-align: justify;
     text-justify: inter-word;
+  }
+  .proj-txtx h4 {
+    font-size: 20px;
+    width: auto;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1em;
+    color: var(--orange-yellow-crayola);
+  }
+  .proj-txtx span {
+  font-size: 10px;
+  line-height: 0.5em;
+
   }
 }
 @media only screen and (min-width: 1201px) {
