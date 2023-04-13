@@ -8,6 +8,9 @@
   height: 38rem;
 }
 
+.card{
+  border: 1px solid var(--jet);
+}
 /* Define the animation keyframes */
 @keyframes bounce {
   0%,

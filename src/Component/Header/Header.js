@@ -1,12 +1,9 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-// import Toggle from "../Toggle/Toggle";
 import { themeContext } from "../../Context";
 import "./Header.css";
 import "../../App.css";
 import { Link as ScrollLink } from "react-scroll";
-
-
 
 const NavigationBar = () => {
   const theme = useContext(themeContext);
@@ -14,19 +11,26 @@ const NavigationBar = () => {
   const [expanded, setExpanded] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [togglerClicked, setTogglerClicked] = useState(false);
 
   const navbarRef = useRef(null);
 
   const handleLinkClick = () => {
     if (window.innerWidth <= 991.98) {
       setExpanded(false);
+      setTogglerClicked(false);
     }
   };
 
   const handleContactClick = () => {
     if (window.innerWidth <= 991.98) {
       setExpanded(false);
+      setTogglerClicked(false);
     }
+  };
+
+  const handleTogglerClick = () => {
+    setTogglerClicked(!togglerClicked);
   };
 
   useEffect(() => {
@@ -49,6 +53,7 @@ const NavigationBar = () => {
         expanded
       ) {
         setExpanded(false);
+        setTogglerClicked(false);
       }
     };
 
@@ -67,22 +72,15 @@ const NavigationBar = () => {
         onToggle={setExpanded}
         ref={navbarRef}
       >
-        {/* <Navbar.Brand className="navbar-brand" href="#home">
-          TETRA
+        <Navbar.Brand className="navbar-brand" href="#home">
+          
         </Navbar.Brand>
-        <Toggle /> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="tog" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleTogglerClick} className={`${togglerClicked ? 'collapsed' : ''} tog`} />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="custom-nav justify-content-center">
             <Nav.Link href="#header" onClick={handleLinkClick} off>
               Home
             </Nav.Link>
-            {/* <Nav.Link href="#services" onClick={handleLinkClick}>
-              Services
-            </Nav.Link> */}
-            {/* <Nav.Link href="#Experience" onClick={handleLinkClick}>
-              Experience
-            </Nav.Link> */}
             <Nav.Link href="#skills" onClick={handleLinkClick}>
               Skills
             </Nav.Link>
@@ -92,7 +90,6 @@ const NavigationBar = () => {
             <Nav.Link href="#blog" onClick={handleLinkClick}>
               Blogs
             </Nav.Link>
-            
           </Nav>
           <Nav.Link href="#contact">
             <button className="button n-button" onClick={handleContactClick}>
