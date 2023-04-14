@@ -94,6 +94,7 @@
     margin-bottom: -0.5rem;
     margin-left: -20px;
     width: 117%;
+
     margin-top: 1rem;
   }
   .left-section {
@@ -143,7 +144,11 @@
     margin-top: 3rem;
   }
   .left-section {
-    margin-left: 1rem;
+    margin-left: -13rem;
+  }
+  .right-section {
+    margin-left: 25rem;
+
   }
   .footer {
     flex-direction: column;

@@ -57,6 +57,9 @@
   border: none;
   background: none;
 }
+.navbar-toggler-icon{
+  margin-left: -18px;
+}
 
 @media screen and (max-width: 991.98px) {
   .custom-navbar {
@@ -67,7 +70,7 @@
     right: 0rem;
     width: max-content;
     border-radius: 0px 0px 0px 20px;
-    padding: 0px 17px 0px 0px;
+    padding: 0px 6px 0px 8px;
     box-shadow: none;
   }
   /* .navbar-brand {
