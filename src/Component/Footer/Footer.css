@@ -55,7 +55,7 @@
   color: #e1306c;
 }
 .social-link a:hover .fa-github {
-  color: #333;
+  color: white;
 }
 .social-link a:hover .social-icon {
   animation: bounce 0.5s ease-in-out;

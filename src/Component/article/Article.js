@@ -33,7 +33,7 @@ const BlogSection = () => {
                 <a
                   href="https://codemindiq.blogspot.com/2023/04/introduction-modern-ai-language-model.html"
                   className="button"
-                  style={{ textDecoration: "none", marginTop:"1rem" }}
+                  style={{ textDecoration: "none", marginTop:"2.4rem" }}
                   rel="noreferrer"
                   target="_blank"
                 >

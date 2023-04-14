@@ -67,6 +67,8 @@ export const Skills = () => {
                 <img src={Html} alt="" />
                 <img src={css} alt="" />
                 <img src={js} alt="" />
+
+                
                 <img src={python} alt="" />
               </div> */}
               <Carousel

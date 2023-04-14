@@ -31,6 +31,7 @@ const Intro = () => {
     { name: "TypeScript", url: "#" },
     { name: "REST", url: "#" },
     { name: "JSON", url: "#" },
+    { name: "ES6", url: "#" },
     { name: "GSAP", url: "#" },
     { name: "Data Science", url: "#" },
     { name: "Wordpress", url: "#" },
@@ -38,11 +39,13 @@ const Intro = () => {
     { name: "Python", url: "#" },
     { name: "Node JS", url: "#" },
     { name: "Git", url: "#" },
-    { name: "_lodash", url: "#" },
+    { name: "JavaScript", url: "#" },
     { name: "SASS", url: "#" },
+    { name: "MongoDB", url: "#" },
     { name: "JQuery", url: "#" },
     { name: "SQI", url: "#" },
-    { name: "Gulp", url: "#" },
+    { name: "Python", url: "#" },
+
     { name: "npm", url: "#" },
     { name: "IoT", url: "#" },
     { name: "Yarn", url: "#" },
@@ -130,7 +133,7 @@ const Intro = () => {
                   </a>
                 </div>
               </li>
-           
+
               <li className="contact-item">
                 <div className="icon-box">
                   <a

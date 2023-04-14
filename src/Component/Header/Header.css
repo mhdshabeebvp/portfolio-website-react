@@ -64,9 +64,9 @@
     bottom: auto;
     top: 0;
     left: auto;
-    right: -1rem;
+    right: 0rem;
     width: max-content;
-    border-radius: 0 20px;
+    border-radius: 0px 0px 0px 20px;
     padding: 0px 17px 0px 0px;
     box-shadow: none;
   }
