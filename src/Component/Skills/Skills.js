@@ -45,7 +45,7 @@ export const Skills = () => {
   const darkMode = theme.state.darkMode;
   return (
     <section className="skill" id="skills">
-      <div className="container">
+      <div className="container-fluid ">
         <div className="row">
           <div className="col-12">
             <div

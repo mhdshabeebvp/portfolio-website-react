@@ -2,7 +2,6 @@
   padding: 0 0 50px 0;
   position: relative;
   margin-top: 100px;
- 
 }
 .skill-bx {
   background: var(--eerie-black-2);
@@ -14,7 +13,6 @@
   margin-top: -60px;
   width: 100%;
   box-shadow: var(--shadow-1);
-
 }
 .skill h2 {
   font-size: 45px;
