@@ -1,8 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "../../Component/Project/ProjectCard";
-import projImg1 from "../../img/img2/project-img1.png";
-import projImg2 from "../../img/img2/project-img2.png";
-import projImg3 from "../../img/img2/project-img3.png";
+import movie from "../../img/img2/movie.png";
+// import projImg3 from "../../img/img2/project-img3.png";
 import colorSharp2 from "../../img/img2/color-sharp2.png";
 import "animation.css";
 import "./Projects.css";
@@ -40,9 +39,10 @@ export const Projects = () => {
       imgUrl: project3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Movie Application",
+      description:
+        " a React.js web application specializing in rapid and accurate movie searches. The application connects seamlessly to a Movie API, delivering real-time results to users.",
+      imgUrl: movie,
     },
     // {
     //   title: "Business Startup",
@@ -117,11 +117,11 @@ export const Projects = () => {
       imgUrl: lp4,
     },
 
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
   ];
   return (
     <section className="project" id="projects">
@@ -188,8 +188,8 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Portfolio project section showcases my upcoming
-                          fully functional website. It describes its purpose,
+                          Portfolio project section showcases my upcoming fully
+                          functional website. It describes its purpose,
                           features, and goals, as well as the technologies used
                           to develop it, highlighting my technical skills.
                         </p>
