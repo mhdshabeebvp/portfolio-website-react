@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio-website-react/static/css/main.9bbdcd3a.css",
-    "main.js": "/portfolio-website-react/static/js/main.91169118.js",
+    "main.js": "/portfolio-website-react/static/js/main.b96bd23b.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
+    "static/media/movie.png": "/portfolio-website-react/static/media/movie.d39410a11d0a74f271ff.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
     "static/media/mongodb.png": "/portfolio-website-react/static/media/mongodb.6170bacefd8a1f69ca74.png",
@@ -14,15 +15,12 @@
     "static/media/cb.jpg": "/portfolio-website-react/static/media/cb.d8df356ca59eed8421a9.jpg",
     "static/media/techAssistaP.png": "/portfolio-website-react/static/media/techAssistaP.58498a518e1d15a5a976.png",
     "static/media/bt.png": "/portfolio-website-react/static/media/bt.c5b2fc44d37fd3864947.png",
-    "static/media/project-img1.png": "/portfolio-website-react/static/media/project-img1.d593db3f12901bc685c2.png",
     "static/media/mvg.jpg": "/portfolio-website-react/static/media/mvg.42cfd7c6de0fbb136ca6.jpg",
-    "static/media/project-img2.png": "/portfolio-website-react/static/media/project-img2.2e52097c417f9f1134b0.png",
     "static/media/humenf.jpg": "/portfolio-website-react/static/media/humenf.798bd07cf552b0e35cd7.jpg",
     "static/media/skills2023.jpg": "/portfolio-website-react/static/media/skills2023.07c7c1a07aea2bc427c7.jpg",
     "static/media/project3.png": "/portfolio-website-react/static/media/project3.d2c8b25dfc19d24a7661.png",
     "static/media/gpt3.webp": "/portfolio-website-react/static/media/gpt3.45eb4f56d9bc5f4bee04.webp",
     "static/media/iot1.png": "/portfolio-website-react/static/media/iot1.82aa2e3b3ec5e7e88b15.png",
-    "static/media/project-img3.png": "/portfolio-website-react/static/media/project-img3.675b30d2f975a1bc1d09.png",
     "static/media/project2.jpg": "/portfolio-website-react/static/media/project2.78c50bd16db900dba553.jpg",
     "static/media/linefollower.webp": "/portfolio-website-react/static/media/linefollower.ae6992bbe5f1638e45e6.webp",
     "static/media/CNC.jpg": "/portfolio-website-react/static/media/CNC.83d63b03ffbee3a451ec.jpg",
@@ -39,10 +37,10 @@
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
     "main.9bbdcd3a.css.map": "/portfolio-website-react/static/css/main.9bbdcd3a.css.map",
-    "main.91169118.js.map": "/portfolio-website-react/static/js/main.91169118.js.map"
+    "main.b96bd23b.js.map": "/portfolio-website-react/static/js/main.b96bd23b.js.map"
   },
   "entrypoints": [
     "static/css/main.9bbdcd3a.css",
-    "static/js/main.91169118.js"
+    "static/js/main.b96bd23b.js"
   ]
 }
