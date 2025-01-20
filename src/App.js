@@ -1,6 +1,6 @@
 import "./App.css";
 import Intro from "./Component/Intro/Intro";
-import Services from "./Component/Services/Services";
+// import Services from "./Component/Services/Services";
 // import { themeContext } from "./Context";
 // import { useContext } from "react";
 import { Skills } from "./Component/Skills/Skills";
@@ -10,6 +10,7 @@ import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 // import ParallaxSections from "./Component/Blogs/Blogs";
 import BlogSection from "./Component/article/Article";
+import Certificates from "./Component/Certificates/Certificates";
 // import { Router } from "react-bootstrap-icons";
 
 
@@ -27,13 +28,13 @@ function App() {
     >
       <Header />
       <Intro />
-      <Services />
+      {/* <Services /> */}
       <Skills />
       <Projects />
       {/* <ParallaxSections /> */}
+      <Certificates />
       <BlogSection />
       <Contact />
-      
       <Footer />
     </div>
   );
