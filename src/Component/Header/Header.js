@@ -3,7 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { themeContext } from "../../Context";
 import "./Header.css";
 import "../../App.css";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 
 const NavigationBar = () => {
   const theme = useContext(themeContext);

@@ -27,7 +27,7 @@ const Footer = () => {
       }
     );
     observer.observe(footerRef.current);
-    return () => observer.unobserve(footerRef.current);
+    return () => observer.unobserve(footerRef.currentFooter);
   }, []);
 
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
           </li>
 
           <li className="social-link">
-            <a href="#">
+            <a href="social-link">
               <FontAwesomeIcon icon={faTwitter} className="social-icon" />
             </a>
           </li>
@@ -61,7 +61,7 @@ const Footer = () => {
           </li>
 
           <li className="social-link">
-            <a href="#">
+            <a href="social-link">
               <FontAwesomeIcon icon={faYoutube} className="social-icon" />
             </a>
           </li>

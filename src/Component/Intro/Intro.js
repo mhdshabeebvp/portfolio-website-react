@@ -67,14 +67,14 @@ const Intro = () => {
     if (canvas && typeof TagCanvas !== "undefined") {
       TagCanvas.Start("myCanvas", "tags", options);
     }
-  }, [canvasRef]);
+  }, [canvasRef, darkMode]);
 
   return (
     <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
-          <span>Muhammd Shabeeb</span>
+          <span>Muhammd Shabeeb vp(test)</span>
           <span>
             With a strong passion for technology and programming. I am skilled
             in several programming languages, including PYTHON, JAVASCRIPT,
