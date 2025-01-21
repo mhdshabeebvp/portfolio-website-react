@@ -13,23 +13,24 @@ const Footer = () => {
   const footerRef = useRef(null);
 
   useEffect(() => {
+    const currentFooterRef = footerRef.current; // Store the reference in a local variable
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          footerRef.current.classList.add("animate");
+          currentFooterRef.classList.add("animate");
         } else {
-          footerRef.current.classList.remove("animate");
+          currentFooterRef.classList.remove("animate");
         }
       },
       {
         threshold: 0.5,
       }
     );
-    observer.observe(footerRef.current);
-    return () => observer.unobserve(footerRef.current);
+    observer.observe(currentFooterRef);
+  
+    return () => observer.unobserve(currentFooterRef); // Cleanup with the stored variable
   }, []);
-
   return (
     <footer className="footer" ref={footerRef}>
       <div className="left-section">
@@ -50,7 +51,7 @@ const Footer = () => {
           </li>
 
           <li className="social-link">
-            <a href="#">
+            <a href="social-link">
               <FontAwesomeIcon icon={faTwitter} className="social-icon" />
             </a>
           </li>
@@ -61,7 +62,7 @@ const Footer = () => {
           </li>
 
           <li className="social-link">
-            <a href="#">
+            <a href="social-link">
               <FontAwesomeIcon icon={faYoutube} className="social-icon" />
             </a>
           </li>

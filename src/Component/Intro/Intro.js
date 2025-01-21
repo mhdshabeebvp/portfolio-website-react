@@ -67,8 +67,7 @@ const Intro = () => {
     if (canvas && typeof TagCanvas !== "undefined") {
       TagCanvas.Start("myCanvas", "tags", options);
     }
-  }, [canvasRef]);
-
+  }, [canvasRef, darkMode]);
   return (
     <div className="intro" id="Intro">
       <div className="i-left">
