@@ -1,0 +1,77 @@
+#blog {
+  background: var(--eerie-black-2);
+  margin-top: 5rem;
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  overflow-y: scroll;
+  height: 38rem;
+}
+
+.card{
+  border: 1px solid var(--jet);
+}
+/* Define the animation keyframes */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+/* Apply the animation to an element */
+.element {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  transition: all 0.3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.element:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-body {
+  background: var(--eerie-black-2);
+  height: 12rem;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  color: var(--light-gray);
+  border-radius: 0 0 10px 10px;
+
+}
+#Blog-heading{
+  color: var(--white-2);
+}
+.Date{
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+.Bimg{
+  height: 13rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Bparagraph{
+  
+}
+@media (min-width: 768px) {
+  .card-deck {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card-deck .card {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+  }
+  .card-deck .card:last-of-type {
+    margin-right: 0;
+  }
+  
+}
