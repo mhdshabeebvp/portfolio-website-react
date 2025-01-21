@@ -8,7 +8,7 @@
   height: 38rem;
 }
 
-.card{
+.card {
   border: 1px solid var(--jet);
 }
 /* Define the animation keyframes */
@@ -35,28 +35,36 @@
 }
 .card-body {
   background: var(--eerie-black-2);
-  height: 12rem;
+  height: 13.5rem;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
   color: var(--light-gray);
-  border-radius: 0 0 10px 10px;
-
+  border-radius: 0 0 11px 10px;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Distribute space evenly */
 }
-#Blog-heading{
+#Blog-heading {
+  font-size: 45px;
+  font-weight: 700;
   color: var(--white-2);
+  text-transform: capitalize;
 }
-.Date{
+.Date {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
-.Bimg{
+.Bimg {
   height: 13rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#Bparagraph{
-  
+#Bparagraph {
+}
+.card-body h5, /* Issue Date */
+.card-body .button {
+  margin-top: auto; /* Ensure the button stays at the bottom */
 }
 @media (min-width: 768px) {
   .card-deck {
@@ -73,5 +81,4 @@
   .card-deck .card:last-of-type {
     margin-right: 0;
   }
-  
 }

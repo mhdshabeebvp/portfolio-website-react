@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./Certificates.css";
-import gpt3 from "../../img/gpt3.webp";
-import job from "../../img/job.png";
-import gpt4 from "../../img/gpt4.jpg";
-import cb from "../../img/cb.jpg";
+import yip from "../../img/certificates/yip.jpg";
+import google from "../../img/certificates/google.jpg";
+import isro from "../../img/certificates/isro.jpg";
 import skill2023 from "../../img/skills2023.jpg";
 
 const BlogSection = () => {
@@ -17,145 +16,95 @@ const BlogSection = () => {
         <Row>
           <Col lg={4} md={6} className="mb-4">
             <Card>
-              <Card.Img className="Bimg" variant="top" src={gpt3} />
+              <Card.Img className="Bimg" variant="top" src={yip} />
               <Card.Body>
                 <h5 className="text-left Date">
                   {" "}
-                  Design &#x2022; April 9 2023{" "}
+                  Issue Date: April 9, 2023{" "}
                 </h5>
-                <Card.Title>Revolutionizing Communication:The ChatGpt3</Card.Title>
-                {/* <Card.Text id="Bparagraph">
-                  GPT-3 has limitations including biases learned from data and
-                  high energy consumption from requiring significant computing
-                  power.
-                  
-                </Card.Text> */}
-                <a
-                  href="https://codemindiq.blogspot.com/2023/04/introduction-modern-ai-language-model.html"
-                  className="button"
-                  style={{ textDecoration: "none", marginTop:"2.4rem" }}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Read More
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={4} md={6} className="mb-4">
-            <Card>
-              <Card.Img className="Bimg" variant="top" src={job} />
-              <Card.Body>
+                <Card.Title>
+                  YOUNG INNOVATION PROGRMME (YIP)[Distric level winner]
+                </Card.Title>
                 <h5 className="text-left Date">
                   {" "}
-                  Design &#x2022; April 9 2023{" "}
+                  Kerala Development and Innovation Strategic Council{" "}
                 </h5>
 
-                <Card.Title>
-                Which Jobs Are at Risk of Automation and How to Prepare for It
-                </Card.Title>
                 {/* <Card.Text>
                   Continuous learning and alignment with values lead to
                   fulfilling careers and job security in 2023.
                 </Card.Text> */}
                 <a
-                  href="https://codemindiq.blogspot.com/2023/04/the-future-of-work-which-jobs-are-at.html"
-                  className="button"
-                  style={{ textDecoration: "none" , marginTop:"1rem" }}
+                  href={yip} className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Read More
+                  Credential
                 </a>
               </Card.Body>
             </Card>
           </Col>
           <Col lg={4} md={6} className="mb-4">
             <Card>
-              <Card.Img className="Bimg" variant="top" src={skill2023} />
+              <Card.Img className="Bimg" variant="top" src={google} />
               <Card.Body>
                 <h5 className="text-left Date">
                   {" "}
-                  Design &#x2022; April 10 2023{" "}
+                  Issue Date: January 27, 2023
+                  {" "}
+                </h5>
+                <Card.Title>
+                  CRASH COURSE IN PYTHON
+                  [Course Certificate]
+                </Card.Title>
+
+                <h5 className="text-left Date">
+                  Google
                 </h5>
 
-                <Card.Title>
-                  The Most Lucrative High-Paid Skills for 2023
-                </Card.Title>
-                {/* <Card.Text>
-                  Continuous learning and alignment with values lead to
-                  fulfilling careers and job security in 2023.
-                </Card.Text> */}
                 <a
-                  href="https://codemindiq.blogspot.com/2023/04/the-skills-that-pay-bills-most.html"
+                  href="https://www.coursera.org/account/accomplishments/verify/8D6KG4KV928C"
                   className="button"
-                  style={{ textDecoration: "none" , marginTop:"2.5rem" }}
+                  style={{ textDecoration: "none", marginTop: "auto" }}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Read More
+                  Credential
                 </a>
               </Card.Body>
             </Card>
           </Col>
           <Col lg={4} md={6} className="mb-4">
             <Card>
-              <Card.Img className="Bimg" variant="top" src={gpt4} />
+              <Card.Img className="Bimg" variant="top" src={isro} />
               <Card.Body>
                 <h5 className="text-left Date">
                   {" "}
-                  Design &#x2022; April 10 2023{" "}
+                  Issue Date: December 03, 2020
+                  {" "}
+                </h5>
+                <Card.Title>
+                  ISRO ( Global Navigation Satellite System )
+                </Card.Title>
+                <h5 className="text-left Date">
+                  Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO)
+
                 </h5>
 
-                <Card.Title>
-                  GPT-4: Advanced Language Processing Benefits
-                </Card.Title>
-                {/* <Card.Text>
-                  AI advances enhance communication, creativity, and
-                  problem-solving, with ethical considerations.
-                </Card.Text> */}
                 <a
-                  href="https://codemindiq.blogspot.com/2023/04/unleashing-power-of-natural-language.html"
+                  href={isro}
                   className="button"
-                  style={{ textDecoration: "none",marginTop:"1rem"  }}
+                  style={{ textDecoration: "none", marginTop: "auto" }}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Read More
+                  Credential
                 </a>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={4} md={6} className="mb-4">
-            <Card>
-              <Card.Img className="Bimg" variant="top" src={cb} />
-              <Card.Body>
-                <h5 className="text-left Date">
-                  {" "}
-                  Design &#x2022; April 10 2023{" "}
-                </h5>
 
-                <Card.Title>
-                  ChatGPT vs BART: A Battle of AI Chatbot Titans
-                </Card.Title>
-                {/* <Card.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  auctor, libero vel tincidunt tristique, ipsum nulla cursus
-                  dui, in bibendum ex eros id mi.
-                </Card.Text> */}
-                <a
-                  href="https://codemindiq.blogspot.com/2023/04/chatgpt-vs-bart-comparison-of-two.html"
-                  className="button"
-                  style={{ textDecoration: "none" ,marginTop:"1rem"}}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Read More
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-          
         </Row>
       </Container>
     </section>
