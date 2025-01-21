@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website-react/static/css/main.9bbdcd3a.css",
-    "main.js": "/portfolio-website-react/static/js/main.66e9c46d.js",
+    "main.css": "/portfolio-website-react/static/css/main.70efaf24.css",
+    "main.js": "/portfolio-website-react/static/js/main.207cec7e.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
@@ -11,7 +11,10 @@
     "static/media/lp3.png": "/portfolio-website-react/static/media/lp3.e123d5d549d903e976a7.png",
     "static/media/lp2.png": "/portfolio-website-react/static/media/lp2.b82815dcfbb02a957116.png",
     "static/media/Resume.pdf": "/portfolio-website-react/static/media/Resume.f150515e2fe975d67531.pdf",
+    "static/media/yip.jpg": "/portfolio-website-react/static/media/yip.c0c4c7d6b3bde135bb80.jpg",
+    "static/media/isro.jpg": "/portfolio-website-react/static/media/isro.c6441eef7a627f8be5d0.jpg",
     "static/media/cb.jpg": "/portfolio-website-react/static/media/cb.d8df356ca59eed8421a9.jpg",
+    "static/media/google.jpg": "/portfolio-website-react/static/media/google.952ad6401e2a09d91024.jpg",
     "static/media/techAssistaP.png": "/portfolio-website-react/static/media/techAssistaP.58498a518e1d15a5a976.png",
     "static/media/bt.png": "/portfolio-website-react/static/media/bt.c5b2fc44d37fd3864947.png",
     "static/media/project-img1.png": "/portfolio-website-react/static/media/project-img1.d593db3f12901bc685c2.png",
@@ -37,11 +40,11 @@
     "index.html": "/portfolio-website-react/index.html",
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
-    "main.9bbdcd3a.css.map": "/portfolio-website-react/static/css/main.9bbdcd3a.css.map",
-    "main.66e9c46d.js.map": "/portfolio-website-react/static/js/main.66e9c46d.js.map"
+    "main.70efaf24.css.map": "/portfolio-website-react/static/css/main.70efaf24.css.map",
+    "main.207cec7e.js.map": "/portfolio-website-react/static/js/main.207cec7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bbdcd3a.css",
-    "static/js/main.66e9c46d.js"
+    "static/css/main.70efaf24.css",
+    "static/js/main.207cec7e.js"
   ]
 }
