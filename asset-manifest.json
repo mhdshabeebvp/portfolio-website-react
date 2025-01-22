@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website-react/static/css/main.70efaf24.css",
-    "main.js": "/portfolio-website-react/static/js/main.f43a4cc3.js",
+    "main.css": "/portfolio-website-react/static/css/main.2b3c14b6.css",
+    "main.js": "/portfolio-website-react/static/js/main.6bfd8cb8.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
@@ -11,16 +11,32 @@
     "static/media/lp3.png": "/portfolio-website-react/static/media/lp3.e123d5d549d903e976a7.png",
     "static/media/lp2.png": "/portfolio-website-react/static/media/lp2.b82815dcfbb02a957116.png",
     "static/media/Resume.pdf": "/portfolio-website-react/static/media/Resume.f150515e2fe975d67531.pdf",
+    "static/media/ieee2.jpg": "/portfolio-website-react/static/media/ieee2.f5d0ec4248fceb0baf2b.jpg",
+    "static/media/right1.jpg": "/portfolio-website-react/static/media/right1.d8f98411447d3d24c8f5.jpg",
     "static/media/yip.jpg": "/portfolio-website-react/static/media/yip.c0c4c7d6b3bde135bb80.jpg",
+    "static/media/google2.jpg": "/portfolio-website-react/static/media/google2.baea70f0db920ff4d906.jpg",
+    "static/media/center2.jpg": "/portfolio-website-react/static/media/center2.6d670a94b0a3d47c9dc6.jpg",
+    "static/media/right2.jpg": "/portfolio-website-react/static/media/right2.011f9d066f021bb4e428.jpg",
+    "static/media/sports1.jpg": "/portfolio-website-react/static/media/sports1.c62b2166a796f9a122f4.jpg",
+    "static/media/university.jpg": "/portfolio-website-react/static/media/university.f048edd81795b4addb2c.jpg",
     "static/media/isro.jpg": "/portfolio-website-react/static/media/isro.c6441eef7a627f8be5d0.jpg",
+    "static/media/nss2.jpg": "/portfolio-website-react/static/media/nss2.c73f1450bb121d2ae6ae.jpg",
     "static/media/iit.jpg": "/portfolio-website-react/static/media/iit.1226e4cbc52a84c4ac29.jpg",
+    "static/media/kel.jpg": "/portfolio-website-react/static/media/kel.b076fe34615b892e357f.jpg",
+    "static/media/nss1.jpg": "/portfolio-website-react/static/media/nss1.71760301e7d38028ef85.jpg",
+    "static/media/udemy2.jpg": "/portfolio-website-react/static/media/udemy2.a11fd5db7929f0239b6e.jpg",
     "static/media/aicte.jpg": "/portfolio-website-react/static/media/aicte.e1641880bf760adbb7ed.jpg",
+    "static/media/center3.jpg": "/portfolio-website-react/static/media/center3.0484443d1ad822dd2e14.jpg",
+    "static/media/ieee1.jpg": "/portfolio-website-react/static/media/ieee1.12b7e8edcf80d6c83a18.jpg",
     "static/media/national3.jpg": "/portfolio-website-react/static/media/national3.38b210d4efb4de2e0869.jpg",
     "static/media/iit1.jpg": "/portfolio-website-react/static/media/iit1.4f826928e3439e87611e.jpg",
+    "static/media/udemy1.jpg": "/portfolio-website-react/static/media/udemy1.9ba6dc2891689e092ddd.jpg",
+    "static/media/center.jpg": "/portfolio-website-react/static/media/center.375951247adc8d5f6153.jpg",
     "static/media/national2.jpg": "/portfolio-website-react/static/media/national2.5bab9e260af3c78e994c.jpg",
     "static/media/cb.jpg": "/portfolio-website-react/static/media/cb.d8df356ca59eed8421a9.jpg",
     "static/media/national1.jpg": "/portfolio-website-react/static/media/national1.5dc9d19d50e89e1c06e5.jpg",
     "static/media/google.jpg": "/portfolio-website-react/static/media/google.952ad6401e2a09d91024.jpg",
+    "static/media/iginite.jpg": "/portfolio-website-react/static/media/iginite.b77f2b8a7a98ff68709b.jpg",
     "static/media/techAssistaP.png": "/portfolio-website-react/static/media/techAssistaP.58498a518e1d15a5a976.png",
     "static/media/bt.png": "/portfolio-website-react/static/media/bt.c5b2fc44d37fd3864947.png",
     "static/media/project-img1.png": "/portfolio-website-react/static/media/project-img1.d593db3f12901bc685c2.png",
@@ -46,11 +62,11 @@
     "index.html": "/portfolio-website-react/index.html",
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
-    "main.70efaf24.css.map": "/portfolio-website-react/static/css/main.70efaf24.css.map",
-    "main.f43a4cc3.js.map": "/portfolio-website-react/static/js/main.f43a4cc3.js.map"
+    "main.2b3c14b6.css.map": "/portfolio-website-react/static/css/main.2b3c14b6.css.map",
+    "main.6bfd8cb8.js.map": "/portfolio-website-react/static/js/main.6bfd8cb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.70efaf24.css",
-    "static/js/main.f43a4cc3.js"
+    "static/css/main.2b3c14b6.css",
+    "static/js/main.6bfd8cb8.js"
   ]
 }
