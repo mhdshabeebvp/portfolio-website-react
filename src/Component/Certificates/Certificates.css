@@ -1,4 +1,4 @@
-#blog {
+#Certificate {
   background: var(--eerie-black-2);
   margin-top: 5rem;
   border-radius: 20px;
@@ -44,7 +44,7 @@
   flex-direction: column; /* Stack items vertically */
   justify-content: space-between; /* Distribute space evenly */
 }
-#Blog-heading {
+#Certificate-heading {
   font-size: 45px;
   font-weight: 700;
   color: var(--white-2);

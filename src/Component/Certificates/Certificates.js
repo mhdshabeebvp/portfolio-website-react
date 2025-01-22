@@ -13,11 +13,11 @@ import iit1 from "../../img/certificates/iit1.jpg";
 import aicte from "../../img/certificates/aicte.jpg";
 
 
-const BlogSection = () => {
+const CertificateSection = () => {
   return (
-    <section id="blog" className="py-5" >
+    <section id="Certificate" className="py-5" >
       <Container>
-        <h2 className="text-center mb-5" id="Blog-heading">
+        <h2 className="text-center mb-5" id="Certificate-heading">
           Certificates
         </h2>
         <Row>
@@ -308,4 +308,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default CertificateSection;

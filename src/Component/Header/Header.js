@@ -73,7 +73,7 @@ const NavigationBar = () => {
         ref={navbarRef}
       >
         <Navbar.Brand className="navbar-brand" href="#home">
-          
+
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleTogglerClick} className={`${togglerClicked ? 'collapsed' : ''} tog`} />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -86,6 +86,9 @@ const NavigationBar = () => {
             </Nav.Link>
             <Nav.Link href="#projects" onClick={handleLinkClick}>
               Projects
+            </Nav.Link>
+            <Nav.Link href="#Certificate" onClick={handleLinkClick}>
+              Certificates
             </Nav.Link>
             <Nav.Link href="#blog" onClick={handleLinkClick}>
               Blogs
