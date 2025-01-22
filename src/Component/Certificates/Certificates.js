@@ -18,6 +18,18 @@ import iginite from "../../img/certificates/iginite.jpg";
 import ieee1 from "../../img/certificates/ieee1.jpg";
 import ieee2 from "../../img/certificates/ieee2.jpg";
 
+
+import right1 from "../../img/certificates/right1.jpg";
+import right2 from "../../img/certificates/right2.jpg";
+import google2 from "../../img/certificates/google2.jpg";
+import kel from "../../img/certificates/kel.jpg";
+import university from "../../img/certificates/university.jpg";
+import udemy1 from "../../img/certificates/udemy1.jpg";
+import udemy2 from "../../img/certificates/udemy2.jpg";
+import nss1 from "../../img/certificates/nss1.jpg";
+import nss2 from "../../img/certificates/nss2.jpg";
+import sports1 from "../../img/certificates/sports1.jpg";
+
 const CertificateSection = () => {
   return (
     <section id="Certificate" className="py-5">
@@ -399,6 +411,208 @@ const CertificateSection = () => {
 
                 <a
                   href={ieee1}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={right1} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: July 7, 2023 </h5>
+                <Card.Title>Python FullStack with Data Science</Card.Title>
+                <h5 className="text-left Date">Right soft Options, Kochi</h5>
+
+                <a
+                  href={right1}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={right2} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: July 7, 2023 </h5>
+                <Card.Title> Internship in Python FullStack with Data Science</Card.Title>
+                <h5 className="text-left Date">Right soft Options, Kochi</h5>
+
+                <a
+                  href={right2}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={kel} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: July 25, 2018 </h5>
+                <Card.Title> Internship Training [Electrical & Electronics Engineering]</Card.Title>
+                <h5 className="text-left Date">Kerala Electrical & Allied Engineering CO.LTD</h5>
+
+                <a
+                  href={kel}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={university} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: July 5, 2020</h5>
+                <Card.Title> National Level Online Quiz [Digital Electronics]</Card.Title>
+                <h5 className="text-left Date">Kerala Electrical & Allied Engineering CO.LTD</h5>
+
+                <a
+                  href={university}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={google2} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: August 7, 2018</h5>
+                <Card.Title>Google Adwords Fundamentals</Card.Title>
+                <h5 className="text-left Date">Google</h5>
+
+                <a
+                  href={google2}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={udemy1} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: February 24, 2019</h5>
+                <Card.Title> Certificate for Completion [Basics of Electronics]</Card.Title>
+                <h5 className="text-left Date">Udemy</h5>
+
+                <a
+                  href={udemy1}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={udemy2} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: December 5, 2018</h5>
+                <Card.Title> Certificate for Completion [Iot(Internet of Things) automation with ESP8266]</Card.Title>
+                <h5 className="text-left Date">Udemy</h5>
+
+                <a
+                  href={udemy2}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={nss1} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: September, 2018</h5>
+                <Card.Title> POST FLOOD REHABILITATION PROGRAMME</Card.Title>
+                <h5 className="text-left Date">Government of Kerala</h5>
+
+                <a
+                  href={nss1}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={nss2} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: September 14, 2018</h5>
+                <Card.Title> POST FLOOD REHABILITATIONS SURVEY</Card.Title>
+                <h5 className="text-left Date">NSS- Mes Collage of Engineering Kuttippuram</h5>
+
+                <a
+                  href={nss2}
+                  className="button"
+                  style={{ textDecoration: "none", marginTop: "auto" }}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Credential
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col lg={4} md={6} className="mb-4">
+            <Card>
+              <Card.Img className="Bimg" variant="top" src={sports1} />
+              <Card.Body>
+                <h5 className="text-left Date"> Issue Date: August 06, 2011</h5>
+                <Card.Title> District Level Softball Competition</Card.Title>
+                <h5 className="text-left Date">Malappuram District Softball Association </h5>
+
+                <a
+                  href={sports1}
                   className="button"
                   style={{ textDecoration: "none", marginTop: "auto" }}
                   rel="noreferrer"
