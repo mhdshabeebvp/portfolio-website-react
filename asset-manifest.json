@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website-react/static/css/main.70efaf24.css",
-    "main.js": "/portfolio-website-react/static/js/main.207cec7e.js",
+    "main.js": "/portfolio-website-react/static/js/main.f43a4cc3.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
@@ -13,7 +13,13 @@
     "static/media/Resume.pdf": "/portfolio-website-react/static/media/Resume.f150515e2fe975d67531.pdf",
     "static/media/yip.jpg": "/portfolio-website-react/static/media/yip.c0c4c7d6b3bde135bb80.jpg",
     "static/media/isro.jpg": "/portfolio-website-react/static/media/isro.c6441eef7a627f8be5d0.jpg",
+    "static/media/iit.jpg": "/portfolio-website-react/static/media/iit.1226e4cbc52a84c4ac29.jpg",
+    "static/media/aicte.jpg": "/portfolio-website-react/static/media/aicte.e1641880bf760adbb7ed.jpg",
+    "static/media/national3.jpg": "/portfolio-website-react/static/media/national3.38b210d4efb4de2e0869.jpg",
+    "static/media/iit1.jpg": "/portfolio-website-react/static/media/iit1.4f826928e3439e87611e.jpg",
+    "static/media/national2.jpg": "/portfolio-website-react/static/media/national2.5bab9e260af3c78e994c.jpg",
     "static/media/cb.jpg": "/portfolio-website-react/static/media/cb.d8df356ca59eed8421a9.jpg",
+    "static/media/national1.jpg": "/portfolio-website-react/static/media/national1.5dc9d19d50e89e1c06e5.jpg",
     "static/media/google.jpg": "/portfolio-website-react/static/media/google.952ad6401e2a09d91024.jpg",
     "static/media/techAssistaP.png": "/portfolio-website-react/static/media/techAssistaP.58498a518e1d15a5a976.png",
     "static/media/bt.png": "/portfolio-website-react/static/media/bt.c5b2fc44d37fd3864947.png",
@@ -41,10 +47,10 @@
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
     "main.70efaf24.css.map": "/portfolio-website-react/static/css/main.70efaf24.css.map",
-    "main.207cec7e.js.map": "/portfolio-website-react/static/js/main.207cec7e.js.map"
+    "main.f43a4cc3.js.map": "/portfolio-website-react/static/js/main.f43a4cc3.js.map"
   },
   "entrypoints": [
     "static/css/main.70efaf24.css",
-    "static/js/main.207cec7e.js"
+    "static/js/main.f43a4cc3.js"
   ]
 }
