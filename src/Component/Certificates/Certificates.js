@@ -34,8 +34,8 @@ const CertificateSection = () => {
   return (
     <section id="Certificate" className="py-5">
       <Container>
-        <h2 className="text-center mb-5" id="Certificate-heading">
-          Certificates
+        <h2 className="text-center mb-5" id="-heading">
+          CertificatesCertificate
         </h2>
         <Row>
           <Col lg={4} md={6} className="mb-4">

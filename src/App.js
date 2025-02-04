@@ -6,6 +6,8 @@ import Services from "./Component/Services/Services";
 import { Skills } from "./Component/Skills/Skills";
 import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
+import Activities from "./Component/Activities/Activities";
+
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 // import ParallaxSections from "./Component/Blogs/Blogs";
@@ -20,11 +22,11 @@ function App() {
   return (
     <div
       className="App"
-      // style section when it turn ON DarkMode
-      // style={{
-      //   background: darkMode ? "black" : "",
-      //   color: darkMode ? "white" : "",
-      // }}
+    // style section when it turn ON DarkMode
+    // style={{
+    //   background: darkMode ? "black" : "",
+    //   color: darkMode ? "white" : "",
+    // }}
     >
       <Header />
       <Intro />
@@ -32,10 +34,10 @@ function App() {
       <Skills />
       <Projects />
       <Certificates />
+      <Activities />
       {/* <ParallaxSections /> */}
       <BlogSection />
       <Contact />
-      
       <Footer />
     </div>
   );
