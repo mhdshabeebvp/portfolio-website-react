@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-website-react/static/css/main.11bbf2d7.css",
-    "main.js": "/portfolio-website-react/static/js/main.6bfd8cb8.js",
+    "main.css": "/portfolio-website-react/static/css/main.6f7dfe7a.css",
+    "main.js": "/portfolio-website-react/static/js/main.329da4ba.js",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
     "static/media/mongodb.png": "/portfolio-website-react/static/media/mongodb.6170bacefd8a1f69ca74.png",
     "static/media/lp1.png": "/portfolio-website-react/static/media/lp1.2e5ea333ae4fe660fece.png",
+    "static/media/1689792545900.jpeg": "/portfolio-website-react/static/media/1689792545900.fa01440aafd47988327d.jpeg",
     "static/media/lp4.png": "/portfolio-website-react/static/media/lp4.7463f49cd5ac603e0683.png",
     "static/media/lp3.png": "/portfolio-website-react/static/media/lp3.e123d5d549d903e976a7.png",
     "static/media/lp2.png": "/portfolio-website-react/static/media/lp2.b82815dcfbb02a957116.png",
@@ -62,11 +63,11 @@
     "index.html": "/portfolio-website-react/index.html",
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
-    "main.11bbf2d7.css.map": "/portfolio-website-react/static/css/main.11bbf2d7.css.map",
-    "main.6bfd8cb8.js.map": "/portfolio-website-react/static/js/main.6bfd8cb8.js.map"
+    "main.6f7dfe7a.css.map": "/portfolio-website-react/static/css/main.6f7dfe7a.css.map",
+    "main.329da4ba.js.map": "/portfolio-website-react/static/js/main.329da4ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.11bbf2d7.css",
-    "static/js/main.6bfd8cb8.js"
+    "static/css/main.6f7dfe7a.css",
+    "static/js/main.329da4ba.js"
   ]
 }
