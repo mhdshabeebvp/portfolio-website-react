@@ -21,6 +21,7 @@ import "../../App.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import Resume from "../../Component/Intro/Resume.pdf";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 const Intro = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -141,7 +142,7 @@ const Intro = () => {
                     rel="noreferrer"
                   >
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faX}
                       className="social-icon-s"
                     />
                   </a>

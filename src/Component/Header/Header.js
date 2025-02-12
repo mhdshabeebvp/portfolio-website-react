@@ -90,6 +90,9 @@ const NavigationBar = () => {
             <Nav.Link href="#Certificate" onClick={handleLinkClick}>
               Certificates
             </Nav.Link>
+            <Nav.Link href="#Activities" onClick={handleLinkClick}>
+              Activities
+            </Nav.Link>
             <Nav.Link href="#blog" onClick={handleLinkClick}>
               Blogs
             </Nav.Link>

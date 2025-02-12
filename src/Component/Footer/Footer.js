@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faGithub,
   faYoutube,
@@ -52,7 +52,7 @@ const Footer = () => {
 
           <li className="social-link">
             <a href="social-link">
-              <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+              <FontAwesomeIcon icon={faXTwitter} className="social-icon" />
             </a>
           </li>
           <li className="social-link">

@@ -4,8 +4,23 @@
   border-radius: 20px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
-  overflow-y: scroll;
-  height: 38rem;
+
+}
+/* Scrollbar Styling */
+.activities-section .scrollbars-track {
+  background: transparent; /* Keeps the track invisible */
+  border-radius: 10px;
+}
+
+.activities-section .scrollbars-thumb {
+  background: #ffffff; /* White scrollbar */
+  border-radius: 10px;
+  width: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.activities-section .scrollbars-thumb:hover {
+  background: #f0f0f0; /* Slightly darker white on hover */
 }
 
 .card{
