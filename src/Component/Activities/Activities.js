@@ -12,6 +12,14 @@ import cnc from "../../img/activitiesimg/cnc.jpeg";
 import farookstate from "../../img/activitiesimg/farookstate.jpeg";
 import malabar from "../../img/activitiesimg/malabar.jpg";
 
+
+import poly from "../../img/activitiesimg/polytechnic.jpeg";
+import mbot from "../../img/activitiesimg/mbot.jpeg";
+import srishti1 from "../../img/activitiesimg/srishti.jpg";
+import supra from "../../img/activitiesimg/supra.jpg";
+import fund from "../../img/activitiesimg/fund.jpeg";
+import srishtti2 from "../../img/activitiesimg/srishtti2.jpeg";
+import diksha from "../../img/activitiesimg/diksha.jpeg";
 const activities = [
     {
         title: "Robotics Class at KNM English School, Ponnani",
@@ -58,6 +66,38 @@ const activities = [
         description: " Participated in the Design & Challenge Contest at Malabar Innovation Festival 2018, hosted by the Innovation Hub (Regional Science Centre & Planetarium). Won a special prize in the Innovation Project category for a CNC machine project.",
         imgSrc: malabar,
     },
+// second
+{
+    title: "Robotics Workshop at Malabar Polytechnic College, Kadampuzha",
+    description: " Conducted a one-day robotics workshop at Malabar Polytechnic College, Kadampuzha. Engaged students with hands-on activities, fostering technical skills and encouraging innovation in robotics.",
+    imgSrc: poly,
+},
+
+{
+    title: "SRISHTI 7th National Level Technical Project Exhibition & Competition",
+    description: " Participated in the SRISHTI 7th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous). Showcased innovative technical projects and engaged with peers and industry experts.",
+    imgSrc: srishti1,
+},
+{
+    title: "Entertaining Robot for Suprabhatham Newspaper",
+    description: " Successfully designed and developed an entertaining robot for Suprabhatham, a leading Malayalam newspaper, for their marketing and advertising purposes during the Kerala School Kalolsavam. The robot was installed at their stall, effectively attracting and engaging audiences. ",
+    imgSrc: supra,
+},
+{
+    title: "College Fund for Future Projects and R&D",
+    description: "Received funding from the college, granted by Principal Dr. A. S. Varadarajan, to support future project developments and research & development (R&D) activities. This funding aims to foster innovation and enhance technical expertise.",
+    imgSrc: fund,
+},
+{
+    title: "SRISHTI 6th National Level Technical Project Exhibition & Competition",
+    description: "Participated in the SRISHTI 6th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous) in February 2019. Showcased innovative technical projects and engaged with industry experts and peers.",
+    imgSrc: srishtti2,
+},
+{
+    title: "DIKSHA'20 Project Expo – CUIET",
+    description: "Participated in the DIKSHA'20 Project Expo at Calicut University Institute of Engineering and Technology (CUIET). Presented innovative projects and engaged in knowledge-sharing with peers and industry professionals.",
+    imgSrc: diksha,
+},
 ];
 
 const Activities = () => {
