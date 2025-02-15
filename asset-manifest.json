@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-website-react/static/css/main.6f7dfe7a.css",
-    "main.js": "/portfolio-website-react/static/js/main.329da4ba.js",
+    "main.css": "/portfolio-website-react/static/css/main.ebcf89a8.css",
+    "main.js": "/portfolio-website-react/static/js/main.dde35732.js",
+    "static/media/yip.jpeg": "/portfolio-website-react/static/media/yip.c5f96644dbc08aae5b6c.jpeg",
     "static/media/job.png": "/portfolio-website-react/static/media/job.0394512f6878ab86273e.png",
+    "static/media/malabar.jpg": "/portfolio-website-react/static/media/malabar.9a99d406e404378f3eff.jpg",
+    "static/media/amup.jpeg": "/portfolio-website-react/static/media/amup.1c4c1b691ab1864d8e2f.jpeg",
     "static/media/color-sharp2.png": "/portfolio-website-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/alhuda.jpeg": "/portfolio-website-react/static/media/alhuda.3f672f9ee7f61cfbb7dc.jpeg",
+    "static/media/farookstate.jpeg": "/portfolio-website-react/static/media/farookstate.a91563f14c8873796bea.jpeg",
+    "static/media/cnc.jpeg": "/portfolio-website-react/static/media/cnc.77f49a7694bc38ec6145.jpeg",
     "static/media/gpt4.jpg": "/portfolio-website-react/static/media/gpt4.70b150d91b797e3630bd.jpg",
     "static/media/mongodb.png": "/portfolio-website-react/static/media/mongodb.6170bacefd8a1f69ca74.png",
     "static/media/lp1.png": "/portfolio-website-react/static/media/lp1.2e5ea333ae4fe660fece.png",
-    "static/media/1689792545900.jpeg": "/portfolio-website-react/static/media/1689792545900.fa01440aafd47988327d.jpeg",
     "static/media/lp4.png": "/portfolio-website-react/static/media/lp4.7463f49cd5ac603e0683.png",
     "static/media/lp3.png": "/portfolio-website-react/static/media/lp3.e123d5d549d903e976a7.png",
     "static/media/lp2.png": "/portfolio-website-react/static/media/lp2.b82815dcfbb02a957116.png",
     "static/media/Resume.pdf": "/portfolio-website-react/static/media/Resume.f150515e2fe975d67531.pdf",
+    "static/media/robotclass.jpeg": "/portfolio-website-react/static/media/robotclass.bde2b2d010e8a0b56be1.jpeg",
+    "static/media/camp2.jpeg": "/portfolio-website-react/static/media/camp2.78814fccc7bb052bb9da.jpeg",
     "static/media/ieee2.jpg": "/portfolio-website-react/static/media/ieee2.f5d0ec4248fceb0baf2b.jpg",
     "static/media/right1.jpg": "/portfolio-website-react/static/media/right1.d8f98411447d3d24c8f5.jpg",
     "static/media/yip.jpg": "/portfolio-website-react/static/media/yip.c0c4c7d6b3bde135bb80.jpg",
@@ -31,6 +38,7 @@
     "static/media/ieee1.jpg": "/portfolio-website-react/static/media/ieee1.12b7e8edcf80d6c83a18.jpg",
     "static/media/national3.jpg": "/portfolio-website-react/static/media/national3.38b210d4efb4de2e0869.jpg",
     "static/media/iit1.jpg": "/portfolio-website-react/static/media/iit1.4f826928e3439e87611e.jpg",
+    "static/media/3d.jpg": "/portfolio-website-react/static/media/3d.14fa8fa6271bb2a0f22f.jpg",
     "static/media/udemy1.jpg": "/portfolio-website-react/static/media/udemy1.9ba6dc2891689e092ddd.jpg",
     "static/media/center.jpg": "/portfolio-website-react/static/media/center.375951247adc8d5f6153.jpg",
     "static/media/national2.jpg": "/portfolio-website-react/static/media/national2.5bab9e260af3c78e994c.jpg",
@@ -63,11 +71,11 @@
     "index.html": "/portfolio-website-react/index.html",
     "static/media/css3-simple.svg": "/portfolio-website-react/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/portfolio-website-react/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
-    "main.6f7dfe7a.css.map": "/portfolio-website-react/static/css/main.6f7dfe7a.css.map",
-    "main.329da4ba.js.map": "/portfolio-website-react/static/js/main.329da4ba.js.map"
+    "main.ebcf89a8.css.map": "/portfolio-website-react/static/css/main.ebcf89a8.css.map",
+    "main.dde35732.js.map": "/portfolio-website-react/static/js/main.dde35732.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f7dfe7a.css",
-    "static/js/main.329da4ba.js"
+    "static/css/main.ebcf89a8.css",
+    "static/js/main.dde35732.js"
   ]
 }
