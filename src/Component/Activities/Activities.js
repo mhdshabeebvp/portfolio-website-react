@@ -14,12 +14,13 @@ import malabar from "../../img/activitiesimg/malabar.jpg";
 
 
 import poly from "../../img/activitiesimg/polytechnic.jpeg";
-import mbot from "../../img/activitiesimg/mbot.jpeg";
+import mbot from "../../img/activitiesimg/mbot1.png";
 import srishti1 from "../../img/activitiesimg/srishti.jpg";
 import supra from "../../img/activitiesimg/supra.jpg";
 import fund from "../../img/activitiesimg/fund.jpeg";
 import srishtti2 from "../../img/activitiesimg/srishtti2.jpeg";
 import diksha from "../../img/activitiesimg/diksha.jpeg";
+import { Robot } from "react-bootstrap-icons";
 const activities = [
     {
         title: "Robotics Class at KNM English School, Ponnani",
@@ -32,17 +33,27 @@ const activities = [
         imgSrc: yip,
     },
     {
-        title: "CNC 3D Printer from Electronic Waste",
-        description: " Developed a functional CNC 3D printer using repurposed electronic waste. This project highlights ingenuity and sustainability by transforming discarded materials into a versatile and efficient manufacturing tool.",
-        imgSrc: printer,
+        title: "Robotics Workshop at Malabar Polytechnic College, Kadampuzha",
+        description: " Conducted a one-day robotics workshop at Malabar Polytechnic College, Kadampuzha. Engaged students with hands-on activities, fostering technical skills and encouraging innovation in robotics.",
+        imgSrc: poly,
     },
     {
-        title: "Judge at TechFest – AL Huda Central School, Kadampuzha",
-        description: " Served as a judge for project evaluations at the TechFest hosted by AL Huda Central School, Kadampuzha. Assessed innovative student projects and provided feedback to inspire creativity and innovation. ",
-        imgSrc: alhuda,
+        title: "College Fund for Future Projects and R&D",
+        description: "Received funding from the college, granted by Principal Dr. A. S. Varadarajan, to support future project developments and research & development (R&D) activities. This funding aims to foster innovation and enhance technical expertise.",
+        imgSrc: fund,
     },
     {
-        title: "Robotics Class at AMUP School, Ullanam",
+        title: "SRISHTI 6th National Level Technical Project Exhibition & Competition",
+        description: "Participated in the SRISHTI 6th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous) in February 2019. Showcased innovative technical projects and engaged with industry experts and peers.",
+        imgSrc: srishtti2,
+    },
+    {
+        title: "SRISHTI 7th National Level Technical Project Exhibition & Competition",
+        description: " Participated in the SRISHTI 7th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous). Showcased innovative technical projects and engaged with peers and industry experts.",
+        imgSrc: srishti1,
+    },
+    {
+        title: "Robotics Workshop at AMUP School, Ullanam",
         description: " Conducted a robotics class for students at AMUP School, Ullanam. Shared knowledge on robotics, encouraging creativity and fostering technical skills among young, enthusiastic learners.",
         imgSrc: amup,
     },
@@ -52,52 +63,54 @@ const activities = [
         imgSrc: camp2,
     },
     {
-        title: "CNC Plotter Machine from Electronic Waste",
-        description: " Built a small CNC plotter machine using repurposed electronic waste. This project emphasizes creativity and sustainability by transforming discarded materials into a functional plotting device for precision drawing and design.",
-        imgSrc: cnc,
+        title: "DIKSHA'20 Project Expo – CUIET",
+        description: "Participated in the DIKSHA'20 Project Expo at Calicut University Institute of Engineering and Technology (CUIET). Presented innovative projects and engaged in knowledge-sharing with peers and industry professionals.",
+        imgSrc: diksha,
     },
+    {
+        title: "Judge at TechFest – AL Huda Central School, Kadampuzha",
+        description: " Served as a judge for project evaluations at the TechFest hosted by AL Huda Central School, Kadampuzha. Assessed innovative student projects and provided feedback to inspire creativity and innovation. ",
+        imgSrc: alhuda,
+    },
+
+
     {
         title: "Judge at TechFest – Farook English Medium School Kottakka",
         description: "Served as a judge for project evaluations at the TechFest hosted by Farook English Medium School. Assessed innovative student projects, offering feedback to inspire creativity and technical excellence. ",
         imgSrc: farookstate,
     },
+
     {
         title: "Malabar Innovation Festival 2018 – Special Prize Winner",
         description: " Participated in the Design & Challenge Contest at Malabar Innovation Festival 2018, hosted by the Innovation Hub (Regional Science Centre & Planetarium). Won a special prize in the Innovation Project category for a CNC machine project.",
         imgSrc: malabar,
     },
-// second
-{
-    title: "Robotics Workshop at Malabar Polytechnic College, Kadampuzha",
-    description: " Conducted a one-day robotics workshop at Malabar Polytechnic College, Kadampuzha. Engaged students with hands-on activities, fostering technical skills and encouraging innovation in robotics.",
-    imgSrc: poly,
-},
 
-{
-    title: "SRISHTI 7th National Level Technical Project Exhibition & Competition",
-    description: " Participated in the SRISHTI 7th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous). Showcased innovative technical projects and engaged with peers and industry experts.",
-    imgSrc: srishti1,
-},
-{
-    title: "Entertaining Robot for Suprabhatham Newspaper",
-    description: " Successfully designed and developed an entertaining robot for Suprabhatham, a leading Malayalam newspaper, for their marketing and advertising purposes during the Kerala School Kalolsavam. The robot was installed at their stall, effectively attracting and engaging audiences. ",
-    imgSrc: supra,
-},
-{
-    title: "College Fund for Future Projects and R&D",
-    description: "Received funding from the college, granted by Principal Dr. A. S. Varadarajan, to support future project developments and research & development (R&D) activities. This funding aims to foster innovation and enhance technical expertise.",
-    imgSrc: fund,
-},
-{
-    title: "SRISHTI 6th National Level Technical Project Exhibition & Competition",
-    description: "Participated in the SRISHTI 6th National Level Technical Project Exhibition & Competition at Saintgits College of Engineering (Autonomous) in February 2019. Showcased innovative technical projects and engaged with industry experts and peers.",
-    imgSrc: srishtti2,
-},
-{
-    title: "DIKSHA'20 Project Expo – CUIET",
-    description: "Participated in the DIKSHA'20 Project Expo at Calicut University Institute of Engineering and Technology (CUIET). Presented innovative projects and engaged in knowledge-sharing with peers and industry professionals.",
-    imgSrc: diksha,
-},
+    {
+        title: "Entertaining Robot for Suprabhatham Newspaper",
+        description: " Successfully designed and developed an entertaining robot for Suprabhatham, a leading Malayalam newspaper, for their marketing and advertising purposes during the Kerala School Kalolsavam. The robot was installed at their stall, effectively attracting and engaging audiences. ",
+        imgSrc: supra,
+    },
+
+    {
+        title: "CNC 3D Printer from Electronic Waste",
+        description: " Developed a functional CNC 3D printer using repurposed electronic waste. This project highlights ingenuity and sustainability by transforming discarded materials into a versatile and efficient manufacturing tool.",
+        imgSrc: printer,
+    },
+    {
+        title: "M-BOT: Autonomous Medical Cum Delivery Robot",
+        description: "Completed as my final-year project, M-BOT is an autonomous medical and delivery robot designed for efficient healthcare assistance. This project won ₹25,000 as a district-level winner in the Young Innovators Programme (YIP) and was selected for the state-level competition.",
+        imgSrc: mbot,
+    },
+    {
+        title: "CNC Plotter Machine from Electronic Waste",
+        description: " Built a small CNC plotter machine using repurposed electronic waste. This project emphasizes creativity and sustainability by transforming discarded materials into a functional plotting device for precision drawing and design.",
+        imgSrc: cnc,
+    },
+   
+
+
+
 ];
 
 const Activities = () => {
