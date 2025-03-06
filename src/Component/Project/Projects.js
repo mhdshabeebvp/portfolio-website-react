@@ -21,6 +21,12 @@ import lp1 from "../../img/LP/lp1.png";
 import lp2 from "../../img/LP/lp2.png";
 import lp3 from "../../img/LP/lp3.png";
 import lp4 from "../../img/LP/lp4.png";
+import printer from "../../img/skillp/3d.jpg";
+import supra from "../../img/skillp/supra.jpg";
+import plotter from "../../img/skillp/plotter.jpg";
+import movie from "../../img/skillp/movie.png";
+import hacker from "../../img/skillp/hacker.png";
+
 
 export const Projects = () => {
   const projects = [
@@ -40,9 +46,14 @@ export const Projects = () => {
       imgUrl: project3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Hacker-News-Notifier",
+      description: "Stay updated with real-time notifications for Hacker News posts. Get desktop alerts for high-priority topics and browse latest news effortlessly. ",
+      imgUrl: hacker,
+    },
+    {
+      title: "Movie Search Application using API",
+      description: "A web application that allows users to search for movies by fetching real-time data from a movie database API. It displays movie details like title, release date, and poster images in an interactive interface.",
+      imgUrl: movie,
     },
     // {
     //   title: "Business Startup",
@@ -56,11 +67,7 @@ export const Projects = () => {
     // },
   ];
   const projects2 = [
-    {
-      title: "QUARDRIVE",
-      description: "the 4 wheel E-bike that look like a car",
-      imgUrl: car,
-    },
+    
     {
       title: "ROBO-19 ",
       description: "Nursing cum Deliver robot for pandemic situations",
@@ -74,11 +81,31 @@ export const Projects = () => {
       imgUrl: humenf,
     },
     {
+      title: "QUARDRIVE",
+      description: "the 4 wheel E-bike that look like a car",
+      imgUrl: car,
+    },
+    {
+      title: "Entertaining Robot for Suprabhatham Newspaper",
+      description:
+        "Designed and developed an interactive robot for Suprabhatham, a leading Malayalam newspaper, to enhance marketing and audience engagement at the Kerala School Kalolsavam.",
+      imgUrl: supra
+      ,
+    },
+    {
+      title: "CNC Plotter MACHINE",
+      description:
+        "Arduino-powered CNC 3D printer machine creates accurate and intricate designs with ease.",
+      imgUrl: printer,
+    },
+    {
       title: "CNC Plotter MACHINE",
       description:
         "Arduino-powered CNC plotter machine creates accurate and intricate designs with ease.",
-      imgUrl: cnc,
+      imgUrl: plotter,
     },
+   
+   
     {
       title: "LINE FOLLOWER ROBOT",
       description:

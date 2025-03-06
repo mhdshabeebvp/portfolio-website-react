@@ -4,6 +4,7 @@
   border-radius: 20px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
+  
 
 }
 /* Scrollbar Styling */
@@ -25,6 +26,8 @@
 
 .card {
   border: 1px solid var(--jet);
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 /* Define the animation keyframes */
 @keyframes bounce {

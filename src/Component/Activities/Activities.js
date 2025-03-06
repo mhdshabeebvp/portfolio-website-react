@@ -20,7 +20,7 @@ import supra from "../../img/activitiesimg/supra.jpg";
 import fund from "../../img/activitiesimg/fund.jpeg";
 import srishtti2 from "../../img/activitiesimg/srishtti2.jpeg";
 import diksha from "../../img/activitiesimg/diksha.jpeg";
-import { Robot } from "react-bootstrap-icons";
+// import { Robot } from "react-bootstrap-icons";
 const activities = [
     {
         title: "Robotics Class at KNM English School, Ponnani",
@@ -124,16 +124,17 @@ const Activities = () => {
         <section id="Activities" className="activities-section">
             <h2>My Activities</h2>
             <Scrollbars
-                style={{ height: "35rem" }}
-                autoHide
+                style={{ height: "40rem" }}
+                // autoHide
                 renderThumbVertical={({ style, ...props }) => (
                     <div
                         {...props}
                         style={{
                             ...style,
-                            backgroundColor: "#ffffff", // White scrollbar
+                            backgroundImage: "linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%)", // Corrected to use backgroundImage
                             borderRadius: "10px",
-                            width: "5px"
+                            width: "8px",
+                            
                         }}
                     />
                 )}

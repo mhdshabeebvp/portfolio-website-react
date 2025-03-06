@@ -32,13 +32,14 @@ h2 {
 .activities-section .scrollbars-thumb {
   background: #ffffff; /* White scrollbar */
   border-radius: 10px;
-  width: 8px;
+  width: 10px;
   transition: background 0.3s ease-in-out;
 }
 
 .activities-section .scrollbars-thumb:hover {
   background: #f0f0f0; /* Slightly darker white on hover */
 }
+
 
 .activities-section {
   max-width: 1700px;

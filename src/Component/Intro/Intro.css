@@ -340,8 +340,8 @@
 /* Extra large screens, TV */
 @media only screen and (min-width: 1201px) {
   /* CSS styles for extra large screens and TV go here */
-  .sidebar {
-    
+  .sidebar { 
+   
     width: 19rem;
   }
   .intro {
@@ -369,9 +369,7 @@
   }
 }
 @media only screen and (min-width: 1202px) and (max-width: 80.0625em) {
-  .sidebar {
-    background: rgb(235, 235, 20);
-  }
+
   .intro {
     height: auto;
   }
