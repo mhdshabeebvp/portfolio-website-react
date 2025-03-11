@@ -34,7 +34,7 @@
   letter-spacing: 0.8px;
   margin: 14px auto 30px auto;
   text-align: justify;
-  width: 56%;
+  width: 96%;
 }
 
 .skills-grid {
@@ -92,6 +92,8 @@
 
   .skill p {
     font-size: 16px;
+    width: 100%;
+    
   }
 
   .skills-grid {
