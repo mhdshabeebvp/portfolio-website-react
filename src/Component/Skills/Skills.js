@@ -1,15 +1,9 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-// import arrow1 from "../../img/img2/arrow1.svg";
-// import arrow2 from "../../img/img2/arrow2.svg";
+import React from "react";
 import "./Skills.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import "../../App.css";
-// import { motion } from "framer-motion";
 
-// image section
+// Icons
 import reactIcon from "../../img/react.svg";
 import Html from "../../img/html5.svg";
 import css from "../../img/css3-simple.svg";
@@ -21,101 +15,52 @@ import iot from "../../img/iot1.png";
 import bt from "../../img/bt.png";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const skillsData = [
+    { icon: reactIcon, name: "React", description: "Front-End Library" },
+    { icon: Html, name: "HTML", description: "Markup Language" },
+    { icon: css, name: "CSS", description: "Styling Language" },
+    { icon: js, name: "JavaScript", description: "Programming Language" },
+    { icon: python, name: "Python", description: "Back-End Language" },
+    { icon: mongodb, name: "MongoDB", description: "NoSQL Database" },
+    { icon: sql, name: "SQL", description: "Relational Database" },
+    { icon: bt, name: "Bootstrap", description: "CSS Framework" },
+    { icon: iot, name: "IoT", description: "Internet of Things" },
+  ];
+
   return (
     <section className="skill" id="skills">
-      <div className="container-fluid ">
-        <div className="row">
-          <div className="col-12">
+      <div className="skill-bx">
+        <h2 style={{ color: darkMode ? "" : "white" }}>Skills</h2>
+        <p style={{ color: darkMode ? "" : "white" }}>
+          Familiar with front-end and back-end development, database management,
+          IoT, and hardware projects. I enjoy building robust and user-friendly
+          applications while continuously learning new technologies. Let's create
+          something extraordinary together!
+        </p>
+        <div className="skills-grid">
+          {skillsData.map((skill, index) => (
             <div
-              className="skill-bx wow zoomIn"
-              style={{ background: darkMode ? "" : "" }}
+              key={index}
+              className="skill-card"
+              style={{
+                background: darkMode ? "rgba(255, 255, 255, 0.05)" : "#fff",
+                border: darkMode
+                  ? "1px solid rgba(255, 255, 255, 0.1)"
+                  : "1px solid rgba(0, 0, 0, 0.1)",
+              }}
             >
-              <h2 style={{ color: darkMode ? "" : "white" }}>Skills </h2>
-              <p style={{ color: darkMode ? "" : "white" }}>
-                "Experienced in front-end and back-end development, database
-                management, IoT, and hardware projects,I deliver robust and
-                user-friendly applications with a keen eye for detail.
-                Proficient in popular frameworks such as Bootstrap and React, I
-                communicate complex technical concepts effectively and
-                collaborate well with others.Let's create something
-                extraordinary together!"
+              <img src={skill.icon} alt={skill.name} />
+              <h5 style={{ color: darkMode ? "white" : "#333" }}>
+                {skill.name}
+              </h5>
+              <p style={{ color: darkMode ? "rgba(255, 255, 255, 0.8)" : "#666" }}>
+                {skill.description}
               </p>
-              {/* <div className="skill-Icon">
-                <img src={reactIcon} alt="" />
-                <img src={Html} alt="" />
-                <img src={css} alt="" />
-                <img src={js} alt="" />
-
-                
-                <img src={python} alt="" />
-              </div> */}
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={reactIcon} alt="Image" />
-                  <h5 style={{ color: darkMode ? "white" : "" }}>React</h5>
-                </div>
-                <div className="item">
-                  <img src={python} alt="Image" />
-                  <h5>Python</h5>
-                </div>
-                <div className="item">
-                  <img src={Html} alt="Image" />
-                  <h5>Html</h5>
-                </div>
-                <div className="item">
-                  <img src={css} alt="Image" />
-                  <h5>CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={js} alt="Image" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={bt} alt="Image" />
-                  <h5>Bootstrap</h5>
-                </div>
-                <div className="item">
-                  <img src={mongodb} alt="Image" />
-                  <h5>MongoDB</h5>
-                </div>
-                <div className="item">
-                  <img src={sql} alt="Image" />
-                  <h5>SQL</h5>
-                </div>
-
-                <div className="item">
-                  <img src={iot} alt="Image" />
-                  <h5>IoT</h5>
-                </div>
-              </Carousel>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

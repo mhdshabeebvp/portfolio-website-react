@@ -76,15 +76,9 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
-            With a strong passion for technology and programming. I am skilled
-            in several programming languages, including PYTHON, JAVASCRIPT,
-            HTML, CSS etc..and have used these skills to develop websites, web
-            applications, and projects in hardware, robotics, and IoT. I am
-            committed to learning and exploring new ideas to stay up-to-date
-            with the latest trends and innovations in technology. I believe that
-            technology can be a powerful tool to solve complex problems and
-            improve people's lives, and I am excited to be a part of this
-            ever-evolving field.
+          A passionate technologist and Electrical and Electronics Engineering graduate with a strong interest in hardware, software, and emerging technologies. I enjoy working on robotics, IoT, and software projects, solving real-world problems through innovation. Familiar with Python, ReactJS, JavaScript, HTML, CSS, and other tools, I thrive on learning new technologies. I’m continuously learning through hands-on experience and certifications from IIT, ISRO, Google, and more. I’ve also participated in national and state-level project competitions, showcasing my ability to innovate and collaborate.
+
+I love diving into new technical areas, tackling challenges, and contributing to research. Whether it’s building software, designing hardware solutions, or exploring emerging technologies, I’m excited to create meaningful impact. Let’s connect and build something extraordinary together!
           </span>
         </div>
         <a style={{ textDecoration: "none" }} href={Resume} download>

@@ -1,130 +1,102 @@
 .skill {
-  padding: 0 0 50px 0;
+  padding: 100px 0;
   position: relative;
-  margin-top: 100px;
+  overflow: hidden;
 }
+
 .skill-bx {
-  background: var(--eerie-black-2);
-  /* background: linear-gradient(to bottom, #2193b0, #6dd5ed, #bce6eb, #ffc3a0, #ffafbd);; */
-  border: 1px solid var(--jet);
-  border-radius: 20px;
   text-align: center;
-  padding: 87px 17px;
-  margin-top: -60px;
-  width: 100%;
-  box-shadow: var(--shadow-1);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
   color: var(--white-2);
   text-transform: capitalize;
+  margin-bottom: 20px;
 }
-.skill h5 {
-  color: var(--light-gray);
-}
-/* icons section started */
 
-/* .skill-Icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 4rem; /* add a negative margin 
-}
-.skill-Icon img {
-  width: 5rem;
-  height: 5rem;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: -3rem;
-}
-.skill-Icon > :nth-child(5){
-  width: 100px;
-  height: 126px;
-margin-top: 21px;
-}
-.skill-Icon img:hover {
-  transform: scale(1.1);
-} */
 .skill p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--light-gray);
-  font-size: var(--fs-2);
+  font-size: 18px;
   line-height: 1.6;
-  margin: 14px 0 17px 0;
-  /* font-weight:100; */
-  width: auto;
-  text-align: justify;
-  text-justify: inter-word;
+  margin: 0 auto 40px;
+  max-width: 800px;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+.skill-card {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 480px) {
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.skill-card h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
   .skill {
-    margin-top: 5rem;
-    width: auto;
+    padding: 60px 0;
   }
+
   .skill-bx {
-    height: 37rem;
+    padding: 40px 15px;
   }
-  .skill p {
-    text-align: justify;
-    letter-spacing: 0;
-    margin: 0;
-  }
+
   .skill h2 {
-    margin-top: -2rem;
+    font-size: 36px;
   }
-  .skill-slider {
-    margin-top: 2rem;
-  }
-}
-@media only screen and (max-width: 47.9em) and (min-width: 23.4375em) and (orientation: landscape) {
+
   .skill p {
-    width: auto;
-    text-align: justify;
-    text-justify: inter-word;
+    font-size: 16px;
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .skill p {
-    width: auto;
-    text-align: justify;
-    text-justify: inter-word;
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .skill p {
-    width: auto;
-    text-align: justify;
-    text-justify: inter-word;
+
+  .skill-card img {
+    width: 50px;
+    height: 50px;
   }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .skill p {
-    width: auto;
-    text-align: justify;
-    text-justify: inter-word;
+
+  .skill-card h5 {
+    font-size: 18px;
   }
-}
-@media only screen and (min-width: 1201px) {
-  .skill p {
-    width: auto;
-    font-size: 25px;
+
+  .skill-card p {
+    font-size: 2px;
   }
 }
