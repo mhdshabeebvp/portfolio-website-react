@@ -19,17 +19,16 @@ export const Skills = () => {
   const darkMode = theme.state.darkMode;
 
   const skillsData = [
-    { icon: reactIcon, name: "React", description: "Front-End Library" },
-    { icon: Html, name: "HTML", description: "Markup Language" },
-    { icon: css, name: "CSS", description: "Styling Language" },
-    { icon: js, name: "JavaScript", description: "Programming Language" },
-    { icon: python, name: "Python", description: "Back-End Language" },
-    { icon: mongodb, name: "MongoDB", description: "NoSQL Database" },
-    { icon: sql, name: "SQL", description: "Relational Database" },
-    { icon: bt, name: "Bootstrap", description: "CSS Framework" },
-    { icon: iot, name: "IoT", description: "Internet of Things" },
+    { icon: reactIcon, name: "React" },
+    { icon: Html, name: "HTML" },
+    { icon: css, name: "CSS" },
+    { icon: js, name: "JavaScript" },
+    { icon: python, name: "Python" },
+    { icon: mongodb, name: "MongoDB" },
+    { icon: sql, name: "SQL" },
+    { icon: bt, name: "Bootstrap" },
+    { icon: iot, name: "IoT" },
   ];
-
   return (
     <section className="skill" id="skills">
       <div className="skill-bx">
@@ -46,7 +45,7 @@ export const Skills = () => {
               key={index}
               className="skill-card"
               style={{
-                background: darkMode ? "rgba(255, 255, 255, 0.05)" : "#fff",
+                background: darkMode ? "rgba(255, 255, 255, 0.05)" : "black",
                 border: darkMode
                   ? "1px solid rgba(255, 255, 255, 0.1)"
                   : "1px solid rgba(0, 0, 0, 0.1)",
