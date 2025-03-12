@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useRef, useState,useEffect } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
@@ -75,6 +75,15 @@ const Contact = () => {
         }
       );
   };
+  // Trigger vibration animation when errors change
+  useEffect(() => {
+    if (Object.keys(errors).length > 0) {
+      const timer = setTimeout(() => {
+        setErrors({}); // Clear errors after vibration
+      }, 300); // Match the duration of the vibration animation
+      return () => clearTimeout(timer);
+    }
+  }, [errors]);
 
 
   return (
@@ -97,17 +106,17 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            className={`user ${errors.user_name ? "invalid" : ""}`}
+            className={`user ${errors.user_name ? "invalid vibrate" : ""}`}
             placeholder="Name"
           />
           <input
             type="email"
             name="user_email"
-            className={`user ${errors.user_email ? "invalid" : ""}`}
+            className={`user ${errors.user_email ? "invalid vibrate" : ""}`}
             placeholder="Email"
           />
 
-          <textarea name="message" className={`user ${errors.message ? "invalid" : ""}`} placeholder="Message" />
+          <textarea name="message" className={`user ${errors.message ? "invalid vibrate" : ""}`} placeholder="Message" />
 
 
           <div className="button-container">
