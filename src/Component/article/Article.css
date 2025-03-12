@@ -4,6 +4,7 @@
   border-radius: 20px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.3);
 
 }
 /* Scrollbar Styling */
@@ -24,7 +25,15 @@
 }
 
 .card{
+  margin-top: 3rem;
   border: 1px solid var(--jet);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 /* Define the animation keyframes */
 @keyframes bounce {
@@ -45,8 +54,8 @@
   animation-iteration-count: infinite;
 }
 .element:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 .card-body {
   background: var(--eerie-black-2);

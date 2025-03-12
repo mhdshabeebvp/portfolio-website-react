@@ -48,7 +48,7 @@ const CertificateSection = () => {
                 ...style,
                 backgroundImage: "linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%)", // Corrected to use backgroundImage
                 borderRadius: "10px",
-                width: "8px"
+                width: "8px",
               }}
             />
           )}

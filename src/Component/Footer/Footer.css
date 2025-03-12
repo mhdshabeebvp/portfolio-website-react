@@ -9,6 +9,7 @@
   margin-left: -71px;
   margin-bottom: -1rem;
   border: 1px solid var(--jet);
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.3);
 }
 .left-section {
   width: 70%;

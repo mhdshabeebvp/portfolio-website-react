@@ -2,6 +2,7 @@
   padding: 100px 0;
   position: relative;
   overflow: hidden;
+  
 }
 
 .skill-bx {
@@ -15,6 +16,7 @@
   border-radius: 20px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.3);
 }
 
 .skill h2 {
@@ -53,7 +55,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
 
 }
-
 .skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);

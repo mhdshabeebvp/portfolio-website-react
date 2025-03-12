@@ -10,6 +10,7 @@
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
   gap: 9rem;
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.3);
 }
 
 .c-right {
