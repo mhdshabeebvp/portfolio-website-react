@@ -3,7 +3,7 @@
   display: flex;
   height: 65vh;
   margin-top: 5rem;
-   /* scroll */
+  /* scroll */
   padding-top: 1rem;
   background: var(--eerie-black-2);
   border-radius: 20px;
@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  padding: 20px;
 }
 .button-c {
   font-size: var(--fs-2);
@@ -50,6 +51,41 @@ textarea {
 .c-blur1 {
   top: 1rem;
   left: 8rem;
+}
+/* Add a red border to invalid input fields */
+.user.invalid {
+  border: 1px solid #ff4d4d !important;
+}
+/* Tick animation styles */
+.tick-animation {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: calc(100% + 10px); /* Position to the right of the button */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.tick {
+  display: inline-block;
+  width: 30px; /* Adjust size for better visibility */
+  height: 30px;
+  animation: tickAnimation 0.5s ease-in-out;
+}
+
+.tick::after {
+  content: "✓";
+  font-size: 24px; /* Adjust font size */
+  color: green;
+  font-weight: bold; /* Make the tick bold */
+}
+
+/* Button container to position the tick */
+.button-container {
+  position: relative; /* Ensure the tick is positioned relative to the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Add space between button and tick */
 }
 /* ----------------Responsive---------------- */
 /* for Mobile [verified] */
@@ -96,43 +132,40 @@ textarea {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
-.contact-form{
-  height: auto;
-  width: auto;
-}
-.awesome > :nth-child(1){
-  font-size: 30px;
-}
-.awesome > :nth-child(2){
-  font-size: 33px;
-}
-.c-right .user {
-margin-left: -7rem;
-width: 12rem;
-}
-.button-c {
-  margin-left: -7rem;
-  width: 12rem;
-}
+  .contact-form {
+    height: auto;
+    width: auto;
+  }
+  .awesome > :nth-child(1) {
+    font-size: 30px;
+  }
+  .awesome > :nth-child(2) {
+    font-size: 33px;
+  }
+  .c-right .user {
+    margin-left: -7rem;
+    width: 12rem;
+  }
+  .button-c {
+    margin-left: -7rem;
+    width: 12rem;
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
-  .contact-form{
+  .contact-form {
     height: auto;
     width: auto;
     margin-bottom: 5rem;
   }
-  .awesome > :nth-child(1){
+  .awesome > :nth-child(1) {
     font-size: 60px;
-    
   }
-  .awesome > :nth-child(2){
+  .awesome > :nth-child(2) {
     font-size: 50px;
   }
   .c-right .user {
-  margin-left: -7rem;
-  width: 18rem;
+    margin-left: -7rem;
+    width: 18rem;
   }
   .button-c {
     margin-left: -7rem;
@@ -140,44 +173,37 @@ width: 12rem;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .contact-form{
+  .contact-form {
     height: auto;
     width: auto;
     margin-bottom: 5rem;
   }
-  .awesome > :nth-child(1){
+  .awesome > :nth-child(1) {
     font-size: 50px;
-
   }
-  .awesome > :nth-child(2){
+  .awesome > :nth-child(2) {
     font-size: 40px;
   }
   .c-right .user {
-  margin-left: -7rem;
-  width: 18rem;
+    margin-left: -7rem;
+    width: 18rem;
   }
   .button-c {
     margin-left: -7rem;
     width: 18rem;
   }
-
 }
 
 @media only screen and (min-width: 1201px) {
-.contact-form{
-  height: auto;
-}
-.c-right .user {
-  margin-left: -7rem;
-  width: 30rem;
+  .contact-form {
+    height: auto;
   }
-  .button-c{
+  .c-right .user {
+    margin-left: -7rem;
+    width: 30rem;
+  }
+  .button-c {
     width: 30rem;
     margin-left: -7rem;
   }
-
-
 }
-
-

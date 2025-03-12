@@ -8,9 +8,49 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  // Validate form inputs
+  const validateForm = () => {
+    const errors = {};
+    const formData = new FormData(form.current);
+
+    // Check name
+    if (!formData.get("user_name")) {
+      errors.user_name = "Name is required";
+    }
+
+    // Check email
+    if (!formData.get("user_email")) {
+      errors.user_email = "Email is required";
+    } else if (!validateEmail(formData.get("user_email"))) {
+      errors.user_email = "Invalid email address";
+    }
+
+    // Check message
+    if (!formData.get("message")) {
+      errors.message = "Message is required";
+    }
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0; // Return true if no errors
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
+    // Validate form before sending
+    if (!validateForm()) {
+      return; // Stop if validation fails
+    }
+
+    setIsSending(true);
     emailjs
       .sendForm(
         "service_azo1x7u",
@@ -22,19 +62,21 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+          setIsSending(false);
           form.current.reset();
-  
+
           setTimeout(() => {
             setDone(false);
           }, 3000); // hide the message after 3 seconds
         },
         (error) => {
           console.log(error.text);
+          setIsSending(false);
         }
       );
   };
-  
-  
+
+
   return (
     <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}
@@ -55,18 +97,29 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            className="user"
+            className={`user ${errors.user_name ? "invalid" : ""}`}
             placeholder="Name"
           />
           <input
             type="email"
             name="user_email"
-            className="user"
+            className={`user ${errors.user_email ? "invalid" : ""}`}
             placeholder="Email"
           />
-          <textarea name="message" className="user" placeholder="Message" />
-          <input type="submit" value="Send Message" className="button button-c" />
-          <span>{done && "Thanks for Contacting me"}</span>
+
+          <textarea name="message" className={`user ${errors.message ? "invalid" : ""}`} placeholder="Message" />
+
+
+          <div className="button-container">
+            <button type="submit" className="button button-c" disabled={isSending}>
+              {isSending ? "Sending..." : "Send Message"}
+            </button>
+            {done && (
+              <div className="tick-animation">
+                <span className="tick"></span>
+              </div>
+            )}
+          </div>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
@@ -76,4 +129,5 @@ const Contact = () => {
     </div>
   );
 };
+
 export default Contact;
