@@ -100,23 +100,24 @@
   margin-top: auto; /* Ensure the button stays at the bottom */
 }
 
+
+
 @media screen and (max-width: 480px) {
-  #Certificate{
+  #Certificate {
     padding: 60px 0;
   }
   #Certificate p {
     width: 100%;
     color: var(--light-gray);
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 1.6;
-    margin-top: -2rem; 
+    margin-top: -2rem;
     text-align: justify;
   }
   #Certificate h2 {
     margin-top: -2rem;
     font-size: 2rem;
   }
- 
 }
 @media (min-width: 768px) {
   #Certificate p {

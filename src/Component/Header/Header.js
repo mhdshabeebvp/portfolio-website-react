@@ -91,7 +91,7 @@ const NavigationBar = () => {
               Certificates
             </Nav.Link>
             <Nav.Link href="#Activities" onClick={handleLinkClick}>
-              Activities
+              Contributions
             </Nav.Link>
             <Nav.Link href="#blog" onClick={handleLinkClick}>
               Blogs

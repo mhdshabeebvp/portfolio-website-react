@@ -122,9 +122,9 @@ const Activities = () => {
 
     return (
         <section id="Activities" className="activities-section">
-            <h2>My Activities</h2>
+            <h2>Tech Contributions</h2>
             <p>
-                Welcome to my activities section, where I highlight my involvement in technical and innovative endeavors. From conducting robotics classes and workshops to participating in competitions and judging at TechFests, these experiences have honed my skills and allowed me to contribute to the tech community. Here are some key moments I cherish:
+                Welcome to my Tech Contributions section, where I highlight my involvement in technical and innovative endeavors. From conducting robotics classes and workshops to participating in competitions and judging at TechFests, these experiences have honed my skills and allowed me to contribute to the tech community. Here are some key moments I cherish:
             </p>
             <Scrollbars
                 style={{ height: "40rem" }}
