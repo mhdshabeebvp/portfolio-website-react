@@ -153,8 +153,9 @@
   z-index: 1;
   height: 3.7rem;
   width: 16rem; /* reduce the width of the sidebar as an example */
-  padding-left: 0;
-  padding-right: 0;
+  display: flex; /* Add flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   margin-top: -40px;
 }
 
@@ -178,7 +179,10 @@
 .contacts-list {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.5rem; 
+  margin: 0; 
+  padding: 0;
+  list-style: none;
 }
 
 .icon-box::before {
