@@ -38,6 +38,8 @@ const CertificateSection = () => {
         <h2 className="text-center mb-5" id="-heading">
           Certificates
         </h2>
+        <p>
+        Welcome to my certificates section, where I showcase my achievements and milestones. From earning accolades from IIT, Google, and ISRO to participating in national and state-level competitions, these accomplishments reflect my dedication to learning and innovation. Recognized in programs like YIP, I take pride in these milestones that highlight my passion for growth and excellence.        </p>
         <Scrollbars
           style={{ height: "40rem", }}
           // autoHide

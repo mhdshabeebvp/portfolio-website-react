@@ -88,11 +88,14 @@
   }
 
   .skill h2 {
-    font-size: 36px;
+    font-size: 2rem;
   }
 
   .skill p {
-    font-size: 16px;
+    font-size: 16px; /* or 1rem */
+    line-height: 1.6; /* for better readability */
+    margin-bottom: 16px; /* spacing between paragraphs */
+    text-align: justify; 
     width: 100%;
     
   }

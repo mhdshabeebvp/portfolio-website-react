@@ -1,8 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "../../Component/Project/ProjectCard";
-import projImg1 from "../../img/img2/project-img1.png";
+
 // import projImg2 from "../../img/img2/project-img2.png";
-import projImg3 from "../../img/img2/project-img3.png";
 import colorSharp2 from "../../img/img2/color-sharp2.png";
 import "animation.css";
 import "./Projects.css";
@@ -144,11 +143,7 @@ export const Projects = () => {
       imgUrl: lp4,
     },
 
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+   
   ];
   return (
     <section className="project" id="projects">

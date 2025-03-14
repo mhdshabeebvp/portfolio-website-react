@@ -107,7 +107,7 @@ const activities = [
         description: " Built a small CNC plotter machine using repurposed electronic waste. This project emphasizes creativity and sustainability by transforming discarded materials into a functional plotting device for precision drawing and design.",
         imgSrc: cnc,
     },
-   
+
 
 
 
@@ -123,6 +123,9 @@ const Activities = () => {
     return (
         <section id="Activities" className="activities-section">
             <h2>My Activities</h2>
+            <p>
+                Welcome to my activities section, where I highlight my involvement in technical and innovative endeavors. From conducting robotics classes and workshops to participating in competitions and judging at TechFests, these experiences have honed my skills and allowed me to contribute to the tech community. Here are some key moments I cherish:
+            </p>
             <Scrollbars
                 style={{ height: "40rem" }}
                 // autoHide
@@ -134,7 +137,7 @@ const Activities = () => {
                             backgroundImage: "linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%)", // Corrected to use backgroundImage
                             borderRadius: "10px",
                             width: "8px",
-                            
+
                         }}
                     />
                 )}

@@ -7,12 +7,12 @@ import { Skills } from "./Component/Skills/Skills";
 import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Activities from "./Component/Activities/Activities";
-
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 // import ParallaxSections from "./Component/Blogs/Blogs";
 import BlogSection from "./Component/article/Article";
 import Certificates from "./Component/Certificates/Certificates";
+import Cards from "./Component/Cards/Cards";
 // import { Router } from "react-bootstrap-icons";
 
 
@@ -29,14 +29,16 @@ function App() {
     // }}
     >
       <Header />
+   
       <Intro />
       <Services />
+      {/* <Cards /> */}
       <Skills />
       <Projects />
       <Certificates />
       <Activities />
       {/* <ParallaxSections /> */}
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Contact />
       <Footer />
     </div>

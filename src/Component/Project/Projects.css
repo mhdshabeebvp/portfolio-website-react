@@ -23,7 +23,8 @@
   letter-spacing: 0.8px;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 100%;
+
   /* font-weight:100; */
 }
 .project .nav.nav-pills {
@@ -150,14 +151,21 @@
 }
 
 @media screen and (max-width: 480px) {
+  .project{
+    padding: 60px 0;
+  }
   .project p {
-    text-align: justify;
-    letter-spacing: -1px;
+    font-size: 16px; /* or 1rem */
+    line-height: 1.6; /* for better readability */
+    margin-bottom: 16px;
     width: 100%;
     color: var(--light-gray);
+    text-align: justify;
+  
   }
   .project h2 {
     margin-top: -2rem;
+    font-size: 2rem;
   }
   .project .nav.nav-pills {
     width: 90%;
