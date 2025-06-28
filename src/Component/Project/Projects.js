@@ -172,10 +172,10 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Software</Nav.Link>
+                        <Nav.Link eventKey="first">Hardware</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Hardware</Nav.Link>
+                        <Nav.Link eventKey="second">Software</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Launchpad</Nav.Link>
@@ -189,7 +189,7 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects2.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
@@ -203,7 +203,7 @@ export const Projects = () => {
                           inventore debitis quo.
                         </p> */}
                         <Row>
-                          {projects2.map((project, index) => {
+                          {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>

@@ -76,10 +76,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
-          A passionate technologist and Electrical and Electronics Engineering graduate with a strong interest in hardware, software, and emerging technologies. I enjoy working on robotics, IoT, and software projects, solving real-world problems through innovation. Familiar with Python, ReactJS, JavaScript, HTML, CSS, and other tools, I thrive on learning new technologies. I’m continuously learning through hands-on experience and certifications from IIT, ISRO, Google, and more. I’ve also participated in national and state-level project competitions, showcasing my ability to innovate and collaborate.
-
-I love diving into new technical areas, tackling challenges, and contributing to research. Whether it’s building software, designing hardware solutions, or exploring emerging technologies, I’m excited to create meaningful impact. Let’s connect and build something extraordinary together!
-          </span>
+          A passionate technologist and Electrical and Electronics Engineering graduate with a strong interest in hardware, software, and emerging technologies. I enjoy working on robotics, IoT, and software projects, solving real-world problems through innovation. I am continuously learning through hands-on experience and certifications from institutions like IIT, ISRO, and Google. My participation in national and state-level project competitions has honed my ability to innovate and collaborate. Whether it's building software, designing hardware solutions, or exploring new technical frontiers, I'm excited to create meaningful impact. Let's connect and build something extraordinary together!</span>
         </div>
         <a style={{ textDecoration: "none" }} href={Resume} download>
           <button className="button si-button">Download CV</button>

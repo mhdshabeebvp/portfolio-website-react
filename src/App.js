@@ -3,7 +3,7 @@ import Intro from "./Component/Intro/Intro";
 import Services from "./Component/Services/Services";
 // import { themeContext } from "./Context";
 // import { useContext } from "react";
-import { Skills } from "./Component/Skills/Skills";
+import { Expertise } from "./Component/Expertise/Expertise";
 import { Projects } from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Activities from "./Component/Activities/Activities";
@@ -33,7 +33,7 @@ function App() {
       <Intro />
       <Services />
       {/* <Cards /> */}
-      <Skills />
+      <Expertise />
       <Projects />
       <Certificates />
       <Activities />
