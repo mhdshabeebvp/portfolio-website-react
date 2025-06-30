@@ -29,11 +29,11 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--light-gray);
   line-height: 1.6;
-  font-size: 23px;
+  font-size: 28px;
   letter-spacing: 0.8px;
-  margin: 14px auto 50px auto;
-  text-align: center;
-  max-width: 80%;
+  margin: 14px auto 30px auto;
+  text-align: justify;
+  width: 100%;
 }
 
 .category-container {

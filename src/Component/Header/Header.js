@@ -81,7 +81,7 @@ const NavigationBar = () => {
             <Nav.Link href="#header" onClick={handleLinkClick} off>
               Home
             </Nav.Link>
-            <Nav.Link href="#skills" onClick={handleLinkClick}>
+            <Nav.Link href="#expertise" onClick={handleLinkClick}>
               Skills
             </Nav.Link>
             <Nav.Link href="#projects" onClick={handleLinkClick}>

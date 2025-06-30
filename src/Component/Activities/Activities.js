@@ -75,7 +75,7 @@ const activities = [
 
 
     {
-        title: "Judge at TechFest – Farook English Medium School Kottakka",
+        title: "Judge at TechFest – Farook English Medium School Kottakkal",
         description: "Served as a judge for project evaluations at the TechFest hosted by Farook English Medium School. Assessed innovative student projects, offering feedback to inspire creativity and technical excellence. ",
         imgSrc: farookstate,
     },

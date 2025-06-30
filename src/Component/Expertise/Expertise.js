@@ -13,8 +13,7 @@ import pythonIcon from "../../img/python2.png";
 import mongodbIcon from "../../img/mongodb.png";
 import sqlIcon from "../../img/sql.png";
 import bootstrapIcon from "../../img/bt.png";
-// You can add nodejs icon here if you find one
-// import nodejsIcon from "../../img/nodejs.svg";
+
 
 export const Expertise = () => {
   const theme = useContext(themeContext);
