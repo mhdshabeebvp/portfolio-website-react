@@ -76,12 +76,12 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
           <span>Muhammd Shabeeb</span>
           <span>
-          A passionate technologist and Electrical and Electronics Engineering graduate with a strong interest in hardware, software, and emerging technologies. I enjoy working on robotics, IoT, and software projects, solving real-world problems through innovation. I am continuously learning through hands-on experience and certifications from institutions like IIT, ISRO, and Google. My participation in national and state-level project competitions has honed my ability to innovate and collaborate. Whether it's building software, designing hardware solutions, or exploring new technical frontiers, I'm excited to create meaningful impact. Let's connect and build something extraordinary together!</span>
+            A passionate technologist specializing in Electrical and Electronics Engineering, with hands-on experience in hardware, software, and emerging technologies. I enjoy working on robotics, IoT, and software projects that solve real-world problems through innovation. Continuously learning through hands-on experience and certifications from institutions like IIT, ISRO, and Google, I strive to bridge the gap between technology and creativity. My participation in national and state-level project competitions has honed my ability to innovate and collaborate effectively. Whether it’s building software, designing hardware solutions, or exploring new technical frontiers, I’m driven to create meaningful impact. Let’s connect and build something extraordinary together!</span>
         </div>
-        <a style={{ textDecoration: "none" }} href={Resume} download>
+        {/* <a style={{ textDecoration: "none" }} href={Resume} download>
           <button className="button si-button">Download CV</button>
-        </a>
-        <a
+        </a> */}
+        {/* <a
           style={{ textDecoration: "none" }}
           href={Resume}
           rel="noreferrer"
@@ -90,7 +90,7 @@ const Intro = () => {
           <button className="sv-button ">
             <FaEye />{" "}
           </button>
-        </a>
+        </a> */}
 
         {/* social icon */}
         <div className="i-icons">
