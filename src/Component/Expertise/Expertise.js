@@ -9,9 +9,9 @@ import reactIcon from "../../img/react.svg";
 import htmlIcon from "../../img/html5.svg";
 import cssIcon from "../../img/css3-simple.svg";
 import jsIcon from "../../img/java-script.svg";
-import pythonIcon from "../../img/python2.png";
-import mongodbIcon from "../../img/mongodb.png";
-import sqlIcon from "../../img/sql.png";
+// import pythonIcon from "../../img/python2.png";
+// import mongodbIcon from "../../img/mongodb.png";
+// import sqlIcon from "../../img/sql.png";
 import bootstrapIcon from "../../img/bt.png";
 
 
@@ -22,20 +22,6 @@ export const Expertise = () => {
   // UPDATED: Added a 'type' to each category.
   // 'logoGrid' for software, 'textList' for others.
   const expertiseData = [
-    {
-      category: "Software Development",
-      type: "logoGrid", // This will use the icon cards
-      skills: [
-        { icon: reactIcon, name: "React" },
-        { icon: jsIcon, name: "JavaScript" },
-        { icon: pythonIcon, name: "Python" },
-        { icon: htmlIcon, name: "HTML5" },
-        { icon: cssIcon, name: "CSS3" },
-        { icon: mongodbIcon, name: "MongoDB" },
-        { icon: sqlIcon, name: "SQL" },
-        { icon: bootstrapIcon, name: "Bootstrap" },
-      ],
-    },
     {
       category: "Hardware & Embedded Systems",
       type: "textList", // This will use the new text-only cards
@@ -49,6 +35,21 @@ export const Expertise = () => {
         { name: "Soldering & Prototyping" },
       ],
     },
+    {
+      category: "Software Development",
+      type: "logoGrid", // This will use the icon cards
+      skills: [
+        { icon: reactIcon, name: "React" },
+        { icon: jsIcon, name: "JavaScript" },
+        // { icon: pythonIcon, name: "Python" },
+        { icon: htmlIcon, name: "HTML5" },
+        { icon: cssIcon, name: "CSS3" },
+        // { icon: mongodbIcon, name: "MongoDB" },
+        // { icon: sqlIcon, name: "SQL" },
+        { icon: bootstrapIcon, name: "Bootstrap" },
+      ],
+    },
+    
     {
       category: "Professional Competencies",
       type: "textList", // This will also use the new text-only cards
