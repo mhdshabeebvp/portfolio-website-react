@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.767c7069.css",
-    "main.js": "/static/js/main.aabe3935.js",
+    "main.js": "/static/js/main.93ac4c68.js",
     "static/media/yip.jpeg": "/static/media/yip.c5f96644dbc08aae5b6c.jpeg",
     "static/media/job.png": "/static/media/job.0394512f6878ab86273e.png",
     "static/media/malabar.jpg": "/static/media/malabar.9a99d406e404378f3eff.jpg",
@@ -14,7 +14,6 @@
     "static/media/farookstate.jpeg": "/static/media/farookstate.a91563f14c8873796bea.jpeg",
     "static/media/cnc.jpeg": "/static/media/cnc.77f49a7694bc38ec6145.jpeg",
     "static/media/gpt4.jpg": "/static/media/gpt4.70b150d91b797e3630bd.jpg",
-    "static/media/mongodb.png": "/static/media/mongodb.6170bacefd8a1f69ca74.png",
     "static/media/supra.jpg": "/static/media/supra.ce6eb0527cec3a119b37.jpg",
     "static/media/lp1.png": "/static/media/lp1.2e5ea333ae4fe660fece.png",
     "static/media/lp4.png": "/static/media/lp4.7463f49cd5ac603e0683.png",
@@ -68,18 +67,16 @@
     "static/media/CNC.jpg": "/static/media/CNC.83d63b03ffbee3a451ec.jpg",
     "static/media/covid.jpg": "/static/media/covid.ab3714a6bd6be2f07040.jpg",
     "static/media/car.jpg": "/static/media/car.8f667d01759b0df5f0ff.jpg",
-    "static/media/python2.png": "/static/media/python2.f7f12e1bf59e577656a2.png",
-    "static/media/sql.png": "/static/media/sql.666de00e0667aaa95f73.png",
     "static/media/react.svg": "/static/media/react.7ae42767b84e196272cdefdef0f5f8e1.svg",
     "static/media/java-script.svg": "/static/media/java-script.f0f310af117bf636c72a6487f26dd7c8.svg",
     "index.html": "/index.html",
     "static/media/css3-simple.svg": "/static/media/css3-simple.473165b79fcea57dead5ddb2a440984b.svg",
     "static/media/html5.svg": "/static/media/html5.fcdc9fd006e4b6124c5ff3ef71cd16b1.svg",
     "main.767c7069.css.map": "/static/css/main.767c7069.css.map",
-    "main.aabe3935.js.map": "/static/js/main.aabe3935.js.map"
+    "main.93ac4c68.js.map": "/static/js/main.93ac4c68.js.map"
   },
   "entrypoints": [
     "static/css/main.767c7069.css",
-    "static/js/main.aabe3935.js"
+    "static/js/main.93ac4c68.js"
   ]
 }
